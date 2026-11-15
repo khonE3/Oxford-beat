@@ -1,0 +1,45 @@
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono, Noto_Sans_Thai } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const notoSansThai = Noto_Sans_Thai({
+  variable: "--font-noto-thai",
+  subsets: ["thai"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  title: "Neon Keys — Oxford 3000 Rhythm Typing Game",
+  description:
+    "เกมพิมพ์คำศัพท์ภาษาอังกฤษแนว Rhythm / Falling Notes อ้างอิงคลังคำศัพท์ Oxford 3000 พร้อมคำแปลไทยและเสียงเปียโนสังเคราะห์",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#09090b",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="th"
+      className={`${geistSans.variable} ${geistMono.variable} ${notoSansThai.variable} h-full antialiased dark`}
+    >
+      <body className="min-h-full flex flex-col bg-[#09090b] text-zinc-100 selection:bg-orange-500/30 selection:text-orange-100">
+        {children}
+      </body>
+    </html>
+  );
+}

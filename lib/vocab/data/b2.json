@@ -1,0 +1,4552 @@
+[
+  {
+    "id": "b2-001",
+    "word": "abandon",
+    "pos": "v.",
+    "meaning_th": "ละทิ้ง, ทอดทิ้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-002",
+    "word": "accurate",
+    "pos": "adj.",
+    "meaning_th": "แม่นยำ, ถูกต้อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-003",
+    "word": "ambitious",
+    "pos": "adj.",
+    "meaning_th": "ทะเยอทะยาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-004",
+    "word": "analyse",
+    "pos": "v.",
+    "meaning_th": "วิเคราะห์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-005",
+    "word": "appropriate",
+    "pos": "adj.",
+    "meaning_th": "เหมาะสม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-006",
+    "word": "assume",
+    "pos": "v.",
+    "meaning_th": "สันนิษฐาน, ทึกทัก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-007",
+    "word": "beneficial",
+    "pos": "adj.",
+    "meaning_th": "เป็นประโยชน์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-008",
+    "word": "capable",
+    "pos": "adj.",
+    "meaning_th": "มีความสามารถ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-009",
+    "word": "collapse",
+    "pos": "v.",
+    "meaning_th": "พังทลาย, ล้มลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-010",
+    "word": "commitment",
+    "pos": "n.",
+    "meaning_th": "ความมุ่งมั่น, พันธะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-011",
+    "word": "consequence",
+    "pos": "n.",
+    "meaning_th": "ผลที่ตามมา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-012",
+    "word": "controversial",
+    "pos": "adj.",
+    "meaning_th": "เป็นที่ถกเถียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-013",
+    "word": "crucial",
+    "pos": "adj.",
+    "meaning_th": "สำคัญยิ่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-014",
+    "word": "demonstrate",
+    "pos": "v.",
+    "meaning_th": "แสดงให้เห็น, สาธิต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-015",
+    "word": "distinguish",
+    "pos": "v.",
+    "meaning_th": "แยกแยะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-016",
+    "word": "enthusiasm",
+    "pos": "n.",
+    "meaning_th": "ความกระตือรือร้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-017",
+    "word": "enormous",
+    "pos": "adj.",
+    "meaning_th": "ใหญ่มหึมา, มหาศาล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-018",
+    "word": "essentially",
+    "pos": "adv.",
+    "meaning_th": "โดยพื้นฐาน, โดยแก่นแท้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-019",
+    "word": "evaluate",
+    "pos": "v.",
+    "meaning_th": "ประเมิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-020",
+    "word": "frustrated",
+    "pos": "adj.",
+    "meaning_th": "หงุดหงิด, คับข้องใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-021",
+    "word": "guarantee",
+    "pos": "v.",
+    "meaning_th": "รับประกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-022",
+    "word": "interpret",
+    "pos": "v.",
+    "meaning_th": "ตีความ, แปล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-023",
+    "word": "investigate",
+    "pos": "v.",
+    "meaning_th": "สืบสวน, ตรวจสอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-024",
+    "word": "necessarily",
+    "pos": "adv.",
+    "meaning_th": "อย่างจำเป็น, เสมอไป",
+    "level": "B2"
+  },
+  {
+    "id": "b2-025",
+    "word": "nevertheless",
+    "pos": "adv.",
+    "meaning_th": "อย่างไรก็ตาม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-026",
+    "word": "occasionally",
+    "pos": "adv.",
+    "meaning_th": "เป็นครั้งคราว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-027",
+    "word": "precisely",
+    "pos": "adv.",
+    "meaning_th": "อย่างแม่นยำ, ตรงเป๊ะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-028",
+    "word": "principle",
+    "pos": "n.",
+    "meaning_th": "หลักการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-029",
+    "word": "reasonable",
+    "pos": "adj.",
+    "meaning_th": "สมเหตุสมผล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-030",
+    "word": "sufficient",
+    "pos": "adj.",
+    "meaning_th": "เพียงพอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-031",
+    "word": "strategy",
+    "pos": "n.",
+    "meaning_th": "กลยุทธ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-032",
+    "word": "substantial",
+    "pos": "adj.",
+    "meaning_th": "มาก, เป็นสาระสำคัญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-033",
+    "word": "tension",
+    "pos": "n.",
+    "meaning_th": "ความตึงเครียด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-034",
+    "word": "thoroughly",
+    "pos": "adv.",
+    "meaning_th": "อย่างละเอียดถี่ถ้วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-035",
+    "word": "virtual",
+    "pos": "adj.",
+    "meaning_th": "เสมือนจริง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-036",
+    "word": "whereas",
+    "pos": "conj.",
+    "meaning_th": "ในขณะที่, แต่ทว่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-037",
+    "word": "convince",
+    "pos": "v.",
+    "meaning_th": "ทำให้เชื่อ, โน้มน้าว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-038",
+    "word": "deny",
+    "pos": "v.",
+    "meaning_th": "ปฏิเสธ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-039",
+    "word": "absolute",
+    "pos": "adj.",
+    "meaning_th": "แน่นอน, สมบูรณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-040",
+    "word": "absorb",
+    "pos": "v.",
+    "meaning_th": "ดูดซับ, ซึมซับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-041",
+    "word": "abstract",
+    "pos": "adj.",
+    "meaning_th": "เชิงนามธรรม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-042",
+    "word": "academic",
+    "pos": "n.",
+    "meaning_th": "นักวิชาการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-043",
+    "word": "accent",
+    "pos": "n.",
+    "meaning_th": "สำเนียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-044",
+    "word": "acceptable",
+    "pos": "adj.",
+    "meaning_th": "ยอมรับได้, พอรับได้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-045",
+    "word": "accidentally",
+    "pos": "adv.",
+    "meaning_th": "โดยบังเอิญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-046",
+    "word": "accommodate",
+    "pos": "v.",
+    "meaning_th": "รองรับ, จุคน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-047",
+    "word": "accompany",
+    "pos": "v.",
+    "meaning_th": "ไปเป็นเพื่อน, ร่วมทาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-048",
+    "word": "accomplish",
+    "pos": "v.",
+    "meaning_th": "ทำสำเร็จ, บรรลุผล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-049",
+    "word": "account",
+    "pos": "v.",
+    "meaning_th": "อธิบาย, นับเป็น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-050",
+    "word": "accountant",
+    "pos": "n.",
+    "meaning_th": "นักบัญชี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-051",
+    "word": "accuracy",
+    "pos": "n.",
+    "meaning_th": "ความแม่นยำ, ความถูกต้อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-052",
+    "word": "accurately",
+    "pos": "adv.",
+    "meaning_th": "อย่างแม่นยำ, อย่างถูกต้อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-053",
+    "word": "accuse",
+    "pos": "v.",
+    "meaning_th": "กล่าวหา, ฟ้องร้อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-054",
+    "word": "acid",
+    "pos": "n.",
+    "meaning_th": "กรด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-055",
+    "word": "acknowledge",
+    "pos": "v.",
+    "meaning_th": "รับทราบ, ยอมรับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-056",
+    "word": "acquire",
+    "pos": "v.",
+    "meaning_th": "ได้รับ, เข้าครอบครอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-057",
+    "word": "activate",
+    "pos": "v.",
+    "meaning_th": "เปิดใช้งาน, กระตุ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-058",
+    "word": "actual",
+    "pos": "adj.",
+    "meaning_th": "ที่แท้จริง, ตามจริง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-059",
+    "word": "adapt",
+    "pos": "v.",
+    "meaning_th": "ปรับตัว, ดัดแปลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-060",
+    "word": "addiction",
+    "pos": "n.",
+    "meaning_th": "การเสพติด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-061",
+    "word": "additional",
+    "pos": "adj.",
+    "meaning_th": "เพิ่มเติม, เสริม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-062",
+    "word": "additionally",
+    "pos": "adv.",
+    "meaning_th": "นอกจากนี้, เพิ่มเติม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-063",
+    "word": "address",
+    "pos": "v.",
+    "meaning_th": "จัดการ, กล่าวปราศรัย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-064",
+    "word": "adequate",
+    "pos": "adj.",
+    "meaning_th": "เพียงพอ, เหมาะสม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-065",
+    "word": "adequately",
+    "pos": "adv.",
+    "meaning_th": "อย่างเพียงพอ, อย่างเหมาะสม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-066",
+    "word": "adjust",
+    "pos": "v.",
+    "meaning_th": "ปรับ, ปรับเปลี่ยน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-067",
+    "word": "administration",
+    "pos": "n.",
+    "meaning_th": "การบริหาร, การจัดการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-068",
+    "word": "adopt",
+    "pos": "v.",
+    "meaning_th": "รับเลี้ยง, นำมาใช้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-069",
+    "word": "advance",
+    "pos": "adj.",
+    "meaning_th": "ล่วงหน้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-070",
+    "word": "advance",
+    "pos": "n.",
+    "meaning_th": "ความก้าวหน้า, การก้าวหน้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-071",
+    "word": "advance",
+    "pos": "v.",
+    "meaning_th": "ก้าวหน้า, พัฒนา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-072",
+    "word": "affair",
+    "pos": "n.",
+    "meaning_th": "กิจธุระ, เรื่องอื้อฉาว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-073",
+    "word": "affordable",
+    "pos": "adj.",
+    "meaning_th": "ราคาจับต้องได้, ไม่แพง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-074",
+    "word": "afterwards",
+    "pos": "adv.",
+    "meaning_th": "หลังจากนั้น, ในภายหลัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-075",
+    "word": "agency",
+    "pos": "n.",
+    "meaning_th": "ตัวแทน, หน่วยงาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-076",
+    "word": "agenda",
+    "pos": "n.",
+    "meaning_th": "วาระการประชุม, กำหนดการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-077",
+    "word": "aggressive",
+    "pos": "adj.",
+    "meaning_th": "ก้าวร้าว, ดุดัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-078",
+    "word": "agriculture",
+    "pos": "n.",
+    "meaning_th": "การเกษตร, เกษตรกรรม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-079",
+    "word": "aid",
+    "pos": "n.",
+    "meaning_th": "ความช่วยเหลือ, การสงเคราะห์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-080",
+    "word": "aid",
+    "pos": "v.",
+    "meaning_th": "ช่วยเหลือ, สงเคราะห์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-081",
+    "word": "aids",
+    "pos": "n.",
+    "meaning_th": "โรคเอดส์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-082",
+    "word": "aircraft",
+    "pos": "n.",
+    "meaning_th": "อากาศยาน, เครื่องบิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-083",
+    "word": "alarm",
+    "pos": "v.",
+    "meaning_th": "ทำให้ตกใจ, ส่งสัญญาณเตือน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-084",
+    "word": "alien",
+    "pos": "n.",
+    "meaning_th": "มนุษย์ต่างดาว, คนต่างด้าว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-085",
+    "word": "alongside",
+    "pos": "prep.",
+    "meaning_th": "เคียงข้าง, ข้างๆ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-086",
+    "word": "alter",
+    "pos": "v.",
+    "meaning_th": "ปรับเปลี่ยน, แก้ไข",
+    "level": "B2"
+  },
+  {
+    "id": "b2-087",
+    "word": "altogether",
+    "pos": "adv.",
+    "meaning_th": "โดยสิ้นเชิง, ทั้งหมดร่วมกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-088",
+    "word": "ambulance",
+    "pos": "n.",
+    "meaning_th": "รถพยาบาล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-089",
+    "word": "amount",
+    "pos": "v.",
+    "meaning_th": "มีผลรวมเป็น, มีค่าเท่ากับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-090",
+    "word": "amusing",
+    "pos": "adj.",
+    "meaning_th": "น่าขบขัน, เพลิดเพลิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-091",
+    "word": "analyst",
+    "pos": "n.",
+    "meaning_th": "นักวิเคราะห์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-092",
+    "word": "ancestor",
+    "pos": "n.",
+    "meaning_th": "บรรพบุรุษ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-093",
+    "word": "anger",
+    "pos": "n.",
+    "meaning_th": "ความโกรธ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-094",
+    "word": "angle",
+    "pos": "n.",
+    "meaning_th": "มุม, แง่มุม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-095",
+    "word": "animation",
+    "pos": "n.",
+    "meaning_th": "ภาพเคลื่อนไหว, แอนิเมชัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-096",
+    "word": "anniversary",
+    "pos": "n.",
+    "meaning_th": "วันครบรอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-097",
+    "word": "annual",
+    "pos": "adj.",
+    "meaning_th": "ประจำปี, รายปี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-098",
+    "word": "annually",
+    "pos": "adv.",
+    "meaning_th": "ประจำปี, ทุกปี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-099",
+    "word": "anticipate",
+    "pos": "v.",
+    "meaning_th": "คาดหมาย, คาดการณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-100",
+    "word": "anxiety",
+    "pos": "n.",
+    "meaning_th": "ความวิตกกังวล, ความกังวลใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-101",
+    "word": "apology",
+    "pos": "n.",
+    "meaning_th": "คำขอโทษ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-102",
+    "word": "apparent",
+    "pos": "adj.",
+    "meaning_th": "ชัดเจน, ประจักษ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-103",
+    "word": "appeal",
+    "pos": "n.",
+    "meaning_th": "การอุทธรณ์, ความดึงดูดใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-104",
+    "word": "appeal",
+    "pos": "v.",
+    "meaning_th": "อุทธรณ์, ดึงดูดใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-105",
+    "word": "applicant",
+    "pos": "n.",
+    "meaning_th": "ผู้สมัคร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-106",
+    "word": "approach",
+    "pos": "n.",
+    "meaning_th": "แนวทาง, วิธีการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-107",
+    "word": "approach",
+    "pos": "v.",
+    "meaning_th": "เข้าใกล้, เข้าหา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-108",
+    "word": "appropriately",
+    "pos": "adv.",
+    "meaning_th": "อย่างเหมาะสม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-109",
+    "word": "approval",
+    "pos": "n.",
+    "meaning_th": "การอนุมัติ, ความเห็นชอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-110",
+    "word": "approve",
+    "pos": "v.",
+    "meaning_th": "อนุมัติ, เห็นชอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-111",
+    "word": "arise",
+    "pos": "v.",
+    "meaning_th": "เกิดขึ้น, ลุกขึ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-112",
+    "word": "armed",
+    "pos": "adj.",
+    "meaning_th": "ติดอาวุธ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-113",
+    "word": "arms",
+    "pos": "n.",
+    "meaning_th": "อาวุธ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-114",
+    "word": "arrow",
+    "pos": "n.",
+    "meaning_th": "ลูกศร, ลูกธนู",
+    "level": "B2"
+  },
+  {
+    "id": "b2-115",
+    "word": "artificial",
+    "pos": "adj.",
+    "meaning_th": "ประดิษฐ์, เทียม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-116",
+    "word": "artistic",
+    "pos": "adj.",
+    "meaning_th": "ทางศิลปะ, เชิงศิลปะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-117",
+    "word": "artwork",
+    "pos": "n.",
+    "meaning_th": "งานศิลปะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-118",
+    "word": "ashamed",
+    "pos": "adj.",
+    "meaning_th": "ละอายใจ, รู้สึกผิด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-119",
+    "word": "aside",
+    "pos": "adv.",
+    "meaning_th": "ไว้ข้างๆ, ไปด้านข้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-120",
+    "word": "aspect",
+    "pos": "n.",
+    "meaning_th": "แง่มุม, ด้าน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-121",
+    "word": "assess",
+    "pos": "v.",
+    "meaning_th": "ประเมิน, ตรวจสอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-122",
+    "word": "assessment",
+    "pos": "n.",
+    "meaning_th": "การประเมิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-123",
+    "word": "asset",
+    "pos": "n.",
+    "meaning_th": "ทรัพย์สิน, สิ่งมีค่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-124",
+    "word": "assign",
+    "pos": "v.",
+    "meaning_th": "มอบหมาย, กำหนด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-125",
+    "word": "assistance",
+    "pos": "n.",
+    "meaning_th": "ความช่วยเหลือ, การสงเคราะห์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-126",
+    "word": "associate",
+    "pos": "v.",
+    "meaning_th": "เชื่อมโยง, คบค้าสมาคม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-127",
+    "word": "associated",
+    "pos": "adj.",
+    "meaning_th": "ที่เกี่ยวข้อง, ที่สัมพันธ์กัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-128",
+    "word": "association",
+    "pos": "n.",
+    "meaning_th": "สมาคม, การรวมกลุ่ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-129",
+    "word": "assumption",
+    "pos": "n.",
+    "meaning_th": "สมมติฐาน, ข้อสันนิษฐาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-130",
+    "word": "assure",
+    "pos": "v.",
+    "meaning_th": "รับรอง, ทำให้มั่นใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-131",
+    "word": "astonishing",
+    "pos": "adj.",
+    "meaning_th": "น่าประหลาดใจอย่างยิ่ง, น่าทึ่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-132",
+    "word": "attachment",
+    "pos": "n.",
+    "meaning_th": "ไฟล์แนบ, ความผูกพัน, สิ่งที่แนบมา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-133",
+    "word": "attempt",
+    "pos": "n.",
+    "meaning_th": "ความพยายาม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-134",
+    "word": "attempt",
+    "pos": "v.",
+    "meaning_th": "พยายาม, เสี่ยงทำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-135",
+    "word": "auction",
+    "pos": "n.",
+    "meaning_th": "การประมูล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-136",
+    "word": "audio",
+    "pos": "adj.",
+    "meaning_th": "เกี่ยวกับเสียง, เกี่ยวกับระบบเสียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-137",
+    "word": "automatic",
+    "pos": "adj.",
+    "meaning_th": "อัตโนมัติ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-138",
+    "word": "automatically",
+    "pos": "adv.",
+    "meaning_th": "โดยอัตโนมัติ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-139",
+    "word": "awareness",
+    "pos": "n.",
+    "meaning_th": "ความตระหนักรู้, การรับรู้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-140",
+    "word": "awkward",
+    "pos": "adj.",
+    "meaning_th": "อึดอัด, เก้ๆ กังๆ, เคอะเขิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-141",
+    "word": "back",
+    "pos": "v.",
+    "meaning_th": "สนับสนุน, ถอยหลัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-142",
+    "word": "bacteria",
+    "pos": "n.",
+    "meaning_th": "แบคทีเรีย, เชื้อแบคทีเรีย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-143",
+    "word": "badge",
+    "pos": "n.",
+    "meaning_th": "ตรา, เข็มกลัด, ตราประจำตำแหน่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-144",
+    "word": "balanced",
+    "pos": "adj.",
+    "meaning_th": "สมดุล, มีสัดส่วนที่เหมาะสม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-145",
+    "word": "ballet",
+    "pos": "n.",
+    "meaning_th": "ระบำปลายเท้า, บัลเลต์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-146",
+    "word": "balloon",
+    "pos": "n.",
+    "meaning_th": "ลูกโป่ง, บอลลูน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-147",
+    "word": "bar",
+    "pos": "v.",
+    "meaning_th": "ขัดขวาง, ปิดกั้น, กักกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-148",
+    "word": "barely",
+    "pos": "adv.",
+    "meaning_th": "แทบจะไม่, เฉียดฉิว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-149",
+    "word": "bargain",
+    "pos": "n.",
+    "meaning_th": "ของราคาถูก, ข้อตกลง, การต่อรองราคา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-150",
+    "word": "barrier",
+    "pos": "n.",
+    "meaning_th": "อุปสรรค, สิ่งกีดขวาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-151",
+    "word": "basement",
+    "pos": "n.",
+    "meaning_th": "ห้องใต้ดิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-152",
+    "word": "basically",
+    "pos": "adv.",
+    "meaning_th": "โดยพื้นฐาน, โดยหลักการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-153",
+    "word": "basket",
+    "pos": "n.",
+    "meaning_th": "ตะกร้า, กระเช้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-154",
+    "word": "bat",
+    "pos": "n.",
+    "meaning_th": "ค้างคาว, ไม้ตีลูกบอล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-155",
+    "word": "battle",
+    "pos": "v.",
+    "meaning_th": "ต่อสู้, สู้รบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-156",
+    "word": "bear",
+    "pos": "v.",
+    "meaning_th": "อดทน, แบกรับ, ให้กำเนิด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-157",
+    "word": "beat",
+    "pos": "n.",
+    "meaning_th": "จังหวะ, จังหวะเต้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-158",
+    "word": "beg",
+    "pos": "v.",
+    "meaning_th": "ขอร้อง, อ้อนวอน, ขอทาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-159",
+    "word": "being",
+    "pos": "n.",
+    "meaning_th": "สิ่งมีชีวิต, การมีชีวิตอยู่, ตัวตน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-160",
+    "word": "bent",
+    "pos": "adj.",
+    "meaning_th": "โค้งงอ, คดเคี้ยว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-161",
+    "word": "beside",
+    "pos": "prep.",
+    "meaning_th": "ข้างๆ, เคียงข้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-162",
+    "word": "besides",
+    "pos": "adv.",
+    "meaning_th": "นอกจากนี้, ยิ่งกว่านั้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-163",
+    "word": "besides",
+    "pos": "prep.",
+    "meaning_th": "นอกจาก, นอกเหนือจาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-164",
+    "word": "bet",
+    "pos": "n.",
+    "meaning_th": "การเดิมพัน, เงินเดิมพัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-165",
+    "word": "bet",
+    "pos": "v.",
+    "meaning_th": "พนัน, พนันว่า, มั่นใจว่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-166",
+    "word": "beyond",
+    "pos": "adv.",
+    "meaning_th": "พ้นไป, ไกลออกไป",
+    "level": "B2"
+  },
+  {
+    "id": "b2-167",
+    "word": "beyond",
+    "pos": "prep.",
+    "meaning_th": "เกินกว่า, พ้น, เหนือกว่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-168",
+    "word": "bias",
+    "pos": "n.",
+    "meaning_th": "อคติ, ความลำเอียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-169",
+    "word": "bid",
+    "pos": "n.",
+    "meaning_th": "การประมูลราคา, การเสนอราคา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-170",
+    "word": "bid",
+    "pos": "v.",
+    "meaning_th": "ประมูลราคา, เสนอราคา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-171",
+    "word": "bill",
+    "pos": "v.",
+    "meaning_th": "เรียกเก็บเงิน, ออกบิล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-172",
+    "word": "biological",
+    "pos": "adj.",
+    "meaning_th": "ทางชีววิทยา, ทางชีวภาพ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-173",
+    "word": "bitter",
+    "pos": "adj.",
+    "meaning_th": "ขม, ขมขื่น, เจ็บแค้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-174",
+    "word": "blame",
+    "pos": "n.",
+    "meaning_th": "การตำหนิ, ความผิด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-175",
+    "word": "blame",
+    "pos": "v.",
+    "meaning_th": "ตำหนิ, โทษ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-176",
+    "word": "blanket",
+    "pos": "n.",
+    "meaning_th": "ผ้าห่ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-177",
+    "word": "blind",
+    "pos": "adj.",
+    "meaning_th": "ตาบอด, มืดบอด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-178",
+    "word": "blow",
+    "pos": "n.",
+    "meaning_th": "การเป่า, การตี, แรงกระแทก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-179",
+    "word": "bold",
+    "pos": "adj.",
+    "meaning_th": "กล้าหาญ, โดดเด่น, ตัวหนา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-180",
+    "word": "bombing",
+    "pos": "n.",
+    "meaning_th": "เหตุวางระเบิด, การทิ้งระเบิด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-181",
+    "word": "bond",
+    "pos": "n.",
+    "meaning_th": "สายสัมพันธ์, พันธบัตร, ข้อผูกมัด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-182",
+    "word": "booking",
+    "pos": "n.",
+    "meaning_th": "การจอง, รายการจอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-183",
+    "word": "boost",
+    "pos": "n.",
+    "meaning_th": "การส่งเสริม, แรงกระตุ้น, การเพิ่มขึ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-184",
+    "word": "boost",
+    "pos": "v.",
+    "meaning_th": "ส่งเสริม, เพิ่มพูน, กระตุ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-185",
+    "word": "border",
+    "pos": "v.",
+    "meaning_th": "ติดกับ, ล้อมรอบ, ติดขอบเขต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-186",
+    "word": "bound",
+    "pos": "adj.",
+    "meaning_th": "แน่นอนว่าจะเกิดขึ้น, ถูกผูกมัด, มุ่งหน้าไปยัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-187",
+    "word": "breast",
+    "pos": "n.",
+    "meaning_th": "เต้านม, หน้าอก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-188",
+    "word": "brick",
+    "pos": "n.",
+    "meaning_th": "ก้อนอิฐ, อิฐ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-189",
+    "word": "brief",
+    "pos": "adj.",
+    "meaning_th": "สั้นกระชับ, รวบรัด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-190",
+    "word": "briefly",
+    "pos": "adv.",
+    "meaning_th": "อย่างสั้นๆ, โดยย่อ, ชั่วครู่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-191",
+    "word": "broad",
+    "pos": "adj.",
+    "meaning_th": "กว้าง, กว้างขวาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-192",
+    "word": "broadcast",
+    "pos": "n.",
+    "meaning_th": "รายการถ่ายทอดสด, การออกอากาศ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-193",
+    "word": "broadcast",
+    "pos": "v.",
+    "meaning_th": "ออกอากาศ, เผยแพร่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-194",
+    "word": "broadcaster",
+    "pos": "n.",
+    "meaning_th": "ผู้ประกาศข่าว, สถานีออกอากาศ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-195",
+    "word": "broadly",
+    "pos": "adv.",
+    "meaning_th": "โดยกว้างๆ, โดยทั่วไป",
+    "level": "B2"
+  },
+  {
+    "id": "b2-196",
+    "word": "budget",
+    "pos": "n.",
+    "meaning_th": "งบประมาณ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-197",
+    "word": "bug",
+    "pos": "n.",
+    "meaning_th": "แมลง, จุดบกพร่อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-198",
+    "word": "bullet",
+    "pos": "n.",
+    "meaning_th": "กระสุน, ลูกปืน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-199",
+    "word": "bunch",
+    "pos": "n.",
+    "meaning_th": "ช่อ, พวง, กลุ่ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-200",
+    "word": "burn",
+    "pos": "n.",
+    "meaning_th": "แผลไหม้, แผลพุพอง, รอยไหม้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-201",
+    "word": "bush",
+    "pos": "n.",
+    "meaning_th": "พุ่มไม้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-202",
+    "word": "but",
+    "pos": "prep.",
+    "meaning_th": "นอกจาก, ยกเว้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-203",
+    "word": "cabin",
+    "pos": "n.",
+    "meaning_th": "กระท่อม, ห้องโดยสาร, ห้องโดยสารเครื่องบิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-204",
+    "word": "cable",
+    "pos": "n.",
+    "meaning_th": "สายเคเบิล, สายไฟ, ลวดสลิง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-205",
+    "word": "calculate",
+    "pos": "v.",
+    "meaning_th": "คำนวณ, คิดเลข",
+    "level": "B2"
+  },
+  {
+    "id": "b2-206",
+    "word": "canal",
+    "pos": "n.",
+    "meaning_th": "คลอง, คลองส่งน้ำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-207",
+    "word": "cancel",
+    "pos": "v.",
+    "meaning_th": "ยกเลิก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-208",
+    "word": "cancer",
+    "pos": "n.",
+    "meaning_th": "โรคมะเร็ง, มะเร็ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-209",
+    "word": "candle",
+    "pos": "n.",
+    "meaning_th": "เทียน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-210",
+    "word": "capacity",
+    "pos": "n.",
+    "meaning_th": "ความจุ, ความสามารถ, ขีดความสามารถ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-211",
+    "word": "capture",
+    "pos": "n.",
+    "meaning_th": "การจับกุม, การยึดครอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-212",
+    "word": "capture",
+    "pos": "v.",
+    "meaning_th": "จับกุม, ยึดครอง, บันทึกภาพ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-213",
+    "word": "carbon",
+    "pos": "n.",
+    "meaning_th": "คาร์บอน, สารคาร์บอน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-214",
+    "word": "cast",
+    "pos": "n.",
+    "meaning_th": "ทีมนักแสดง, เฝือก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-215",
+    "word": "cast",
+    "pos": "v.",
+    "meaning_th": "คัดเลือกนักแสดง, ขว้าง, โยน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-216",
+    "word": "casual",
+    "pos": "adj.",
+    "meaning_th": "ไม่เป็นทางการ, สบายๆ, สุ่ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-217",
+    "word": "catch",
+    "pos": "n.",
+    "meaning_th": "การจับ, สิ่งที่จับได้, ข้อแม้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-218",
+    "word": "cave",
+    "pos": "n.",
+    "meaning_th": "ถ้ำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-219",
+    "word": "cell",
+    "pos": "n.",
+    "meaning_th": "เซลล์, ห้องขัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-220",
+    "word": "certainty",
+    "pos": "n.",
+    "meaning_th": "ความแน่นอน, สิ่งที่แน่นอน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-221",
+    "word": "certificate",
+    "pos": "n.",
+    "meaning_th": "ประกาศนียบัตร, ใบรับรอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-222",
+    "word": "chain",
+    "pos": "v.",
+    "meaning_th": "ล่ามโซ่, ผูกมัดด้วยโซ่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-223",
+    "word": "chair",
+    "pos": "v.",
+    "meaning_th": "ทำหน้าที่ประธาน, เป็นประธานในที่ประชุม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-224",
+    "word": "chairman",
+    "pos": "n.",
+    "meaning_th": "ประธาน, ประธานกรรมการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-225",
+    "word": "challenge",
+    "pos": "v.",
+    "meaning_th": "ท้าทาย, ท้าพนัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-226",
+    "word": "challenging",
+    "pos": "adj.",
+    "meaning_th": "ท้าทาย, ที่กระตุ้นความสามารถ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-227",
+    "word": "championship",
+    "pos": "n.",
+    "meaning_th": "การแข่งขันชิงแชมป์, ตำแหน่งชนะเลิศ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-228",
+    "word": "characteristic",
+    "pos": "adj.",
+    "meaning_th": "เป็นเอกลักษณ์, มีลักษณะเฉพาะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-229",
+    "word": "characteristic",
+    "pos": "n.",
+    "meaning_th": "ลักษณะเฉพาะ, ลักษณะเด่น, คุณสมบัติ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-230",
+    "word": "charming",
+    "pos": "adj.",
+    "meaning_th": "มีเสน่ห์, น่าหลงใหล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-231",
+    "word": "chart",
+    "pos": "v.",
+    "meaning_th": "บันทึกข้อมูล, วางแผน, ทำแผนที่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-232",
+    "word": "chase",
+    "pos": "n.",
+    "meaning_th": "การไล่ตาม, การไล่ล่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-233",
+    "word": "chase",
+    "pos": "v.",
+    "meaning_th": "ไล่ตาม, วิ่งไล่, ไล่ล่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-234",
+    "word": "cheek",
+    "pos": "n.",
+    "meaning_th": "แก้ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-235",
+    "word": "cheer",
+    "pos": "n.",
+    "meaning_th": "เสียงโห่ร้อง, กำลังใจ, ความยินดี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-236",
+    "word": "cheer",
+    "pos": "v.",
+    "meaning_th": "ให้กำลังใจ, ส่งเสียงเชียร์, ร้องแสดงความยินดี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-237",
+    "word": "chief",
+    "pos": "adj.",
+    "meaning_th": "หัวหน้า, สำคัญที่สุด, เป็นหลัก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-238",
+    "word": "chief",
+    "pos": "n.",
+    "meaning_th": "หัวหน้า, ผู้นำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-239",
+    "word": "choir",
+    "pos": "n.",
+    "meaning_th": "คณะนักร้องประสานเสียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-240",
+    "word": "chop",
+    "pos": "v.",
+    "meaning_th": "สับ, หั่น, ตัด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-241",
+    "word": "circuit",
+    "pos": "n.",
+    "meaning_th": "วงจร, วงจรไฟฟ้า, เส้นทางรอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-242",
+    "word": "circumstance",
+    "pos": "n.",
+    "meaning_th": "สถานการณ์, สภาวการณ์, เหตุการณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-243",
+    "word": "cite",
+    "pos": "v.",
+    "meaning_th": "อ้างอิง, กล่าวถึง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-244",
+    "word": "citizen",
+    "pos": "n.",
+    "meaning_th": "พลเมือง, ประชาชน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-245",
+    "word": "civil",
+    "pos": "adj.",
+    "meaning_th": "ทางแพ่ง, ของพลเมือง, พลเรือน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-246",
+    "word": "civilization",
+    "pos": "n.",
+    "meaning_th": "อารยธรรม, ความเจริญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-247",
+    "word": "clarify",
+    "pos": "v.",
+    "meaning_th": "ชี้แจง, อธิบายให้ชัดเจน, ทำให้กระจ่าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-248",
+    "word": "classic",
+    "pos": "adj.",
+    "meaning_th": "คลาสสิก, ยอดเยี่ยม, ชั้นนำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-249",
+    "word": "classic",
+    "pos": "n.",
+    "meaning_th": "ผลงานคลาสสิก, สิ่งชั้นยอด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-250",
+    "word": "classify",
+    "pos": "v.",
+    "meaning_th": "จัดหมวดหมู่, จำแนกประเภท",
+    "level": "B2"
+  },
+  {
+    "id": "b2-251",
+    "word": "clerk",
+    "pos": "n.",
+    "meaning_th": "เสมียน, พนักงานต้อนรับ, พนักงานขาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-252",
+    "word": "cliff",
+    "pos": "n.",
+    "meaning_th": "หน้าผา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-253",
+    "word": "clinic",
+    "pos": "n.",
+    "meaning_th": "คลินิก, สถานพยาบาล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-254",
+    "word": "clip",
+    "pos": "n.",
+    "meaning_th": "คลิปหนีบ, คลิปวิดีโอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-255",
+    "word": "close",
+    "pos": "n.",
+    "meaning_th": "การสิ้นสุด, ตอนจบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-256",
+    "word": "closely",
+    "pos": "adv.",
+    "meaning_th": "อย่างใกล้ชิด, อย่างละเอียดถี่ถ้วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-257",
+    "word": "coincidence",
+    "pos": "n.",
+    "meaning_th": "ความบังเอิญ, ความประจวบเหมาะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-258",
+    "word": "collapse",
+    "pos": "n.",
+    "meaning_th": "การพังทลาย, การทรุดตัว, ความล้มเหลว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-259",
+    "word": "collector",
+    "pos": "n.",
+    "meaning_th": "นักสะสม, ผู้เก็บรวบรวม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-260",
+    "word": "colony",
+    "pos": "n.",
+    "meaning_th": "อาณานิคม, เมืองขึ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-261",
+    "word": "colourful",
+    "pos": "adj.",
+    "meaning_th": "หลากสีสัน, สีสันสดใส",
+    "level": "B2"
+  },
+  {
+    "id": "b2-262",
+    "word": "combination",
+    "pos": "n.",
+    "meaning_th": "การผสมผสาน, การรวมกัน, การประสานงาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-263",
+    "word": "comfort",
+    "pos": "n.",
+    "meaning_th": "ความสะดวกสบาย, การปลอบประโลม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-264",
+    "word": "comfort",
+    "pos": "v.",
+    "meaning_th": "ปลอบประโลม, ปลอบใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-265",
+    "word": "comic",
+    "pos": "adj.",
+    "meaning_th": "ตลกขบขัน, น่าขัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-266",
+    "word": "comic",
+    "pos": "n.",
+    "meaning_th": "หนังสือการ์ตูน, นักแสดงตลก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-267",
+    "word": "command",
+    "pos": "n.",
+    "meaning_th": "คำสั่ง, การสั่งการ, อำนาจบัญชาการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-268",
+    "word": "command",
+    "pos": "v.",
+    "meaning_th": "สั่งการ, บัญชาการ, ควบคุม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-269",
+    "word": "commander",
+    "pos": "n.",
+    "meaning_th": "ผู้บัญชาการ, ผู้สั่งการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-270",
+    "word": "commission",
+    "pos": "n.",
+    "meaning_th": "ค่านายหน้า, คณะกรรมาธิการ, การสั่งทำชิ้นงาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-271",
+    "word": "commission",
+    "pos": "v.",
+    "meaning_th": "สั่งทำ, มอบหมายงาน, แต่งตั้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-272",
+    "word": "committee",
+    "pos": "n.",
+    "meaning_th": "คณะกรรมการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-273",
+    "word": "commonly",
+    "pos": "adv.",
+    "meaning_th": "โดยทั่วไป, เป็นปกติ, เป็นธรรมดา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-274",
+    "word": "comparative",
+    "pos": "adj.",
+    "meaning_th": "เชิงเปรียบเทียบ, สัมพัทธ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-275",
+    "word": "completion",
+    "pos": "n.",
+    "meaning_th": "การเสร็จสิ้น, ความสมบูรณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-276",
+    "word": "complex",
+    "pos": "n.",
+    "meaning_th": "กลุ่มอาคาร, ความซับซ้อน, ปมด้อย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-277",
+    "word": "complicated",
+    "pos": "adj.",
+    "meaning_th": "ซับซ้อน, ยุ่งยาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-278",
+    "word": "component",
+    "pos": "n.",
+    "meaning_th": "ส่วนประกอบ, ชิ้นส่วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-279",
+    "word": "compose",
+    "pos": "v.",
+    "meaning_th": "แต่ง, ประกอบขึ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-280",
+    "word": "composer",
+    "pos": "n.",
+    "meaning_th": "นักแต่งเพลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-281",
+    "word": "compound",
+    "pos": "n.",
+    "meaning_th": "สารประกอบ, บริเวณรั้วรอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-282",
+    "word": "comprehensive",
+    "pos": "adj.",
+    "meaning_th": "ครอบคลุม, ละเอียดถี่ถ้วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-283",
+    "word": "comprise",
+    "pos": "v.",
+    "meaning_th": "ประกอบด้วย, ครอบคลุม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-284",
+    "word": "compulsory",
+    "pos": "adj.",
+    "meaning_th": "ที่บังคับ, ภาคบังคับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-285",
+    "word": "concentration",
+    "pos": "n.",
+    "meaning_th": "ความเข้มข้น, การจดจ่อสมาธิ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-286",
+    "word": "concept",
+    "pos": "n.",
+    "meaning_th": "แนวคิด, มโนทัศน์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-287",
+    "word": "concern",
+    "pos": "n.",
+    "meaning_th": "ความกังวล, ความห่วงใย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-288",
+    "word": "concern",
+    "pos": "v.",
+    "meaning_th": "เกี่ยวข้อง, ทำให้กังวล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-289",
+    "word": "concerned",
+    "pos": "adj.",
+    "meaning_th": "ที่กังวล, ที่เป็นห่วง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-290",
+    "word": "concrete",
+    "pos": "adj.",
+    "meaning_th": "ที่เป็นรูปธรรม, ชัดเจน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-291",
+    "word": "concrete",
+    "pos": "n.",
+    "meaning_th": "คอนกรีต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-292",
+    "word": "conduct",
+    "pos": "n.",
+    "meaning_th": "ความประพฤติ, การปฏิบัติ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-293",
+    "word": "conduct",
+    "pos": "v.",
+    "meaning_th": "ดำเนินการ, จัดการ, นำทาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-294",
+    "word": "confess",
+    "pos": "v.",
+    "meaning_th": "สารภาพ, ยอมรับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-295",
+    "word": "confidence",
+    "pos": "n.",
+    "meaning_th": "ความมั่นใจ, ความไว้วางใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-296",
+    "word": "conflict",
+    "pos": "n.",
+    "meaning_th": "ความขัดแย้ง, การต่อสู้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-297",
+    "word": "conflict",
+    "pos": "v.",
+    "meaning_th": "ขัดแย้ง, ไม่ลงรอยกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-298",
+    "word": "confusing",
+    "pos": "adj.",
+    "meaning_th": "ที่ทำให้สับสน, น่าสับสน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-299",
+    "word": "confusion",
+    "pos": "n.",
+    "meaning_th": "ความสับสน, ความวุ่นวาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-300",
+    "word": "conscious",
+    "pos": "adj.",
+    "meaning_th": "มีสติ, รู้สึกตัว, ตระหนักรู้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-301",
+    "word": "consequently",
+    "pos": "adv.",
+    "meaning_th": "ดังนั้น, ผลลัพธ์คือ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-302",
+    "word": "conservation",
+    "pos": "n.",
+    "meaning_th": "การอนุรักษ์, การสงวนรักษา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-303",
+    "word": "conservative",
+    "pos": "adj.",
+    "meaning_th": "อนุรักษนิยม, ระมัดระวัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-304",
+    "word": "conservative",
+    "pos": "n.",
+    "meaning_th": "ผู้อนุรักษนิยม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-305",
+    "word": "considerable",
+    "pos": "adj.",
+    "meaning_th": "มาก, สำคัญพอควร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-306",
+    "word": "considerably",
+    "pos": "adv.",
+    "meaning_th": "อย่างมาก, อย่างเห็นได้ชัด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-307",
+    "word": "consideration",
+    "pos": "n.",
+    "meaning_th": "การพิจารณา, ความเกรงใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-308",
+    "word": "consistent",
+    "pos": "adj.",
+    "meaning_th": "สม่ำเสมอ, คงเส้นคงวา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-309",
+    "word": "consistently",
+    "pos": "adv.",
+    "meaning_th": "อย่างสม่ำเสมอ, อย่างต่อเนื่อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-310",
+    "word": "conspiracy",
+    "pos": "n.",
+    "meaning_th": "การสมคบคิด, แผนการลับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-311",
+    "word": "constant",
+    "pos": "adj.",
+    "meaning_th": "คงที่, ต่อเนื่อง, มั่นคง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-312",
+    "word": "constantly",
+    "pos": "adv.",
+    "meaning_th": "ตลอดเวลา, อย่างต่อเนื่อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-313",
+    "word": "construct",
+    "pos": "v.",
+    "meaning_th": "สร้าง, ก่อสร้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-314",
+    "word": "construction",
+    "pos": "n.",
+    "meaning_th": "การก่อสร้าง, โครงสร้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-315",
+    "word": "consult",
+    "pos": "v.",
+    "meaning_th": "ปรึกษา, ขอคำแนะนำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-316",
+    "word": "consultant",
+    "pos": "n.",
+    "meaning_th": "ที่ปรึกษา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-317",
+    "word": "consumption",
+    "pos": "n.",
+    "meaning_th": "การบริโภค, การใช้พลังงาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-318",
+    "word": "contemporary",
+    "pos": "adj.",
+    "meaning_th": "ร่วมสมัย, ในยุคปัจจุบัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-319",
+    "word": "contest",
+    "pos": "n.",
+    "meaning_th": "การแข่งขัน, การประกวด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-320",
+    "word": "contest",
+    "pos": "v.",
+    "meaning_th": "แข่งขัน, โต้แย้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-321",
+    "word": "contract",
+    "pos": "n.",
+    "meaning_th": "สัญญา, ข้อตกลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-322",
+    "word": "contract",
+    "pos": "v.",
+    "meaning_th": "หดตัว, ทำสัญญา, ติดโรค",
+    "level": "B2"
+  },
+  {
+    "id": "b2-323",
+    "word": "contribute",
+    "pos": "v.",
+    "meaning_th": "มีส่วนช่วย, สนับสนุน, บริจาค",
+    "level": "B2"
+  },
+  {
+    "id": "b2-324",
+    "word": "contribution",
+    "pos": "n.",
+    "meaning_th": "การสนับสนุน, การมีส่วนร่วม, เงินบริจาค",
+    "level": "B2"
+  },
+  {
+    "id": "b2-325",
+    "word": "controversy",
+    "pos": "n.",
+    "meaning_th": "ข้อพิพาท, การโต้เถียงกันอย่างรุนแรง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-326",
+    "word": "convenience",
+    "pos": "n.",
+    "meaning_th": "ความสะดวก, ความสะดวกสบาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-327",
+    "word": "convention",
+    "pos": "n.",
+    "meaning_th": "ธรรมเนียมปฏิบัติ, การประชุมใหญ่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-328",
+    "word": "conventional",
+    "pos": "adj.",
+    "meaning_th": "ตามธรรมเนียม, ตามแบบแผนดั้งเดิม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-329",
+    "word": "convert",
+    "pos": "v.",
+    "meaning_th": "แปลง, เปลี่ยนรูปแบบ, เปลี่ยนความเชื่อ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-330",
+    "word": "convey",
+    "pos": "v.",
+    "meaning_th": "สื่อความหมาย, ถ่ายทอด, ขนส่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-331",
+    "word": "convinced",
+    "pos": "adj.",
+    "meaning_th": "ที่เชื่อมั่น, ปักใจเชื่อ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-332",
+    "word": "convincing",
+    "pos": "adj.",
+    "meaning_th": "น่าเชื่อถือ, ชวนให้เชื่อ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-333",
+    "word": "cope",
+    "pos": "v.",
+    "meaning_th": "รับมือ, จัดการได้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-334",
+    "word": "core",
+    "pos": "adj.",
+    "meaning_th": "หลัก, สำคัญที่สุด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-335",
+    "word": "core",
+    "pos": "n.",
+    "meaning_th": "แกนกลาง, ใจกลาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-336",
+    "word": "corporate",
+    "pos": "adj.",
+    "meaning_th": "เกี่ยวกับบริษัท, ขององค์กร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-337",
+    "word": "corporation",
+    "pos": "n.",
+    "meaning_th": "บริษัท, องค์กรธุรกิจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-338",
+    "word": "corridor",
+    "pos": "n.",
+    "meaning_th": "ทางเดิน, ระเบียงทางเดิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-339",
+    "word": "council",
+    "pos": "n.",
+    "meaning_th": "สภา, คณะกรรมการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-340",
+    "word": "counter",
+    "pos": "n.",
+    "meaning_th": "เคาน์เตอร์, โต๊ะบริการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-341",
+    "word": "county",
+    "pos": "n.",
+    "meaning_th": "มณฑล, เขตการปกครอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-342",
+    "word": "courage",
+    "pos": "n.",
+    "meaning_th": "ความกล้าหาญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-343",
+    "word": "coverage",
+    "pos": "n.",
+    "meaning_th": "การรายงานข่าว, การคุ้มครอง, ขอบเขตที่ครอบคลุม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-344",
+    "word": "crack",
+    "pos": "n.",
+    "meaning_th": "รอยแตก, รอยร้าว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-345",
+    "word": "crack",
+    "pos": "v.",
+    "meaning_th": "แตก, ร้าว, กะเทาะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-346",
+    "word": "craft",
+    "pos": "n.",
+    "meaning_th": "งานฝีมือ, ยานพาหนะ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-347",
+    "word": "crash",
+    "pos": "n.",
+    "meaning_th": "การชน, การพังทลาย, อุบัติเหตุ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-348",
+    "word": "crash",
+    "pos": "v.",
+    "meaning_th": "ชน, พัง, เกิดอุบัติเหตุ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-349",
+    "word": "creation",
+    "pos": "n.",
+    "meaning_th": "การสร้างสรรค์, สิ่งที่ถูกสร้างขึ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-350",
+    "word": "creativity",
+    "pos": "n.",
+    "meaning_th": "ความคิดสร้างสรรค์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-351",
+    "word": "creature",
+    "pos": "n.",
+    "meaning_th": "สิ่งมีชีวิต, สัตว์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-352",
+    "word": "credit",
+    "pos": "v.",
+    "meaning_th": "ยกย่อง, เชื่อถือ, โอนเงินเข้าบัญชี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-353",
+    "word": "crew",
+    "pos": "n.",
+    "meaning_th": "ลูกเรือ, ลูกทีม, คณะทำงาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-354",
+    "word": "crisis",
+    "pos": "n.",
+    "meaning_th": "วิกฤต, วิกฤตการณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-355",
+    "word": "criterion",
+    "pos": "n.",
+    "meaning_th": "เกณฑ์, บรรทัดฐาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-356",
+    "word": "critic",
+    "pos": "n.",
+    "meaning_th": "นักวิจารณ์, ผู้จับผิด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-357",
+    "word": "critical",
+    "pos": "adj.",
+    "meaning_th": "วิกฤต, สำคัญยิ่ง, เชิงวิพากษ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-358",
+    "word": "critically",
+    "pos": "adv.",
+    "meaning_th": "อย่างวิกฤต, อย่างจริงจัง, เชิงวิพากษ์วิจารณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-359",
+    "word": "criticism",
+    "pos": "n.",
+    "meaning_th": "การวิพากษ์วิจารณ์, ข้อติชม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-360",
+    "word": "criticize",
+    "pos": "v.",
+    "meaning_th": "วิพากษ์วิจารณ์, ติเตียน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-361",
+    "word": "crop",
+    "pos": "n.",
+    "meaning_th": "พืชผล, ผลผลิตทางการเกษตร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-362",
+    "word": "cruise",
+    "pos": "n.",
+    "meaning_th": "การล่องเรือสำราญ, เรือสำราญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-363",
+    "word": "cruise",
+    "pos": "v.",
+    "meaning_th": "ล่องเรือ, เคลื่อนที่ด้วยความเร็วสม่ำเสมอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-364",
+    "word": "cry",
+    "pos": "n.",
+    "meaning_th": "เสียงร้องไห้, เสียงตะโกน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-365",
+    "word": "cue",
+    "pos": "n.",
+    "meaning_th": "สัญญาณบอกใบ้, คิว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-366",
+    "word": "cure",
+    "pos": "n.",
+    "meaning_th": "การรักษา, ยารักษาโรค",
+    "level": "B2"
+  },
+  {
+    "id": "b2-367",
+    "word": "cure",
+    "pos": "v.",
+    "meaning_th": "รักษา, รักษาให้หาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-368",
+    "word": "current",
+    "pos": "n.",
+    "meaning_th": "กระแสน้ำ, กระแสลม, กระแสไฟฟ้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-369",
+    "word": "curriculum",
+    "pos": "n.",
+    "meaning_th": "หลักสูตรการศึกษา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-370",
+    "word": "curve",
+    "pos": "n.",
+    "meaning_th": "เส้นโค้ง, ทางโค้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-371",
+    "word": "curve",
+    "pos": "v.",
+    "meaning_th": "โค้ง, งอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-372",
+    "word": "curved",
+    "pos": "adj.",
+    "meaning_th": "โค้ง, โค้งงอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-373",
+    "word": "cute",
+    "pos": "adj.",
+    "meaning_th": "น่ารัก, มีเสน่ห์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-374",
+    "word": "dairy",
+    "pos": "adj.",
+    "meaning_th": "เกี่ยวกับผลิตภัณฑ์นม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-375",
+    "word": "dairy",
+    "pos": "n.",
+    "meaning_th": "ผลิตภัณฑ์จากนม, ฟาร์มโคนม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-376",
+    "word": "dare",
+    "pos": "v.",
+    "meaning_th": "กล้า, ท้าทาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-377",
+    "word": "darkness",
+    "pos": "n.",
+    "meaning_th": "ความมืดมิด, ความมืด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-378",
+    "word": "database",
+    "pos": "n.",
+    "meaning_th": "ฐานข้อมูล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-379",
+    "word": "date",
+    "pos": "v.",
+    "meaning_th": "เดต, ออกเดต, ระบุวันที่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-380",
+    "word": "deadline",
+    "pos": "n.",
+    "meaning_th": "กำหนดเวลาสิ้นสุด, เส้นตาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-381",
+    "word": "deadly",
+    "pos": "adj.",
+    "meaning_th": "ถึงตาย, ร้ายแรงถึงชีวิต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-382",
+    "word": "dealer",
+    "pos": "n.",
+    "meaning_th": "ตัวแทนจำหน่าย, ผู้ค้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-383",
+    "word": "debate",
+    "pos": "n.",
+    "meaning_th": "การโต้วาที, การอภิปราย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-384",
+    "word": "debate",
+    "pos": "v.",
+    "meaning_th": "โต้วาที, อภิปราย, ถกเถียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-385",
+    "word": "debt",
+    "pos": "n.",
+    "meaning_th": "หนี้สิน, หนี้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-386",
+    "word": "decent",
+    "pos": "adj.",
+    "meaning_th": "เหมาะสม, ดีพอใช้, น่านับถือ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-387",
+    "word": "deck",
+    "pos": "n.",
+    "meaning_th": "ดาดฟ้าเรือ, สำรับไพ่, ระเบียงไม้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-388",
+    "word": "declare",
+    "pos": "v.",
+    "meaning_th": "ประกาศ, แถลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-389",
+    "word": "decline",
+    "pos": "n.",
+    "meaning_th": "การลดลง, ความเสื่อมถอย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-390",
+    "word": "decline",
+    "pos": "v.",
+    "meaning_th": "ปฏิเสธ, ลดลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-391",
+    "word": "decoration",
+    "pos": "n.",
+    "meaning_th": "เครื่องตกแต่ง, การตกแต่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-392",
+    "word": "decrease",
+    "pos": "n.",
+    "meaning_th": "การลดลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-393",
+    "word": "decrease",
+    "pos": "v.",
+    "meaning_th": "ลดลง, ทำให้น้อยลง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-394",
+    "word": "deeply",
+    "pos": "adv.",
+    "meaning_th": "อย่างลึกซึ้ง, อย่างยิ่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-395",
+    "word": "defeat",
+    "pos": "n.",
+    "meaning_th": "ความพ่ายแพ้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-396",
+    "word": "defeat",
+    "pos": "v.",
+    "meaning_th": "เอาชนะ, ปราบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-397",
+    "word": "defence",
+    "pos": "n.",
+    "meaning_th": "การป้องกัน, การแก้ต่าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-398",
+    "word": "defend",
+    "pos": "v.",
+    "meaning_th": "ปกป้อง, ป้องกัน, แก้ต่าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-399",
+    "word": "defender",
+    "pos": "n.",
+    "meaning_th": "ผู้ปกป้อง, ผู้เล่นกองหลัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-400",
+    "word": "delay",
+    "pos": "n.",
+    "meaning_th": "ความล่าช้า, การเลื่อนเวลา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-401",
+    "word": "delay",
+    "pos": "v.",
+    "meaning_th": "ทำให้ล่าช้า, ผัดผ่อน, เลื่อนเวลา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-402",
+    "word": "delete",
+    "pos": "v.",
+    "meaning_th": "ลบ, ตัดออก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-403",
+    "word": "deliberate",
+    "pos": "adj.",
+    "meaning_th": "เจตนา, ตั้งใจ, รอบคอบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-404",
+    "word": "deliberately",
+    "pos": "adv.",
+    "meaning_th": "โดยเจตนา, อย่างตั้งใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-405",
+    "word": "delight",
+    "pos": "n.",
+    "meaning_th": "ความยินดี, ความสุขใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-406",
+    "word": "delight",
+    "pos": "v.",
+    "meaning_th": "ทำให้ยินดี, ทำให้เพลิดเพลิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-407",
+    "word": "delighted",
+    "pos": "adj.",
+    "meaning_th": "ยินดีมาก, ปลื้มใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-408",
+    "word": "delivery",
+    "pos": "n.",
+    "meaning_th": "การส่ง, การจัดส่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-409",
+    "word": "demand",
+    "pos": "n.",
+    "meaning_th": "ความต้องการ, อุปสงค์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-410",
+    "word": "demand",
+    "pos": "v.",
+    "meaning_th": "เรียกร้อง, ต้องการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-411",
+    "word": "democracy",
+    "pos": "n.",
+    "meaning_th": "ประชาธิปไตย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-412",
+    "word": "democratic",
+    "pos": "adj.",
+    "meaning_th": "ทางประชาธิปไตย, เกี่ยวกับประชาธิปไตย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-413",
+    "word": "demonstration",
+    "pos": "n.",
+    "meaning_th": "การสาธิต, การเดินขบวนประท้วง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-414",
+    "word": "depart",
+    "pos": "v.",
+    "meaning_th": "ออกเดินทาง, ออกจาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-415",
+    "word": "dependent",
+    "pos": "adj.",
+    "meaning_th": "พึ่งพาผู้อื่น, ขึ้นอยู่กับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-416",
+    "word": "deposit",
+    "pos": "n.",
+    "meaning_th": "เงินฝาก, เงินมัดจำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-417",
+    "word": "depressed",
+    "pos": "adj.",
+    "meaning_th": "หดหู่, ซึมเศร้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-418",
+    "word": "depressing",
+    "pos": "adj.",
+    "meaning_th": "น่าหดหู่, น่าเศร้าใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-419",
+    "word": "depression",
+    "pos": "n.",
+    "meaning_th": "โรคซึมเศร้า, ภาวะเศรษฐกิจตกต่ำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-420",
+    "word": "depth",
+    "pos": "n.",
+    "meaning_th": "ความลึก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-421",
+    "word": "derive",
+    "pos": "v.",
+    "meaning_th": "ได้รับมาจาก, กำเนิดจาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-422",
+    "word": "desert",
+    "pos": "v.",
+    "meaning_th": "ละทิ้ง, ทอดทิ้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-423",
+    "word": "deserve",
+    "pos": "v.",
+    "meaning_th": "สมควรได้รับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-424",
+    "word": "desire",
+    "pos": "n.",
+    "meaning_th": "ความปรารถนา, ความต้องการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-425",
+    "word": "desire",
+    "pos": "v.",
+    "meaning_th": "ปรารถนา, ต้องการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-426",
+    "word": "desperate",
+    "pos": "adj.",
+    "meaning_th": "สิ้นหวัง, เข้าตาจน, รุนแรง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-427",
+    "word": "desperately",
+    "pos": "adv.",
+    "meaning_th": "อย่างสิ้นหวัง, อย่างยิ่งยวด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-428",
+    "word": "destruction",
+    "pos": "n.",
+    "meaning_th": "การทำลายล้าง, ความพินาศ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-429",
+    "word": "detail",
+    "pos": "v.",
+    "meaning_th": "อธิบายโดยละเอียด, แจกแจง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-430",
+    "word": "detailed",
+    "pos": "adj.",
+    "meaning_th": "ละเอียด, มีรายละเอียดมาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-431",
+    "word": "detect",
+    "pos": "v.",
+    "meaning_th": "ตรวจพบ, ตรวจจับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-432",
+    "word": "determination",
+    "pos": "n.",
+    "meaning_th": "ความมุ่งมั่น, ความตั้งใจแน่วแน่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-433",
+    "word": "devote",
+    "pos": "v.",
+    "meaning_th": "อุทิศ, สละ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-434",
+    "word": "differ",
+    "pos": "v.",
+    "meaning_th": "แตกต่าง, แตกต่างกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-435",
+    "word": "dig",
+    "pos": "v.",
+    "meaning_th": "ขุด, ขุดดิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-436",
+    "word": "disability",
+    "pos": "n.",
+    "meaning_th": "ความพิการ, ความทุพพลภาพ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-437",
+    "word": "disabled",
+    "pos": "adj.",
+    "meaning_th": "พิการ, ทุพพลภาพ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-438",
+    "word": "disagreement",
+    "pos": "n.",
+    "meaning_th": "ความไม่เห็นด้วย, ข้อพิพาท",
+    "level": "B2"
+  },
+  {
+    "id": "b2-439",
+    "word": "disappoint",
+    "pos": "v.",
+    "meaning_th": "ทำให้ผิดหวัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-440",
+    "word": "disappointment",
+    "pos": "n.",
+    "meaning_th": "ความผิดหวัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-441",
+    "word": "disc",
+    "pos": "n.",
+    "meaning_th": "แผ่นกลม, จานกลม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-442",
+    "word": "discipline",
+    "pos": "n.",
+    "meaning_th": "ระเบียบวินัย, วินัย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-443",
+    "word": "discount",
+    "pos": "v.",
+    "meaning_th": "ลดราคา, มองข้าม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-444",
+    "word": "discourage",
+    "pos": "v.",
+    "meaning_th": "ทำให้หมดกำลังใจ, ขัดขวาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-445",
+    "word": "dishonest",
+    "pos": "adj.",
+    "meaning_th": "ไม่ซื่อสัตย์, คดโกง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-446",
+    "word": "disk",
+    "pos": "n.",
+    "meaning_th": "ดิสก์, แผ่นบันทึกข้อมูล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-447",
+    "word": "dismiss",
+    "pos": "v.",
+    "meaning_th": "ไล่ออก, ปัดตก, ยกเลิก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-448",
+    "word": "disorder",
+    "pos": "n.",
+    "meaning_th": "ความผิดปกติ, ความวุ่นวาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-449",
+    "word": "display",
+    "pos": "n.",
+    "meaning_th": "การจัดแสดง, จอแสดงผล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-450",
+    "word": "display",
+    "pos": "v.",
+    "meaning_th": "แสดง, จัดแสดง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-451",
+    "word": "distant",
+    "pos": "adj.",
+    "meaning_th": "ห่างไกล, ไกล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-452",
+    "word": "distinct",
+    "pos": "adj.",
+    "meaning_th": "ชัดเจน, แตกต่างอย่างเห็นได้ชัด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-453",
+    "word": "distract",
+    "pos": "v.",
+    "meaning_th": "ทำให้ไขว้เขว, กวนสมาธิ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-454",
+    "word": "distribute",
+    "pos": "v.",
+    "meaning_th": "แจกจ่าย, กระจาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-455",
+    "word": "distribution",
+    "pos": "n.",
+    "meaning_th": "การแจกจ่าย, การกระจาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-456",
+    "word": "district",
+    "pos": "n.",
+    "meaning_th": "เขต, อำเภอ, ย่าน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-457",
+    "word": "disturb",
+    "pos": "v.",
+    "meaning_th": "รบกวน, กวนใจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-458",
+    "word": "dive",
+    "pos": "n.",
+    "meaning_th": "การดำน้ำ, การกระโดดน้ำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-459",
+    "word": "dive",
+    "pos": "v.",
+    "meaning_th": "ดำน้ำ, กระโดดน้ำ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-460",
+    "word": "diverse",
+    "pos": "adj.",
+    "meaning_th": "หลากหลาย, แตกต่างกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-461",
+    "word": "diversity",
+    "pos": "n.",
+    "meaning_th": "ความหลากหลาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-462",
+    "word": "divide",
+    "pos": "n.",
+    "meaning_th": "เส้นแบ่ง, ช่องว่างแบ่งแยก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-463",
+    "word": "division",
+    "pos": "n.",
+    "meaning_th": "การแบ่ง, แผนก, การหาร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-464",
+    "word": "divorce",
+    "pos": "n.",
+    "meaning_th": "การหย่าร้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-465",
+    "word": "divorce",
+    "pos": "v.",
+    "meaning_th": "หย่า, หย่าร้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-466",
+    "word": "document",
+    "pos": "v.",
+    "meaning_th": "บันทึกข้อมูล, รวบรวมเอกสาร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-467",
+    "word": "domestic",
+    "pos": "adj.",
+    "meaning_th": "ภายในประเทศ, ในบ้าน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-468",
+    "word": "dominant",
+    "pos": "adj.",
+    "meaning_th": "โดดเด่น, มีอิทธิพลเหนือ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-469",
+    "word": "dominate",
+    "pos": "v.",
+    "meaning_th": "ครอบงำ, มีอำนาจเหนือ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-470",
+    "word": "donation",
+    "pos": "n.",
+    "meaning_th": "เงินบริจาค, การบริจาค",
+    "level": "B2"
+  },
+  {
+    "id": "b2-471",
+    "word": "dot",
+    "pos": "n.",
+    "meaning_th": "จุด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-472",
+    "word": "downtown",
+    "pos": "adj.",
+    "meaning_th": "ในย่านใจกลางเมือง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-473",
+    "word": "downtown",
+    "pos": "adv.",
+    "meaning_th": "ไปใจกลางเมือง, อยู่ใจกลางเมือง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-474",
+    "word": "downtown",
+    "pos": "n.",
+    "meaning_th": "ย่านใจกลางเมือง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-475",
+    "word": "downwards",
+    "pos": "adv.",
+    "meaning_th": "ลงข้างล่าง, ลงสู่เบื้องล่าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-476",
+    "word": "dozen",
+    "pos": "det.",
+    "meaning_th": "หนึ่งโหล, โหล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-477",
+    "word": "dozen",
+    "pos": "n.",
+    "meaning_th": "โหล, จำนวนสิบสอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-478",
+    "word": "draft",
+    "pos": "n.",
+    "meaning_th": "ฉบับร่าง, แบบร่าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-479",
+    "word": "draft",
+    "pos": "v.",
+    "meaning_th": "ยกร่าง, ร่างแบบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-480",
+    "word": "drag",
+    "pos": "v.",
+    "meaning_th": "ลาก, ดึง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-481",
+    "word": "dramatic",
+    "pos": "adj.",
+    "meaning_th": "น่าทึ่ง, ตื่นเต้นเร้าใจ, อย่างมาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-482",
+    "word": "dramatically",
+    "pos": "adv.",
+    "meaning_th": "อย่างเห็นได้ชัด, อย่างฮวบฮาบ, อย่างมาก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-483",
+    "word": "drought",
+    "pos": "n.",
+    "meaning_th": "ความแห้งแล้ง, ภัยแล้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-484",
+    "word": "dull",
+    "pos": "adj.",
+    "meaning_th": "น่าเบื่อ, ทึบ, ทื่อ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-485",
+    "word": "dump",
+    "pos": "v.",
+    "meaning_th": "ทิ้ง, เททิ้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-486",
+    "word": "duration",
+    "pos": "n.",
+    "meaning_th": "ช่วงเวลา, ระยะเวลา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-487",
+    "word": "dynamic",
+    "pos": "adj.",
+    "meaning_th": "คล่องแคล่ว, มีพลัง, ไม่หยุดนิ่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-488",
+    "word": "economics",
+    "pos": "n.",
+    "meaning_th": "เศรษฐศาสตร์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-489",
+    "word": "economist",
+    "pos": "n.",
+    "meaning_th": "นักเศรษฐศาสตร์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-490",
+    "word": "edit",
+    "pos": "v.",
+    "meaning_th": "แก้ไข, ตัดต่อ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-491",
+    "word": "edition",
+    "pos": "n.",
+    "meaning_th": "ฉบับพิมพ์, รุ่น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-492",
+    "word": "editorial",
+    "pos": "adj.",
+    "meaning_th": "เกี่ยวกับบทบรรณาธิการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-493",
+    "word": "efficiently",
+    "pos": "adv.",
+    "meaning_th": "อย่างมีประสิทธิภาพ, อย่างคุ้มค่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-494",
+    "word": "elbow",
+    "pos": "n.",
+    "meaning_th": "ข้อศอก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-495",
+    "word": "elderly",
+    "pos": "adj.",
+    "meaning_th": "สูงอายุ, ชรา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-496",
+    "word": "elect",
+    "pos": "v.",
+    "meaning_th": "เลือกตั้ง, คัดเลือก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-497",
+    "word": "electronics",
+    "pos": "n.",
+    "meaning_th": "อิเล็กทรอนิกส์, อุปกรณ์อิเล็กทรอนิกส์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-498",
+    "word": "elegant",
+    "pos": "adj.",
+    "meaning_th": "สง่างาม, สละสลวย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-499",
+    "word": "elementary",
+    "pos": "adj.",
+    "meaning_th": "ขั้นต้น, พื้นฐาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-500",
+    "word": "eliminate",
+    "pos": "v.",
+    "meaning_th": "กำจัด, ขจัด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-501",
+    "word": "elsewhere",
+    "pos": "adv.",
+    "meaning_th": "ที่อื่น, แห่งอื่น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-502",
+    "word": "embrace",
+    "pos": "v.",
+    "meaning_th": "สวมกอด, น้อมรับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-503",
+    "word": "emerge",
+    "pos": "v.",
+    "meaning_th": "ปรากฏออกมา, โผล่ออกมา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-504",
+    "word": "emission",
+    "pos": "n.",
+    "meaning_th": "การปล่อยมลพิษ, การปล่อยก๊าซ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-505",
+    "word": "emotional",
+    "pos": "adj.",
+    "meaning_th": "ทางอารมณ์, มีอารมณ์ความรู้สึก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-506",
+    "word": "emotionally",
+    "pos": "adv.",
+    "meaning_th": "ทางอารมณ์, ด้วยอารมณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-507",
+    "word": "emphasis",
+    "pos": "n.",
+    "meaning_th": "การเน้นย้ำ, ความสำคัญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-508",
+    "word": "emphasize",
+    "pos": "v.",
+    "meaning_th": "เน้นย้ำ, ให้ความสำคัญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-509",
+    "word": "empire",
+    "pos": "n.",
+    "meaning_th": "จักรวรรดิ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-510",
+    "word": "enable",
+    "pos": "v.",
+    "meaning_th": "ทำให้สามารถ, เปิดใช้งาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-511",
+    "word": "encounter",
+    "pos": "n.",
+    "meaning_th": "การเผชิญหน้า, การพบเจอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-512",
+    "word": "encounter",
+    "pos": "v.",
+    "meaning_th": "เผชิญหน้า, พบเจอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-513",
+    "word": "engage",
+    "pos": "v.",
+    "meaning_th": "มีส่วนร่วม, ดึงดูด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-514",
+    "word": "enhance",
+    "pos": "v.",
+    "meaning_th": "เพิ่มพูน, เสริม, พัฒนา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-515",
+    "word": "enjoyable",
+    "pos": "adj.",
+    "meaning_th": "น่าเพลิดเพลิน, น่าสนุก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-516",
+    "word": "enquiry",
+    "pos": "n.",
+    "meaning_th": "การสอบถาม, การไต่สวน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-517",
+    "word": "ensure",
+    "pos": "v.",
+    "meaning_th": "ทำให้มั่นใจ, รับรอง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-518",
+    "word": "entertaining",
+    "pos": "adj.",
+    "meaning_th": "ให้ความบันเทิง, น่าเพลิดเพลิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-519",
+    "word": "enthusiastic",
+    "pos": "adj.",
+    "meaning_th": "กระตือรือร้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-520",
+    "word": "entire",
+    "pos": "adj.",
+    "meaning_th": "ทั้งหมด, ทั้งสิ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-521",
+    "word": "entirely",
+    "pos": "adv.",
+    "meaning_th": "โดยสิ้นเชิง, ทั้งหมด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-522",
+    "word": "entrepreneur",
+    "pos": "n.",
+    "meaning_th": "ผู้ประกอบการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-523",
+    "word": "envelope",
+    "pos": "n.",
+    "meaning_th": "ซองจดหมาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-524",
+    "word": "equal",
+    "pos": "n.",
+    "meaning_th": "สิ่งเท่าเทียมกัน, คนที่เสมอกัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-525",
+    "word": "equip",
+    "pos": "v.",
+    "meaning_th": "ติดตั้งอุปกรณ์, จัดเตรียม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-526",
+    "word": "equivalent",
+    "pos": "adj.",
+    "meaning_th": "เท่ากัน, เทียบเท่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-527",
+    "word": "equivalent",
+    "pos": "n.",
+    "meaning_th": "สิ่งที่เทียบเท่า, สิ่งที่มีค่าเท่ากัน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-528",
+    "word": "era",
+    "pos": "n.",
+    "meaning_th": "ยุค, สมัย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-529",
+    "word": "erupt",
+    "pos": "v.",
+    "meaning_th": "ปะทุ, ระเบิดออก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-530",
+    "word": "establish",
+    "pos": "v.",
+    "meaning_th": "ก่อตั้ง, สถาปนา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-531",
+    "word": "estate",
+    "pos": "n.",
+    "meaning_th": "อสังหาริมทรัพย์, ทรัพย์สิน, ที่ดิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-532",
+    "word": "estimate",
+    "pos": "n.",
+    "meaning_th": "การประมาณ, ใบเสนอราคา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-533",
+    "word": "estimate",
+    "pos": "v.",
+    "meaning_th": "ประมาณการ, ประเมิน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-534",
+    "word": "ethic",
+    "pos": "n.",
+    "meaning_th": "จริยธรรม, ศีลธรรม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-535",
+    "word": "ethical",
+    "pos": "adj.",
+    "meaning_th": "มีจริยธรรม, ทางศีลธรรม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-536",
+    "word": "ethnic",
+    "pos": "adj.",
+    "meaning_th": "ทางชาติพันธุ์, ชาติพันธุ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-537",
+    "word": "evaluation",
+    "pos": "n.",
+    "meaning_th": "การประเมินผล, การประเมินค่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-538",
+    "word": "even",
+    "pos": "adj.",
+    "meaning_th": "เท่ากัน, สม่ำเสมอ, เรียบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-539",
+    "word": "evident",
+    "pos": "adj.",
+    "meaning_th": "ชัดเจน, ประจักษ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-540",
+    "word": "evil",
+    "pos": "adj.",
+    "meaning_th": "ชั่วร้าย, ร้ายกาจ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-541",
+    "word": "evil",
+    "pos": "n.",
+    "meaning_th": "ความชั่วร้าย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-542",
+    "word": "evolution",
+    "pos": "n.",
+    "meaning_th": "วิวัฒนาการ, พัฒนาการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-543",
+    "word": "evolve",
+    "pos": "v.",
+    "meaning_th": "พัฒนา, วิวัฒนาการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-544",
+    "word": "examination",
+    "pos": "n.",
+    "meaning_th": "การสอบ, การตรวจตรา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-545",
+    "word": "exceed",
+    "pos": "v.",
+    "meaning_th": "เกินกว่า, มากกว่า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-546",
+    "word": "exception",
+    "pos": "n.",
+    "meaning_th": "ข้อยกเว้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-547",
+    "word": "excessive",
+    "pos": "adj.",
+    "meaning_th": "มากเกินไป, เกินควร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-548",
+    "word": "exclude",
+    "pos": "v.",
+    "meaning_th": "กีดกัน, แยกออกไป, ไม่รวม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-549",
+    "word": "excuse",
+    "pos": "n.",
+    "meaning_th": "ข้อแก้ตัว, ข้ออ้าง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-550",
+    "word": "excuse",
+    "pos": "v.",
+    "meaning_th": "ยกโทษให้, ให้อภัย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-551",
+    "word": "executive",
+    "pos": "adj.",
+    "meaning_th": "ด้านการบริหาร, เกี่ยวกับผู้บริหาร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-552",
+    "word": "executive",
+    "pos": "n.",
+    "meaning_th": "ผู้บริหาร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-553",
+    "word": "exhibit",
+    "pos": "n.",
+    "meaning_th": "สิ่งจัดแสดง, นิทรรศการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-554",
+    "word": "exhibit",
+    "pos": "v.",
+    "meaning_th": "จัดแสดง, แสดง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-555",
+    "word": "existence",
+    "pos": "n.",
+    "meaning_th": "การมีอยู่, การดำรงชีวิต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-556",
+    "word": "exit",
+    "pos": "n.",
+    "meaning_th": "ทางออก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-557",
+    "word": "exotic",
+    "pos": "adj.",
+    "meaning_th": "แปลกใหม่, มาจากต่างแดน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-558",
+    "word": "expansion",
+    "pos": "n.",
+    "meaning_th": "การขยายตัว, การแผ่ขยาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-559",
+    "word": "expectation",
+    "pos": "n.",
+    "meaning_th": "ความคาดหวัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-560",
+    "word": "expense",
+    "pos": "n.",
+    "meaning_th": "ค่าใช้จ่าย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-561",
+    "word": "expertise",
+    "pos": "n.",
+    "meaning_th": "ความเชี่ยวชาญ, ความรู้ความชำนาญ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-562",
+    "word": "exploit",
+    "pos": "v.",
+    "meaning_th": "เอาเปรียบ, ใช้ประโยชน์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-563",
+    "word": "exploration",
+    "pos": "n.",
+    "meaning_th": "การสำรวจ, การค้นหา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-564",
+    "word": "expose",
+    "pos": "v.",
+    "meaning_th": "เปิดเผย, เผชิญ, สัมผัส",
+    "level": "B2"
+  },
+  {
+    "id": "b2-565",
+    "word": "exposure",
+    "pos": "n.",
+    "meaning_th": "การเปิดเผย, การสัมผัส",
+    "level": "B2"
+  },
+  {
+    "id": "b2-566",
+    "word": "extend",
+    "pos": "v.",
+    "meaning_th": "ยืดออก, ขยายเวลา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-567",
+    "word": "extension",
+    "pos": "n.",
+    "meaning_th": "การต่อขยาย, ส่วนต่อขยาย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-568",
+    "word": "extensive",
+    "pos": "adj.",
+    "meaning_th": "กว้างขวาง, ครอบคลุม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-569",
+    "word": "extensively",
+    "pos": "adv.",
+    "meaning_th": "อย่างกว้างขวาง, อย่างละเอียดถี่ถ้วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-570",
+    "word": "extent",
+    "pos": "n.",
+    "meaning_th": "ขอบเขต, ระดับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-571",
+    "word": "external",
+    "pos": "adj.",
+    "meaning_th": "ภายนอก, จากภายนอก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-572",
+    "word": "extract",
+    "pos": "n.",
+    "meaning_th": "สารสกัด, ข้อความที่คัดมา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-573",
+    "word": "extraordinary",
+    "pos": "adj.",
+    "meaning_th": "ไม่ธรรมดา, พิเศษ, มหัศจรรย์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-574",
+    "word": "extreme",
+    "pos": "n.",
+    "meaning_th": "จุดสุดขีด, สิ่งที่สุดโต่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-575",
+    "word": "fabric",
+    "pos": "n.",
+    "meaning_th": "ผ้า, สิ่งทอ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-576",
+    "word": "fabulous",
+    "pos": "adj.",
+    "meaning_th": "ดีเลิศ, เยี่ยมยอด",
+    "level": "B2"
+  },
+  {
+    "id": "b2-577",
+    "word": "facility",
+    "pos": "n.",
+    "meaning_th": "สิ่งอำนวยความสะดวก, สถานบริการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-578",
+    "word": "failed",
+    "pos": "adj.",
+    "meaning_th": "ล้มเหลว, ไม่สำเร็จ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-579",
+    "word": "failure",
+    "pos": "n.",
+    "meaning_th": "ความล้มเหลว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-580",
+    "word": "faith",
+    "pos": "n.",
+    "meaning_th": "ความศรัทธา, ความเชื่อมั่น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-581",
+    "word": "fake",
+    "pos": "adj.",
+    "meaning_th": "ปลอม, เทียม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-582",
+    "word": "fame",
+    "pos": "n.",
+    "meaning_th": "ชื่อเสียง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-583",
+    "word": "fantasy",
+    "pos": "n.",
+    "meaning_th": "ความเพ้อฝัน, จินตนาการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-584",
+    "word": "fare",
+    "pos": "n.",
+    "meaning_th": "ค่าโดยสาร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-585",
+    "word": "fault",
+    "pos": "n.",
+    "meaning_th": "ความผิดพลาด, ข้อบกพร่อง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-586",
+    "word": "favour",
+    "pos": "v.",
+    "meaning_th": "ชื่นชอบ, สนับสนุน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-587",
+    "word": "feather",
+    "pos": "n.",
+    "meaning_th": "ขนนก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-588",
+    "word": "federal",
+    "pos": "adj.",
+    "meaning_th": "แห่งสหพันธรัฐ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-589",
+    "word": "fee",
+    "pos": "n.",
+    "meaning_th": "ค่าธรรมเนียม, ค่าบริการ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-590",
+    "word": "feed",
+    "pos": "n.",
+    "meaning_th": "อาหารสัตว์, ฟีดข่าว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-591",
+    "word": "feedback",
+    "pos": "n.",
+    "meaning_th": "ข้อเสนอแนะ, ผลตอบรับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-592",
+    "word": "feel",
+    "pos": "n.",
+    "meaning_th": "ความรู้สึก, สัมผัส",
+    "level": "B2"
+  },
+  {
+    "id": "b2-593",
+    "word": "fellow",
+    "pos": "adj.",
+    "meaning_th": "เพื่อนร่วมงาน, เพื่อนร่วมทาง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-594",
+    "word": "fever",
+    "pos": "n.",
+    "meaning_th": "ไข้, อาการไข้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-595",
+    "word": "figure",
+    "pos": "v.",
+    "meaning_th": "คิดคำนวณ, คาดเดา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-596",
+    "word": "file",
+    "pos": "v.",
+    "meaning_th": "ยื่นเรื่อง, จัดเก็บเอกสาร",
+    "level": "B2"
+  },
+  {
+    "id": "b2-597",
+    "word": "finance",
+    "pos": "n.",
+    "meaning_th": "การเงิน, การคลัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-598",
+    "word": "finance",
+    "pos": "v.",
+    "meaning_th": "ให้เงินทุน, จัดหาเงินทุน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-599",
+    "word": "finding",
+    "pos": "n.",
+    "meaning_th": "ผลการวิจัย, ข้อค้นพบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-600",
+    "word": "firefighter",
+    "pos": "n.",
+    "meaning_th": "นักดับเพลิง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-601",
+    "word": "firework",
+    "pos": "n.",
+    "meaning_th": "พลุ, ดอกไม้ไฟ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-602",
+    "word": "firm",
+    "pos": "adj.",
+    "meaning_th": "มั่นคง, แข็งแรง, หนักแน่น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-603",
+    "word": "firm",
+    "pos": "n.",
+    "meaning_th": "บริษัท, ห้างหุ้นส่วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-604",
+    "word": "firmly",
+    "pos": "adv.",
+    "meaning_th": "อย่างมั่นคง, อย่างหนักแน่น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-605",
+    "word": "fix",
+    "pos": "n.",
+    "meaning_th": "การซ่อมแซม, ทางแก้ปัญหา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-606",
+    "word": "flame",
+    "pos": "n.",
+    "meaning_th": "เปลวไฟ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-607",
+    "word": "flash",
+    "pos": "n.",
+    "meaning_th": "แสงวาบ, แฟลช",
+    "level": "B2"
+  },
+  {
+    "id": "b2-608",
+    "word": "flash",
+    "pos": "v.",
+    "meaning_th": "ส่องแสงวาบ, กะพริบ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-609",
+    "word": "flavour",
+    "pos": "n.",
+    "meaning_th": "รสชาติ, กลิ่นรส",
+    "level": "B2"
+  },
+  {
+    "id": "b2-610",
+    "word": "flexible",
+    "pos": "adj.",
+    "meaning_th": "ยืดหยุ่น, ปรับตัวง่าย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-611",
+    "word": "float",
+    "pos": "v.",
+    "meaning_th": "ลอย, ลอยตัว",
+    "level": "B2"
+  },
+  {
+    "id": "b2-612",
+    "word": "fold",
+    "pos": "n.",
+    "meaning_th": "รอยพับ, ชั้นพับ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-613",
+    "word": "folding",
+    "pos": "adj.",
+    "meaning_th": "ที่พับได้",
+    "level": "B2"
+  },
+  {
+    "id": "b2-614",
+    "word": "following",
+    "pos": "prep.",
+    "meaning_th": "หลังจาก, ภายหลัง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-615",
+    "word": "fond",
+    "pos": "adj.",
+    "meaning_th": "ชอบ, รักใคร่, เอ็นดู",
+    "level": "B2"
+  },
+  {
+    "id": "b2-616",
+    "word": "fool",
+    "pos": "n.",
+    "meaning_th": "คนโง่, คนทึ่ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-617",
+    "word": "forbid",
+    "pos": "v.",
+    "meaning_th": "ห้าม, ไม่อนุญาต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-618",
+    "word": "forecast",
+    "pos": "n.",
+    "meaning_th": "การพยากรณ์, การคาดการณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-619",
+    "word": "forecast",
+    "pos": "v.",
+    "meaning_th": "พยากรณ์, คาดการณ์",
+    "level": "B2"
+  },
+  {
+    "id": "b2-620",
+    "word": "forgive",
+    "pos": "v.",
+    "meaning_th": "ยกโทษ, ให้อภัย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-621",
+    "word": "format",
+    "pos": "n.",
+    "meaning_th": "รูปแบบ, รูปแบบข้อมูล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-622",
+    "word": "formation",
+    "pos": "n.",
+    "meaning_th": "การก่อตัว, การจัดขบวน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-623",
+    "word": "former",
+    "pos": "adj.",
+    "meaning_th": "ก่อนหน้า, อดีต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-624",
+    "word": "formerly",
+    "pos": "adv.",
+    "meaning_th": "แต่ก่อน, ในอดีต",
+    "level": "B2"
+  },
+  {
+    "id": "b2-625",
+    "word": "fortunate",
+    "pos": "adj.",
+    "meaning_th": "โชคดี, มีโชค",
+    "level": "B2"
+  },
+  {
+    "id": "b2-626",
+    "word": "fortune",
+    "pos": "n.",
+    "meaning_th": "โชคชะตา, ความมั่งคั่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-627",
+    "word": "forum",
+    "pos": "n.",
+    "meaning_th": "เวทีอภิปราย, กระดานสนทนา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-628",
+    "word": "forward",
+    "pos": "adj.",
+    "meaning_th": "ข้างหน้า, ก้าวหน้า",
+    "level": "B2"
+  },
+  {
+    "id": "b2-629",
+    "word": "fossil",
+    "pos": "n.",
+    "meaning_th": "ซากดึกดำบรรพ์, ฟอสซิล",
+    "level": "B2"
+  },
+  {
+    "id": "b2-630",
+    "word": "found",
+    "pos": "v.",
+    "meaning_th": "ก่อตั้ง, สถาปนา",
+    "level": "B2"
+  },
+  {
+    "id": "b2-631",
+    "word": "foundation",
+    "pos": "n.",
+    "meaning_th": "มูลนิธิ, รากฐาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-632",
+    "word": "founder",
+    "pos": "n.",
+    "meaning_th": "ผู้ก่อตั้ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-633",
+    "word": "fraction",
+    "pos": "n.",
+    "meaning_th": "เศษส่วน, ส่วนน้อย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-634",
+    "word": "fragment",
+    "pos": "n.",
+    "meaning_th": "ชิ้นส่วน, ส่วนแตกหัก",
+    "level": "B2"
+  },
+  {
+    "id": "b2-635",
+    "word": "framework",
+    "pos": "n.",
+    "meaning_th": "โครงสร้าง, กรอบการทำงาน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-636",
+    "word": "fraud",
+    "pos": "n.",
+    "meaning_th": "การฉ้อโกง, การหลอกลวง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-637",
+    "word": "free",
+    "pos": "v.",
+    "meaning_th": "ปล่อยตัว, ปลดปล่อย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-638",
+    "word": "freedom",
+    "pos": "n.",
+    "meaning_th": "เสรีภาพ, อิสรภาพ",
+    "level": "B2"
+  },
+  {
+    "id": "b2-639",
+    "word": "freely",
+    "pos": "adv.",
+    "meaning_th": "อย่างอิสระ, อย่างเสรี",
+    "level": "B2"
+  },
+  {
+    "id": "b2-640",
+    "word": "frequency",
+    "pos": "n.",
+    "meaning_th": "ความถี่, ความบ่อย",
+    "level": "B2"
+  },
+  {
+    "id": "b2-641",
+    "word": "frequent",
+    "pos": "adj.",
+    "meaning_th": "บ่อย, ถี่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-642",
+    "word": "fuel",
+    "pos": "v.",
+    "meaning_th": "เติมเชื้อเพลิง, กระตุ้น",
+    "level": "B2"
+  },
+  {
+    "id": "b2-643",
+    "word": "fulfil",
+    "pos": "v.",
+    "meaning_th": "ทำให้สำเร็จ, บรรลุ, เติมเต็ม",
+    "level": "B2"
+  },
+  {
+    "id": "b2-644",
+    "word": "fully",
+    "pos": "adv.",
+    "meaning_th": "อย่างเต็มที่, อย่างครบถ้วน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-645",
+    "word": "function",
+    "pos": "v.",
+    "meaning_th": "ทำงาน, ทำหน้าที่",
+    "level": "B2"
+  },
+  {
+    "id": "b2-646",
+    "word": "fund",
+    "pos": "n.",
+    "meaning_th": "กองทุน, เงินทุน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-647",
+    "word": "fund",
+    "pos": "v.",
+    "meaning_th": "ให้เงินทุน, สนับสนุนทุน",
+    "level": "B2"
+  },
+  {
+    "id": "b2-648",
+    "word": "fundamental",
+    "pos": "adj.",
+    "meaning_th": "พื้นฐาน, สำคัญยิ่ง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-649",
+    "word": "fundamentally",
+    "pos": "adv.",
+    "meaning_th": "โดยพื้นฐาน, โดยสิ้นเชิง",
+    "level": "B2"
+  },
+  {
+    "id": "b2-650",
+    "word": "funding",
+    "pos": "n.",
+    "meaning_th": "เงินทุนสนับสนุน, การจัดหาเงินทุน",
+    "level": "B2"
+  }
+]

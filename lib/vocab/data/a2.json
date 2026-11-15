@@ -1,0 +1,5252 @@
+[
+  {
+    "id": "a2-001",
+    "word": "accident",
+    "pos": "n.",
+    "meaning_th": "อุบัติเหตุ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-002",
+    "word": "adventure",
+    "pos": "n.",
+    "meaning_th": "การผจญภัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-003",
+    "word": "allow",
+    "pos": "v.",
+    "meaning_th": "อนุญาต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-004",
+    "word": "arrive",
+    "pos": "v.",
+    "meaning_th": "มาถึง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-005",
+    "word": "borrow",
+    "pos": "v.",
+    "meaning_th": "ยืม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-006",
+    "word": "bridge",
+    "pos": "n.",
+    "meaning_th": "สะพาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-007",
+    "word": "careful",
+    "pos": "adj.",
+    "meaning_th": "ระมัดระวัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-008",
+    "word": "celebrate",
+    "pos": "v.",
+    "meaning_th": "เฉลิมฉลอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-009",
+    "word": "competition",
+    "pos": "n.",
+    "meaning_th": "การแข่งขัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-010",
+    "word": "decide",
+    "pos": "v.",
+    "meaning_th": "ตัดสินใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-011",
+    "word": "dangerous",
+    "pos": "adj.",
+    "meaning_th": "อันตราย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-012",
+    "word": "discover",
+    "pos": "v.",
+    "meaning_th": "ค้นพบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-013",
+    "word": "environment",
+    "pos": "n.",
+    "meaning_th": "สิ่งแวดล้อม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-014",
+    "word": "explain",
+    "pos": "v.",
+    "meaning_th": "อธิบาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-015",
+    "word": "famous",
+    "pos": "adj.",
+    "meaning_th": "มีชื่อเสียง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-016",
+    "word": "fix",
+    "pos": "v.",
+    "meaning_th": "ซ่อม, แก้ไข",
+    "level": "A2"
+  },
+  {
+    "id": "a2-017",
+    "word": "healthy",
+    "pos": "adj.",
+    "meaning_th": "มีสุขภาพดี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-018",
+    "word": "journey",
+    "pos": "n.",
+    "meaning_th": "การเดินทาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-019",
+    "word": "knowledge",
+    "pos": "n.",
+    "meaning_th": "ความรู้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-020",
+    "word": "luggage",
+    "pos": "n.",
+    "meaning_th": "กระเป๋าเดินทาง, สัมภาระ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-021",
+    "word": "medicine",
+    "pos": "n.",
+    "meaning_th": "ยา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-022",
+    "word": "neighbour",
+    "pos": "n.",
+    "meaning_th": "เพื่อนบ้าน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-023",
+    "word": "ordinary",
+    "pos": "adj.",
+    "meaning_th": "ธรรมดา, ทั่วไป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-024",
+    "word": "prefer",
+    "pos": "v.",
+    "meaning_th": "ชอบมากกว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-025",
+    "word": "prepare",
+    "pos": "v.",
+    "meaning_th": "เตรียม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-026",
+    "word": "quiet",
+    "pos": "adj.",
+    "meaning_th": "เงียบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-027",
+    "word": "recently",
+    "pos": "adv.",
+    "meaning_th": "เมื่อเร็วๆ นี้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-028",
+    "word": "receive",
+    "pos": "v.",
+    "meaning_th": "ได้รับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-029",
+    "word": "suddenly",
+    "pos": "adv.",
+    "meaning_th": "ทันใดนั้น, ทันที",
+    "level": "A2"
+  },
+  {
+    "id": "a2-030",
+    "word": "thief",
+    "pos": "n.",
+    "meaning_th": "ขโมย, หัวขโมย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-031",
+    "word": "traffic",
+    "pos": "n.",
+    "meaning_th": "การจราจร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-032",
+    "word": "wallet",
+    "pos": "n.",
+    "meaning_th": "กระเป๋าสตางค์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-033",
+    "word": "wild",
+    "pos": "adj.",
+    "meaning_th": "ป่า, ตามธรรมชาติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-034",
+    "word": "invite",
+    "pos": "v.",
+    "meaning_th": "เชิญ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-035",
+    "word": "improve",
+    "pos": "v.",
+    "meaning_th": "พัฒนา, ปรับปรุง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-036",
+    "word": "interview",
+    "pos": "n.",
+    "meaning_th": "การสัมภาษณ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-037",
+    "word": "opinion",
+    "pos": "n.",
+    "meaning_th": "ความคิดเห็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-038",
+    "word": "probably",
+    "pos": "adv.",
+    "meaning_th": "น่าจะ, อาจจะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-039",
+    "word": "successful",
+    "pos": "adj.",
+    "meaning_th": "ประสบความสำเร็จ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-040",
+    "word": "between",
+    "pos": "prep.",
+    "meaning_th": "ระหว่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-041",
+    "word": "ability",
+    "pos": "n.",
+    "meaning_th": "ความสามารถ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-042",
+    "word": "able",
+    "pos": "adj.",
+    "meaning_th": "สามารถ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-043",
+    "word": "abroad",
+    "pos": "adv.",
+    "meaning_th": "ในต่างประเทศ, ไปต่างประเทศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-044",
+    "word": "accept",
+    "pos": "v.",
+    "meaning_th": "ยอมรับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-045",
+    "word": "act",
+    "pos": "v.",
+    "meaning_th": "กระทำ, แสดง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-046",
+    "word": "active",
+    "pos": "adj.",
+    "meaning_th": "กระตือรือร้น, คล่องแคล่ว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-047",
+    "word": "actually",
+    "pos": "adv.",
+    "meaning_th": "จริงๆ แล้ว, ที่จริง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-048",
+    "word": "adult",
+    "pos": "adj.",
+    "meaning_th": "โตเต็มวัย, สำหรับผู้ใหญ่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-049",
+    "word": "advantage",
+    "pos": "n.",
+    "meaning_th": "ข้อดี, ข้อได้เปรียบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-050",
+    "word": "advertise",
+    "pos": "v.",
+    "meaning_th": "โฆษณา, ประกาศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-051",
+    "word": "advertisement",
+    "pos": "n.",
+    "meaning_th": "โฆษณา, การโฆษณา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-052",
+    "word": "advertising",
+    "pos": "n.",
+    "meaning_th": "การโฆษณา, งานโฆษณา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-053",
+    "word": "affect",
+    "pos": "v.",
+    "meaning_th": "ส่งผลกระทบต่อ, มีผลต่อ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-054",
+    "word": "after",
+    "pos": "adv.",
+    "meaning_th": "หลังจากนั้น, ในภายหลัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-055",
+    "word": "after",
+    "pos": "conj.",
+    "meaning_th": "หลังจากที่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-056",
+    "word": "against",
+    "pos": "prep.",
+    "meaning_th": "ต่อต้าน, พิงกับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-057",
+    "word": "ah",
+    "pos": "exclam.",
+    "meaning_th": "อ้อ, อา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-058",
+    "word": "airline",
+    "pos": "n.",
+    "meaning_th": "สายการบิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-059",
+    "word": "alive",
+    "pos": "adj.",
+    "meaning_th": "มีชีวิตอยู่, มีชีวิตชีวา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-060",
+    "word": "all",
+    "pos": "adv.",
+    "meaning_th": "ทั้งหมด, อย่างสิ้นเชิง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-061",
+    "word": "almost",
+    "pos": "adv.",
+    "meaning_th": "เกือบจะ, แทบจะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-062",
+    "word": "alone",
+    "pos": "adj.",
+    "meaning_th": "โดดเดี่ยว, ตามลำพัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-063",
+    "word": "alone",
+    "pos": "adv.",
+    "meaning_th": "โดยลำพัง, เพียงคนเดียว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-064",
+    "word": "along",
+    "pos": "adv.",
+    "meaning_th": "ไปข้างหน้า, ไปด้วยกัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-065",
+    "word": "along",
+    "pos": "prep.",
+    "meaning_th": "ไปตาม, เลียบตาม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-066",
+    "word": "already",
+    "pos": "adv.",
+    "meaning_th": "แล้ว, เรียบร้อยแล้ว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-067",
+    "word": "alternative",
+    "pos": "n.",
+    "meaning_th": "ทางเลือก, ตัวเลือก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-068",
+    "word": "although",
+    "pos": "conj.",
+    "meaning_th": "แม้ว่า, ถึงแม้ว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-069",
+    "word": "among",
+    "pos": "prep.",
+    "meaning_th": "ท่ามกลาง, ในบรรดา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-070",
+    "word": "amount",
+    "pos": "n.",
+    "meaning_th": "จำนวน, ปริมาณ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-071",
+    "word": "ancient",
+    "pos": "adj.",
+    "meaning_th": "โบราณ, เก่าแก่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-072",
+    "word": "ankle",
+    "pos": "n.",
+    "meaning_th": "ข้อเท้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-073",
+    "word": "any",
+    "pos": "adv.",
+    "meaning_th": "เลย, แม้แต่น้อย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-074",
+    "word": "anybody",
+    "pos": "pron.",
+    "meaning_th": "ใครก็ตาม, ใครก็ได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-075",
+    "word": "anyway",
+    "pos": "adv.",
+    "meaning_th": "อย่างไรก็ตาม, ถึงอย่างไร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-076",
+    "word": "anywhere",
+    "pos": "adv.",
+    "meaning_th": "ที่ไหนก็ตาม, ไม่ว่าที่ใด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-077",
+    "word": "anywhere",
+    "pos": "pron.",
+    "meaning_th": "ที่ใดที่หนึ่ง, ทุกแห่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-078",
+    "word": "app",
+    "pos": "n.",
+    "meaning_th": "แอป, แอปพลิเคชัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-079",
+    "word": "appear",
+    "pos": "v.",
+    "meaning_th": "ปรากฏตัว, ดูเหมือนว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-080",
+    "word": "appearance",
+    "pos": "n.",
+    "meaning_th": "รูปลักษณ์, การปรากฏตัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-081",
+    "word": "apply",
+    "pos": "v.",
+    "meaning_th": "สมัคร, ประยุกต์ใช้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-082",
+    "word": "architect",
+    "pos": "n.",
+    "meaning_th": "สถาปนิก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-083",
+    "word": "architecture",
+    "pos": "n.",
+    "meaning_th": "สถาปัตยกรรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-084",
+    "word": "argue",
+    "pos": "v.",
+    "meaning_th": "โต้เถียง, ให้เหตุผล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-085",
+    "word": "argument",
+    "pos": "n.",
+    "meaning_th": "การโต้เถียง, ข้อโต้แย้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-086",
+    "word": "army",
+    "pos": "n.",
+    "meaning_th": "กองทัพ, กองทัพบก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-087",
+    "word": "arrange",
+    "pos": "v.",
+    "meaning_th": "จัดเตรียม, จัดการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-088",
+    "word": "arrangement",
+    "pos": "n.",
+    "meaning_th": "การจัดเตรียม, ข้อตกลง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-089",
+    "word": "as",
+    "pos": "adv.",
+    "meaning_th": "เท่ากัน, เท่ากับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-090",
+    "word": "as",
+    "pos": "conj.",
+    "meaning_th": "ขณะที่, เพราะว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-091",
+    "word": "asleep",
+    "pos": "adj.",
+    "meaning_th": "นอนหลับ, หลับอยู่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-092",
+    "word": "assistant",
+    "pos": "adj.",
+    "meaning_th": "ผู้ช่วย, ที่เป็นผู้ช่วย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-093",
+    "word": "assistant",
+    "pos": "n.",
+    "meaning_th": "ผู้ช่วย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-094",
+    "word": "athlete",
+    "pos": "n.",
+    "meaning_th": "นักกีฬา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-095",
+    "word": "attack",
+    "pos": "n.",
+    "meaning_th": "การโจมตี, การบุกรุก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-096",
+    "word": "attack",
+    "pos": "v.",
+    "meaning_th": "โจมตี, บุกทำร้าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-097",
+    "word": "attend",
+    "pos": "v.",
+    "meaning_th": "เข้าร่วม, เข้าฟัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-098",
+    "word": "attention",
+    "pos": "exclam.",
+    "meaning_th": "โปรดฟังทางนี้, ระวัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-099",
+    "word": "attention",
+    "pos": "n.",
+    "meaning_th": "ความสนใจ, ความใส่ใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-100",
+    "word": "attractive",
+    "pos": "adj.",
+    "meaning_th": "มีเสน่ห์, ดึงดูดใจ, น่ามอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-101",
+    "word": "audience",
+    "pos": "n.",
+    "meaning_th": "ผู้ชม, ผู้ฟัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-102",
+    "word": "author",
+    "pos": "n.",
+    "meaning_th": "นักเขียน, ผู้แต่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-103",
+    "word": "available",
+    "pos": "adj.",
+    "meaning_th": "ว่าง, มีพร้อมอยู่, หาได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-104",
+    "word": "average",
+    "pos": "adj.",
+    "meaning_th": "เฉลี่ย, ปานกลาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-105",
+    "word": "average",
+    "pos": "n.",
+    "meaning_th": "ค่าเฉลี่ย, อัตราเฉลี่ย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-106",
+    "word": "avoid",
+    "pos": "v.",
+    "meaning_th": "หลีกเลี่ยง, หลบหลีก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-107",
+    "word": "award",
+    "pos": "n.",
+    "meaning_th": "รางวัล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-108",
+    "word": "awful",
+    "pos": "adj.",
+    "meaning_th": "แย่มาก, เลวร้าย, น่ากลัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-109",
+    "word": "back",
+    "pos": "adj.",
+    "meaning_th": "ด้านหลัง, ข้างหลัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-110",
+    "word": "background",
+    "pos": "n.",
+    "meaning_th": "ภูมิหลัง, ฉากหลัง, พื้นหลัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-111",
+    "word": "badly",
+    "pos": "adv.",
+    "meaning_th": "อย่างแย่, อย่างรุนแรง, อย่างยิ่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-112",
+    "word": "bar",
+    "pos": "n.",
+    "meaning_th": "บาร์, แท่ง, ท่อน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-113",
+    "word": "baseball",
+    "pos": "n.",
+    "meaning_th": "เบสบอล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-114",
+    "word": "based",
+    "pos": "adj.",
+    "meaning_th": "อิงจาก, ตั้งอยู่, มีฐานที่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-115",
+    "word": "basketball",
+    "pos": "n.",
+    "meaning_th": "บาสเกตบอล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-116",
+    "word": "bean",
+    "pos": "n.",
+    "meaning_th": "ถั่ว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-117",
+    "word": "bear",
+    "pos": "n.",
+    "meaning_th": "หมี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-118",
+    "word": "beat",
+    "pos": "v.",
+    "meaning_th": "เอาชนะ, ตี, เต้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-119",
+    "word": "beef",
+    "pos": "n.",
+    "meaning_th": "เนื้อวัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-120",
+    "word": "before",
+    "pos": "adv.",
+    "meaning_th": "มาก่อน, ก่อนหน้านี้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-121",
+    "word": "before",
+    "pos": "conj.",
+    "meaning_th": "ก่อนที่จะ, ก่อนที่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-122",
+    "word": "behave",
+    "pos": "v.",
+    "meaning_th": "ประพฤติตัว, ปฏิบัติตัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-123",
+    "word": "belong",
+    "pos": "v.",
+    "meaning_th": "เป็นของ, สังกัด, เข้าพวก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-124",
+    "word": "belt",
+    "pos": "n.",
+    "meaning_th": "เข็มขัด, สายพาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-125",
+    "word": "benefit",
+    "pos": "n.",
+    "meaning_th": "ประโยชน์, ผลประโยชน์, สิทธิประโยชน์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-126",
+    "word": "best",
+    "pos": "adv.",
+    "meaning_th": "ดีที่สุด, ได้ดีที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-127",
+    "word": "best",
+    "pos": "n.",
+    "meaning_th": "สิ่งที่ดีที่สุด, คนที่ดีที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-128",
+    "word": "better",
+    "pos": "adv.",
+    "meaning_th": "ดีกว่า, ได้ดีกว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-129",
+    "word": "between",
+    "pos": "adv.",
+    "meaning_th": "ระหว่างนั้น, อยู่ตรงกลาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-130",
+    "word": "billion",
+    "pos": "num.",
+    "meaning_th": "หนึ่งพันล้าน, พันล้าน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-131",
+    "word": "bin",
+    "pos": "n.",
+    "meaning_th": "ถังขยะ, ถังใส่ของ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-132",
+    "word": "biology",
+    "pos": "n.",
+    "meaning_th": "ชีววิทยา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-133",
+    "word": "birth",
+    "pos": "n.",
+    "meaning_th": "การเกิด, การกำเนิด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-134",
+    "word": "biscuit",
+    "pos": "n.",
+    "meaning_th": "บิสกิต, ขนมปังกรอบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-135",
+    "word": "bit",
+    "pos": "n.",
+    "meaning_th": "ชิ้นเล็กๆ, นิดหน่อย, สักนิด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-136",
+    "word": "blank",
+    "pos": "adj.",
+    "meaning_th": "ว่างเปล่า, ว่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-137",
+    "word": "blank",
+    "pos": "n.",
+    "meaning_th": "ช่องว่าง, ที่ว่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-138",
+    "word": "blood",
+    "pos": "n.",
+    "meaning_th": "เลือด, โลหิต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-139",
+    "word": "blow",
+    "pos": "v.",
+    "meaning_th": "เป่า, พัด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-140",
+    "word": "board",
+    "pos": "n.",
+    "meaning_th": "กระดาน, แผ่นกระดาน, คณะกรรมการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-141",
+    "word": "boil",
+    "pos": "v.",
+    "meaning_th": "ต้ม, เดือด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-142",
+    "word": "bone",
+    "pos": "n.",
+    "meaning_th": "กระดูก, ก้าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-143",
+    "word": "book",
+    "pos": "v.",
+    "meaning_th": "จอง, สำรองที่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-144",
+    "word": "boss",
+    "pos": "n.",
+    "meaning_th": "เจ้านาย, หัวหน้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-145",
+    "word": "bottom",
+    "pos": "adj.",
+    "meaning_th": "ล่างสุด, ต่ำสุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-146",
+    "word": "bottom",
+    "pos": "n.",
+    "meaning_th": "ก้น, ด้านล่าง, ก้นบึ้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-147",
+    "word": "bowl",
+    "pos": "n.",
+    "meaning_th": "ชาม, ถ้วย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-148",
+    "word": "brain",
+    "pos": "n.",
+    "meaning_th": "สมอง, มันสมอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-149",
+    "word": "bright",
+    "pos": "adj.",
+    "meaning_th": "สว่าง, สดใส, ฉลาด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-150",
+    "word": "brilliant",
+    "pos": "adj.",
+    "meaning_th": "ยอดเยี่ยม, ฉลาดหลักแหลม, เจิดจ้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-151",
+    "word": "broken",
+    "pos": "adj.",
+    "meaning_th": "แตกหัก, พัง, ชำรุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-152",
+    "word": "brush",
+    "pos": "n.",
+    "meaning_th": "แปรง, พู่กัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-153",
+    "word": "brush",
+    "pos": "v.",
+    "meaning_th": "แปรง, ปัด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-154",
+    "word": "burn",
+    "pos": "v.",
+    "meaning_th": "เผา, ไหม้, ลุกไหม้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-155",
+    "word": "businessman",
+    "pos": "n.",
+    "meaning_th": "นักธุรกิจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-156",
+    "word": "button",
+    "pos": "n.",
+    "meaning_th": "กระดุม, ปุ่มกด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-157",
+    "word": "camp",
+    "pos": "n.",
+    "meaning_th": "ค่าย, แคมป์, ที่พักแรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-158",
+    "word": "camp",
+    "pos": "v.",
+    "meaning_th": "ตั้งค่าย, พักแรม, กางเต็นท์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-159",
+    "word": "camping",
+    "pos": "n.",
+    "meaning_th": "การตั้งแคมป์, การพักแรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-160",
+    "word": "can",
+    "pos": "n.",
+    "meaning_th": "กระป๋อง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-161",
+    "word": "care",
+    "pos": "n.",
+    "meaning_th": "การดูแล, ความเอาใจใส่, ความระมัดระวัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-162",
+    "word": "care",
+    "pos": "v.",
+    "meaning_th": "ดูแล, ใส่ใจ, ห่วงใย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-163",
+    "word": "carefully",
+    "pos": "adv.",
+    "meaning_th": "อย่างระมัดระวัง, อย่างถี่ถ้วน, อย่างรอบคอบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-164",
+    "word": "carpet",
+    "pos": "n.",
+    "meaning_th": "พรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-165",
+    "word": "cartoon",
+    "pos": "n.",
+    "meaning_th": "การ์ตูน, ภาพล้อเลียน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-166",
+    "word": "case",
+    "pos": "n.",
+    "meaning_th": "กรณี, คดี, กล่อง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-167",
+    "word": "cash",
+    "pos": "n.",
+    "meaning_th": "เงินสด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-168",
+    "word": "castle",
+    "pos": "n.",
+    "meaning_th": "ปราสาท",
+    "level": "A2"
+  },
+  {
+    "id": "a2-169",
+    "word": "catch",
+    "pos": "v.",
+    "meaning_th": "จับ, คว้า, จับกุม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-170",
+    "word": "cause",
+    "pos": "n.",
+    "meaning_th": "สาเหตุ, ต้นเหตุ, อุดมการณ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-171",
+    "word": "cause",
+    "pos": "v.",
+    "meaning_th": "ทำให้เกิด, เป็นสาเหตุให้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-172",
+    "word": "celebrity",
+    "pos": "n.",
+    "meaning_th": "คนดัง, ผู้มีชื่อเสียง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-173",
+    "word": "certain",
+    "pos": "adj.",
+    "meaning_th": "แน่นอน, มั่นใจ, บางอย่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-174",
+    "word": "certainly",
+    "pos": "adv.",
+    "meaning_th": "อย่างแน่นอน, แน่นอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-175",
+    "word": "chance",
+    "pos": "n.",
+    "meaning_th": "โอกาส, ความน่าจะเป็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-176",
+    "word": "character",
+    "pos": "n.",
+    "meaning_th": "บุคลิกภาพ, ตัวละคร, ตัวอักษร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-177",
+    "word": "charity",
+    "pos": "n.",
+    "meaning_th": "การกุศล, องค์กรการกุศล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-178",
+    "word": "chat",
+    "pos": "n.",
+    "meaning_th": "การพูดคุย, การสนทนา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-179",
+    "word": "chat",
+    "pos": "v.",
+    "meaning_th": "พูดคุย, สนทนา, แชต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-180",
+    "word": "check",
+    "pos": "n.",
+    "meaning_th": "การตรวจสอบ, เช็ค, ใบเสร็จ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-181",
+    "word": "chef",
+    "pos": "n.",
+    "meaning_th": "เชฟ, พ่อครัว, หัวหน้าครัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-182",
+    "word": "chemistry",
+    "pos": "n.",
+    "meaning_th": "วิชาเคมี, สารเคมี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-183",
+    "word": "chip",
+    "pos": "n.",
+    "meaning_th": "มันฝรั่งทอด, เศษเล็กๆ, ชิปคอมพิวเตอร์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-184",
+    "word": "choice",
+    "pos": "n.",
+    "meaning_th": "ตัวเลือก, ทางเลือก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-185",
+    "word": "church",
+    "pos": "n.",
+    "meaning_th": "โบสถ์, วัดคริสต์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-186",
+    "word": "cigarette",
+    "pos": "n.",
+    "meaning_th": "บุหรี่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-187",
+    "word": "circle",
+    "pos": "n.",
+    "meaning_th": "วงกลม, แวดวง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-188",
+    "word": "circle",
+    "pos": "v.",
+    "meaning_th": "วนรอบ, วงกลมรอบ, เคลื่อนเป็นวงกลม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-189",
+    "word": "classical",
+    "pos": "adj.",
+    "meaning_th": "คลาสสิก, ตามแบบดั้งเดิม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-190",
+    "word": "clear",
+    "pos": "adj.",
+    "meaning_th": "ชัดเจน, ใส, โล่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-191",
+    "word": "clearly",
+    "pos": "adv.",
+    "meaning_th": "อย่างชัดเจน, ชัดแจ้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-192",
+    "word": "clever",
+    "pos": "adj.",
+    "meaning_th": "ฉลาด, ปราดเปรื่อง, เฉลียวฉลาด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-193",
+    "word": "climate",
+    "pos": "n.",
+    "meaning_th": "สภาพภูมิอากาศ, ภูมิอากาศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-194",
+    "word": "close",
+    "pos": "adj.",
+    "meaning_th": "ใกล้, สนิทสนม, แน่นอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-195",
+    "word": "closed",
+    "pos": "adj.",
+    "meaning_th": "ปิด, ปิดทำการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-196",
+    "word": "clothing",
+    "pos": "n.",
+    "meaning_th": "เสื้อผ้า, เครื่องแต่งกาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-197",
+    "word": "cloud",
+    "pos": "n.",
+    "meaning_th": "เมฆ, กลุ่มเมฆ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-198",
+    "word": "coach",
+    "pos": "n.",
+    "meaning_th": "โค้ช, ผู้ฝึกสอน, รถบัสโดยสาร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-199",
+    "word": "coast",
+    "pos": "n.",
+    "meaning_th": "ชายฝั่ง, ชายทะเล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-200",
+    "word": "code",
+    "pos": "n.",
+    "meaning_th": "รหัส, รหัสลับ, ประมวลกฎหมาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-201",
+    "word": "colleague",
+    "pos": "n.",
+    "meaning_th": "เพื่อนร่วมงาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-202",
+    "word": "collect",
+    "pos": "v.",
+    "meaning_th": "สะสม, รวบรวม, เก็บเงิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-203",
+    "word": "column",
+    "pos": "n.",
+    "meaning_th": "คอลัมน์, เสา, เสาหิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-204",
+    "word": "comedy",
+    "pos": "n.",
+    "meaning_th": "ภาพยนตร์ตลก, ละครตลก, เรื่องตลก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-205",
+    "word": "comfortable",
+    "pos": "adj.",
+    "meaning_th": "สะดวกสบาย, รู้สึกสบาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-206",
+    "word": "comment",
+    "pos": "n.",
+    "meaning_th": "ความคิดเห็น, ข้อคิดเห็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-207",
+    "word": "communicate",
+    "pos": "v.",
+    "meaning_th": "สื่อสาร, ติดต่อสื่อสาร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-208",
+    "word": "community",
+    "pos": "n.",
+    "meaning_th": "ชุมชน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-209",
+    "word": "compete",
+    "pos": "v.",
+    "meaning_th": "แข่งขัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-210",
+    "word": "complain",
+    "pos": "v.",
+    "meaning_th": "บ่น, ร้องเรียน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-211",
+    "word": "completely",
+    "pos": "adv.",
+    "meaning_th": "อย่างสมบูรณ์, โดยสิ้นเชิง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-212",
+    "word": "condition",
+    "pos": "n.",
+    "meaning_th": "เงื่อนไข, สภาพ, สภาวะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-213",
+    "word": "conference",
+    "pos": "n.",
+    "meaning_th": "การประชุม, การสัมมนา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-214",
+    "word": "connect",
+    "pos": "v.",
+    "meaning_th": "เชื่อมต่อ, ผูกพัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-215",
+    "word": "connected",
+    "pos": "adj.",
+    "meaning_th": "ที่เชื่อมต่อกัน, มีความสัมพันธ์กัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-216",
+    "word": "contain",
+    "pos": "v.",
+    "meaning_th": "บรรจุ, มีส่วนประกอบของ, ยับยั้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-217",
+    "word": "context",
+    "pos": "n.",
+    "meaning_th": "บริบท, สภาพแวดล้อม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-218",
+    "word": "continent",
+    "pos": "n.",
+    "meaning_th": "ทวีป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-219",
+    "word": "continue",
+    "pos": "v.",
+    "meaning_th": "ทำต่อไป, ดำเนินต่อไป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-220",
+    "word": "control",
+    "pos": "n.",
+    "meaning_th": "การควบคุม, อำนาจควบคุม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-221",
+    "word": "control",
+    "pos": "v.",
+    "meaning_th": "ควบคุม, จัดการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-222",
+    "word": "cook",
+    "pos": "n.",
+    "meaning_th": "คนทำอาหาร, พ่อครัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-223",
+    "word": "cooker",
+    "pos": "n.",
+    "meaning_th": "เตาหุงต้ม, หม้อหุงข้าว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-224",
+    "word": "copy",
+    "pos": "n.",
+    "meaning_th": "สำเนา, ฉบับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-225",
+    "word": "copy",
+    "pos": "v.",
+    "meaning_th": "คัดลอก, เลียนแบบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-226",
+    "word": "corner",
+    "pos": "n.",
+    "meaning_th": "มุม, หัวมุม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-227",
+    "word": "correctly",
+    "pos": "adv.",
+    "meaning_th": "อย่างถูกต้อง, อย่างแม่นยำ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-228",
+    "word": "count",
+    "pos": "v.",
+    "meaning_th": "นับ, มีความสำคัญ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-229",
+    "word": "couple",
+    "pos": "n.",
+    "meaning_th": "คู่, สองสามสิ่ง, คู่รัก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-230",
+    "word": "cover",
+    "pos": "v.",
+    "meaning_th": "คลุม, ปกคลุม, ครอบคลุม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-231",
+    "word": "crazy",
+    "pos": "adj.",
+    "meaning_th": "บ้า, คลั่งไคล้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-232",
+    "word": "creative",
+    "pos": "adj.",
+    "meaning_th": "มีความคิดสร้างสรรค์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-233",
+    "word": "credit",
+    "pos": "n.",
+    "meaning_th": "สินเชื่อ, เครดิต, ความไว้วางใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-234",
+    "word": "crime",
+    "pos": "n.",
+    "meaning_th": "อาชญากรรม, การก่ออาชญากรรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-235",
+    "word": "criminal",
+    "pos": "n.",
+    "meaning_th": "อาชญากร, คนร้าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-236",
+    "word": "cross",
+    "pos": "n.",
+    "meaning_th": "เครื่องหมายกากบาท, ไม้กางเขน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-237",
+    "word": "cross",
+    "pos": "v.",
+    "meaning_th": "ข้าม, ข้ามผ่าน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-238",
+    "word": "crowd",
+    "pos": "n.",
+    "meaning_th": "ฝูงชน, คนกลุ่มใหญ่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-239",
+    "word": "crowded",
+    "pos": "adj.",
+    "meaning_th": "แออัด, หนาแน่น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-240",
+    "word": "cry",
+    "pos": "v.",
+    "meaning_th": "ร้องไห้, ร้องตะโกน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-241",
+    "word": "cupboard",
+    "pos": "n.",
+    "meaning_th": "ตู้กับข้าว, ตู้เก็บของ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-242",
+    "word": "curly",
+    "pos": "adj.",
+    "meaning_th": "หยิก, เป็นลอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-243",
+    "word": "cycle",
+    "pos": "n.",
+    "meaning_th": "วัฏจักร, วงจร, จักรยาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-244",
+    "word": "cycle",
+    "pos": "v.",
+    "meaning_th": "ปั่นจักรยาน, วนรอบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-245",
+    "word": "daily",
+    "pos": "adj.",
+    "meaning_th": "ประจำวัน, รายวัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-246",
+    "word": "danger",
+    "pos": "n.",
+    "meaning_th": "อันตราย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-247",
+    "word": "dark",
+    "pos": "n.",
+    "meaning_th": "ความมืด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-248",
+    "word": "data",
+    "pos": "n.",
+    "meaning_th": "ข้อมูล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-249",
+    "word": "dead",
+    "pos": "adj.",
+    "meaning_th": "ตาย, เสียชีวิต, ไร้ชีวิต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-250",
+    "word": "deal",
+    "pos": "v.",
+    "meaning_th": "จัดการ, ค้าขาย, แจกไพ่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-251",
+    "word": "dear",
+    "pos": "exclam.",
+    "meaning_th": "คุณพระช่วย, ตายจริง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-252",
+    "word": "death",
+    "pos": "n.",
+    "meaning_th": "ความตาย, การเสียชีวิต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-253",
+    "word": "decision",
+    "pos": "n.",
+    "meaning_th": "การตัดสินใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-254",
+    "word": "deep",
+    "pos": "adj.",
+    "meaning_th": "ลึก, เข้ม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-255",
+    "word": "definitely",
+    "pos": "adv.",
+    "meaning_th": "อย่างแน่นอน, แน่นอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-256",
+    "word": "degree",
+    "pos": "n.",
+    "meaning_th": "องศา, ปริญญา, ระดับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-257",
+    "word": "dentist",
+    "pos": "n.",
+    "meaning_th": "ทันตแพทย์, หมอฟัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-258",
+    "word": "department",
+    "pos": "n.",
+    "meaning_th": "แผนก, ภาควิชา, กรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-259",
+    "word": "depend",
+    "pos": "v.",
+    "meaning_th": "ขึ้นอยู่กับ, พึ่งพา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-260",
+    "word": "desert",
+    "pos": "n.",
+    "meaning_th": "ทะเลทราย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-261",
+    "word": "designer",
+    "pos": "n.",
+    "meaning_th": "นักออกแบบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-262",
+    "word": "destroy",
+    "pos": "v.",
+    "meaning_th": "ทำลาย, ผลาญ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-263",
+    "word": "detective",
+    "pos": "n.",
+    "meaning_th": "นักสืบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-264",
+    "word": "develop",
+    "pos": "v.",
+    "meaning_th": "พัฒนา, ก้าวหน้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-265",
+    "word": "device",
+    "pos": "n.",
+    "meaning_th": "อุปกรณ์, เครื่องมือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-266",
+    "word": "diary",
+    "pos": "n.",
+    "meaning_th": "สมุดบันทึก, ไดอารี่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-267",
+    "word": "differently",
+    "pos": "adv.",
+    "meaning_th": "อย่างแตกต่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-268",
+    "word": "digital",
+    "pos": "adj.",
+    "meaning_th": "ดิจิทัล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-269",
+    "word": "direct",
+    "pos": "adj.",
+    "meaning_th": "โดยตรง, ตรงไปตรงมา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-270",
+    "word": "direction",
+    "pos": "n.",
+    "meaning_th": "ทิศทาง, คำสั่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-271",
+    "word": "director",
+    "pos": "n.",
+    "meaning_th": "ผู้กำกับ, ผู้อำนวยการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-272",
+    "word": "disagree",
+    "pos": "v.",
+    "meaning_th": "ไม่เห็นด้วย, ขัดแย้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-273",
+    "word": "disappear",
+    "pos": "v.",
+    "meaning_th": "หายไป, สูญหาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-274",
+    "word": "disaster",
+    "pos": "n.",
+    "meaning_th": "หายนะ, ภัยพิบัติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-275",
+    "word": "discovery",
+    "pos": "n.",
+    "meaning_th": "การค้นพบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-276",
+    "word": "discussion",
+    "pos": "n.",
+    "meaning_th": "การอภิปราย, การสนทนา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-277",
+    "word": "disease",
+    "pos": "n.",
+    "meaning_th": "โรค, โรคภัยไข้เจ็บ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-278",
+    "word": "distance",
+    "pos": "n.",
+    "meaning_th": "ระยะทาง, ระยะห่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-279",
+    "word": "divorced",
+    "pos": "adj.",
+    "meaning_th": "หย่าร้าง, ที่หย่าร้างแล้ว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-280",
+    "word": "document",
+    "pos": "n.",
+    "meaning_th": "เอกสาร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-281",
+    "word": "double",
+    "pos": "adj.",
+    "meaning_th": "สองเท่า, สองชั้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-282",
+    "word": "double",
+    "pos": "det.",
+    "meaning_th": "สองเท่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-283",
+    "word": "double",
+    "pos": "pron.",
+    "meaning_th": "สองเท่า, สองส่วน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-284",
+    "word": "double",
+    "pos": "v.",
+    "meaning_th": "เพิ่มเป็นสองเท่า, ทวีคูณ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-285",
+    "word": "download",
+    "pos": "n.",
+    "meaning_th": "การดาวน์โหลด, ข้อมูลที่ดาวน์โหลด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-286",
+    "word": "download",
+    "pos": "v.",
+    "meaning_th": "ดาวน์โหลด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-287",
+    "word": "downstairs",
+    "pos": "adj.",
+    "meaning_th": "ชั้นล่าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-288",
+    "word": "drama",
+    "pos": "n.",
+    "meaning_th": "ละคร, การแสดงละคร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-289",
+    "word": "drawing",
+    "pos": "n.",
+    "meaning_th": "ภาพวาด, ภาพเขียน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-290",
+    "word": "dream",
+    "pos": "n.",
+    "meaning_th": "ความฝัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-291",
+    "word": "dream",
+    "pos": "v.",
+    "meaning_th": "ฝัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-292",
+    "word": "drive",
+    "pos": "n.",
+    "meaning_th": "การขับรถ, แรงผลักดัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-293",
+    "word": "driving",
+    "pos": "n.",
+    "meaning_th": "การขับขี่, การขับรถ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-294",
+    "word": "drop",
+    "pos": "v.",
+    "meaning_th": "ทำตก, หล่น, ลดลง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-295",
+    "word": "drug",
+    "pos": "n.",
+    "meaning_th": "ยา, ยาเสพติด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-296",
+    "word": "dry",
+    "pos": "adj.",
+    "meaning_th": "แห้ง, แห้งแล้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-297",
+    "word": "dry",
+    "pos": "v.",
+    "meaning_th": "ทำให้แห้ง, ตากแห้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-298",
+    "word": "earn",
+    "pos": "v.",
+    "meaning_th": "ได้รับ, หาเงินได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-299",
+    "word": "earth",
+    "pos": "n.",
+    "meaning_th": "โลก, พื้นดิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-300",
+    "word": "easily",
+    "pos": "adv.",
+    "meaning_th": "อย่างง่ายดาย, สบายๆ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-301",
+    "word": "education",
+    "pos": "n.",
+    "meaning_th": "การศึกษา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-302",
+    "word": "effect",
+    "pos": "n.",
+    "meaning_th": "ผลกระทบ, ผล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-303",
+    "word": "either",
+    "pos": "adv.",
+    "meaning_th": "เช่นกัน, เหมือนกัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-304",
+    "word": "either",
+    "pos": "det.",
+    "meaning_th": "อันใดอันหนึ่ง, แต่ละ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-305",
+    "word": "either",
+    "pos": "pron.",
+    "meaning_th": "อันใดอันหนึ่ง, คนใดคนหนึ่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-306",
+    "word": "electric",
+    "pos": "adj.",
+    "meaning_th": "ไฟฟ้า, ที่ใช้ไฟฟ้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-307",
+    "word": "electrical",
+    "pos": "adj.",
+    "meaning_th": "เกี่ยวกับไฟฟ้า, ทางไฟฟ้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-308",
+    "word": "electricity",
+    "pos": "n.",
+    "meaning_th": "ไฟฟ้า, พลังงานไฟฟ้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-309",
+    "word": "electronic",
+    "pos": "adj.",
+    "meaning_th": "ทางอิเล็กทรอนิกส์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-310",
+    "word": "employ",
+    "pos": "v.",
+    "meaning_th": "จ้างงาน, ว่าจ้าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-311",
+    "word": "employee",
+    "pos": "n.",
+    "meaning_th": "ลูกจ้าง, พนักงาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-312",
+    "word": "employer",
+    "pos": "n.",
+    "meaning_th": "นายจ้าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-313",
+    "word": "empty",
+    "pos": "adj.",
+    "meaning_th": "ว่างเปล่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-314",
+    "word": "ending",
+    "pos": "n.",
+    "meaning_th": "ตอนจบ, การสิ้นสุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-315",
+    "word": "energy",
+    "pos": "n.",
+    "meaning_th": "พลังงาน, พลัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-316",
+    "word": "engine",
+    "pos": "n.",
+    "meaning_th": "เครื่องยนต์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-317",
+    "word": "engineer",
+    "pos": "n.",
+    "meaning_th": "วิศวกร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-318",
+    "word": "enter",
+    "pos": "v.",
+    "meaning_th": "เข้าไป, เข้าสู่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-319",
+    "word": "equipment",
+    "pos": "n.",
+    "meaning_th": "อุปกรณ์, เครื่องมือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-320",
+    "word": "error",
+    "pos": "n.",
+    "meaning_th": "ข้อผิดพลาด, ความผิดพลาด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-321",
+    "word": "especially",
+    "pos": "adv.",
+    "meaning_th": "โดยเฉพาะอย่างยิ่ง, เป็นพิเศษ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-322",
+    "word": "essay",
+    "pos": "n.",
+    "meaning_th": "เรียงความ, บทความ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-323",
+    "word": "everyday",
+    "pos": "adj.",
+    "meaning_th": "ประจำวัน, ทุกวัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-324",
+    "word": "everywhere",
+    "pos": "adv.",
+    "meaning_th": "ทุกที่, ทุกหนทุกแห่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-325",
+    "word": "evidence",
+    "pos": "n.",
+    "meaning_th": "หลักฐาน, พยานหลักฐาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-326",
+    "word": "exact",
+    "pos": "adj.",
+    "meaning_th": "แม่นยำ, แน่นอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-327",
+    "word": "exactly",
+    "pos": "adv.",
+    "meaning_th": "อย่างแม่นยำ, พอดีเป๊ะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-328",
+    "word": "excellent",
+    "pos": "adj.",
+    "meaning_th": "ยอดเยี่ยม, ดีเลิศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-329",
+    "word": "except",
+    "pos": "prep.",
+    "meaning_th": "ยกเว้น, นอกจาก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-330",
+    "word": "exist",
+    "pos": "v.",
+    "meaning_th": "มีอยู่, ดำรงอยู่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-331",
+    "word": "expect",
+    "pos": "v.",
+    "meaning_th": "คาดหวัง, คาดหมาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-332",
+    "word": "experience",
+    "pos": "n.",
+    "meaning_th": "ประสบการณ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-333",
+    "word": "experiment",
+    "pos": "n.",
+    "meaning_th": "การทดลอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-334",
+    "word": "expert",
+    "pos": "adj.",
+    "meaning_th": "เชี่ยวชาญ, ชำนาญ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-335",
+    "word": "expert",
+    "pos": "n.",
+    "meaning_th": "ผู้เชี่ยวชาญ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-336",
+    "word": "explanation",
+    "pos": "n.",
+    "meaning_th": "คำอธิบาย, การอธิบาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-337",
+    "word": "express",
+    "pos": "v.",
+    "meaning_th": "แสดงออก, ถ่ายทอด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-338",
+    "word": "expression",
+    "pos": "n.",
+    "meaning_th": "การแสดงออก, สำนวน, สีหน้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-339",
+    "word": "extreme",
+    "pos": "adj.",
+    "meaning_th": "รุนแรง, สุดขีด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-340",
+    "word": "extremely",
+    "pos": "adv.",
+    "meaning_th": "อย่างยิ่ง, สุดขีด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-341",
+    "word": "factor",
+    "pos": "n.",
+    "meaning_th": "ปัจจัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-342",
+    "word": "factory",
+    "pos": "n.",
+    "meaning_th": "โรงงาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-343",
+    "word": "fail",
+    "pos": "v.",
+    "meaning_th": "ล้มเหลว, ตก, ผิดพลาด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-344",
+    "word": "fair",
+    "pos": "adj.",
+    "meaning_th": "ยุติธรรม, เป็นธรรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-345",
+    "word": "fall",
+    "pos": "n.",
+    "meaning_th": "การตก, ฤดูใบไม้ร่วง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-346",
+    "word": "fan",
+    "pos": "n.",
+    "meaning_th": "พัดลม, พัด, แฟนคลับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-347",
+    "word": "farm",
+    "pos": "v.",
+    "meaning_th": "ทำฟาร์ม, ทำไร่นา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-348",
+    "word": "farming",
+    "pos": "n.",
+    "meaning_th": "การทำฟาร์ม, เกษตรกรรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-349",
+    "word": "fashion",
+    "pos": "n.",
+    "meaning_th": "แฟชั่น, ค่านิยม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-350",
+    "word": "fat",
+    "pos": "n.",
+    "meaning_th": "ไขมัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-351",
+    "word": "fear",
+    "pos": "n.",
+    "meaning_th": "ความกลัว, ความหวาดหวั่น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-352",
+    "word": "feature",
+    "pos": "n.",
+    "meaning_th": "ลักษณะเด่น, คุณสมบัติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-353",
+    "word": "feed",
+    "pos": "v.",
+    "meaning_th": "ให้อาหาร, ป้อน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-354",
+    "word": "female",
+    "pos": "adj.",
+    "meaning_th": "เพศหญิง, ตัวเมีย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-355",
+    "word": "female",
+    "pos": "n.",
+    "meaning_th": "ผู้หญิง, ตัวเมีย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-356",
+    "word": "fiction",
+    "pos": "n.",
+    "meaning_th": "นวนิยาย, เรื่องแต่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-357",
+    "word": "field",
+    "pos": "n.",
+    "meaning_th": "ทุ่งนา, สนาม, สาขาวิชา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-358",
+    "word": "fight",
+    "pos": "n.",
+    "meaning_th": "การต่อสู้, การชกต่อย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-359",
+    "word": "fight",
+    "pos": "v.",
+    "meaning_th": "ต่อสู้, สู้รบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-360",
+    "word": "figure",
+    "pos": "n.",
+    "meaning_th": "ตัวเลข, รูปร่าง, บุคคล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-361",
+    "word": "film",
+    "pos": "v.",
+    "meaning_th": "ถ่ายทำภาพยนตร์, บันทึกวิดีโอ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-362",
+    "word": "final",
+    "pos": "n.",
+    "meaning_th": "รอบชิงชนะเลิศ, การสอบปลายภาค",
+    "level": "A2"
+  },
+  {
+    "id": "a2-363",
+    "word": "finally",
+    "pos": "adv.",
+    "meaning_th": "ในที่สุด, ท้ายที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-364",
+    "word": "finger",
+    "pos": "n.",
+    "meaning_th": "นิ้วมือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-365",
+    "word": "finish",
+    "pos": "n.",
+    "meaning_th": "จุดสิ้นสุด, ช่วงสุดท้าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-366",
+    "word": "first",
+    "pos": "n.",
+    "meaning_th": "สิ่งแรก, คนแรก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-367",
+    "word": "firstly",
+    "pos": "adv.",
+    "meaning_th": "ประการแรก, ก่อนอื่น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-368",
+    "word": "fish",
+    "pos": "v.",
+    "meaning_th": "ตกปลา, หาปลา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-369",
+    "word": "fishing",
+    "pos": "n.",
+    "meaning_th": "การตกปลา, การประมง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-370",
+    "word": "fit",
+    "pos": "adj.",
+    "meaning_th": "แข็งแรง, เหมาะสม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-371",
+    "word": "fit",
+    "pos": "v.",
+    "meaning_th": "พอดี, เหมาะกับ, ติดตั้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-372",
+    "word": "flat",
+    "pos": "adj.",
+    "meaning_th": "แบน, ราบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-373",
+    "word": "flu",
+    "pos": "n.",
+    "meaning_th": "ไข้หวัดใหญ่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-374",
+    "word": "fly",
+    "pos": "n.",
+    "meaning_th": "แมลงวัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-375",
+    "word": "flying",
+    "pos": "adj.",
+    "meaning_th": "ที่บินได้, ทางอากาศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-376",
+    "word": "flying",
+    "pos": "n.",
+    "meaning_th": "การบิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-377",
+    "word": "focus",
+    "pos": "n.",
+    "meaning_th": "จุดสนใจ, จุดโฟกัส",
+    "level": "A2"
+  },
+  {
+    "id": "a2-378",
+    "word": "focus",
+    "pos": "v.",
+    "meaning_th": "มุ่งเน้น, เพ่งความสนใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-379",
+    "word": "following",
+    "pos": "adj.",
+    "meaning_th": "ต่อไปนี้, ถัดไป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-380",
+    "word": "foreign",
+    "pos": "adj.",
+    "meaning_th": "ต่างชาติ, ต่างประเทศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-381",
+    "word": "forest",
+    "pos": "n.",
+    "meaning_th": "ป่า, ป่าไม้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-382",
+    "word": "fork",
+    "pos": "n.",
+    "meaning_th": "ส้อม, ทางแยก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-383",
+    "word": "formal",
+    "pos": "adj.",
+    "meaning_th": "เป็นทางการ, ตามระเบียบแบบแผน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-384",
+    "word": "fortunately",
+    "pos": "adv.",
+    "meaning_th": "อย่างโชคดี, เคราะห์ดี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-385",
+    "word": "forward",
+    "pos": "adv.",
+    "meaning_th": "ไปข้างหน้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-386",
+    "word": "free",
+    "pos": "adv.",
+    "meaning_th": "โดยไม่คิดเงิน, อย่างอิสระ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-387",
+    "word": "fresh",
+    "pos": "adj.",
+    "meaning_th": "สด, ใหม่, สดชื่น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-388",
+    "word": "fridge",
+    "pos": "n.",
+    "meaning_th": "ตู้เย็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-389",
+    "word": "frog",
+    "pos": "n.",
+    "meaning_th": "กบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-390",
+    "word": "fun",
+    "pos": "adj.",
+    "meaning_th": "สนุกสนาน, น่าสนุก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-391",
+    "word": "furniture",
+    "pos": "n.",
+    "meaning_th": "เฟอร์นิเจอร์, เครื่องเรือน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-392",
+    "word": "further",
+    "pos": "adj.",
+    "meaning_th": "เพิ่มเติม, ไกลกว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-393",
+    "word": "future",
+    "pos": "adj.",
+    "meaning_th": "ในอนาคต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-394",
+    "word": "gallery",
+    "pos": "n.",
+    "meaning_th": "หอศิลป์, แกลเลอรี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-395",
+    "word": "gap",
+    "pos": "n.",
+    "meaning_th": "ช่องว่าง, ช่องโหว่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-396",
+    "word": "gas",
+    "pos": "n.",
+    "meaning_th": "แก๊ส, ก๊าซ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-397",
+    "word": "gate",
+    "pos": "n.",
+    "meaning_th": "ประตูรั้ว, ประตูทางเข้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-398",
+    "word": "general",
+    "pos": "adj.",
+    "meaning_th": "ทั่วไป, โดยทั่วไป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-399",
+    "word": "gift",
+    "pos": "n.",
+    "meaning_th": "ของขวัญ, พรสวรรค์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-400",
+    "word": "goal",
+    "pos": "n.",
+    "meaning_th": "เป้าหมาย, ประตู",
+    "level": "A2"
+  },
+  {
+    "id": "a2-401",
+    "word": "god",
+    "pos": "n.",
+    "meaning_th": "พระเจ้า, เทพเจ้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-402",
+    "word": "gold",
+    "pos": "adj.",
+    "meaning_th": "สีทอง, ทำด้วยทอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-403",
+    "word": "gold",
+    "pos": "n.",
+    "meaning_th": "ทองคำ, สีทอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-404",
+    "word": "golf",
+    "pos": "n.",
+    "meaning_th": "กีฬากอล์ฟ, กอล์ฟ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-405",
+    "word": "good",
+    "pos": "n.",
+    "meaning_th": "ความดี, ผลประโยชน์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-406",
+    "word": "government",
+    "pos": "n.",
+    "meaning_th": "รัฐบาล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-407",
+    "word": "grass",
+    "pos": "n.",
+    "meaning_th": "หญ้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-408",
+    "word": "greet",
+    "pos": "v.",
+    "meaning_th": "ทักทาย, ต้อนรับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-409",
+    "word": "ground",
+    "pos": "n.",
+    "meaning_th": "พื้นดิน, ผืนดิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-410",
+    "word": "guest",
+    "pos": "n.",
+    "meaning_th": "แขก, ผู้มาเยือน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-411",
+    "word": "guide",
+    "pos": "n.",
+    "meaning_th": "ผู้นำทาง, มัคคุเทศก์, คู่มือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-412",
+    "word": "guide",
+    "pos": "v.",
+    "meaning_th": "นำทาง, ชี้แนะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-413",
+    "word": "gun",
+    "pos": "n.",
+    "meaning_th": "ปืน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-414",
+    "word": "guy",
+    "pos": "n.",
+    "meaning_th": "ชายหนุ่ม, ผู้ชาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-415",
+    "word": "habit",
+    "pos": "n.",
+    "meaning_th": "นิสัย, ความเคยชิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-416",
+    "word": "half",
+    "pos": "adv.",
+    "meaning_th": "ครึ่งหนึ่ง, กึ่งหนึ่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-417",
+    "word": "hall",
+    "pos": "n.",
+    "meaning_th": "ห้องโถง, หอประชุม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-418",
+    "word": "happily",
+    "pos": "adv.",
+    "meaning_th": "อย่างมีความสุข",
+    "level": "A2"
+  },
+  {
+    "id": "a2-419",
+    "word": "headache",
+    "pos": "n.",
+    "meaning_th": "อาการปวดศีรษะ, ปวดหัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-420",
+    "word": "heart",
+    "pos": "n.",
+    "meaning_th": "หัวใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-421",
+    "word": "heat",
+    "pos": "n.",
+    "meaning_th": "ความร้อน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-422",
+    "word": "heat",
+    "pos": "v.",
+    "meaning_th": "อุ่น, ทำให้ร้อน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-423",
+    "word": "heavy",
+    "pos": "adj.",
+    "meaning_th": "หนัก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-424",
+    "word": "height",
+    "pos": "n.",
+    "meaning_th": "ความสูง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-425",
+    "word": "helpful",
+    "pos": "adj.",
+    "meaning_th": "มีประโยชน์, เอื้อเฟื้อ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-426",
+    "word": "hero",
+    "pos": "n.",
+    "meaning_th": "วีรบุรุษ, ฮีโร่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-427",
+    "word": "hers",
+    "pos": "pron.",
+    "meaning_th": "ของเธอ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-428",
+    "word": "herself",
+    "pos": "pron.",
+    "meaning_th": "ตัวเธอเอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-429",
+    "word": "hide",
+    "pos": "v.",
+    "meaning_th": "ซ่อน, แอบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-430",
+    "word": "high",
+    "pos": "adv.",
+    "meaning_th": "สูง, ในระดับสูง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-431",
+    "word": "hill",
+    "pos": "n.",
+    "meaning_th": "เนินเขา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-432",
+    "word": "himself",
+    "pos": "pron.",
+    "meaning_th": "ตัวเขาเอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-433",
+    "word": "his",
+    "pos": "pron.",
+    "meaning_th": "ของเขา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-434",
+    "word": "hit",
+    "pos": "n.",
+    "meaning_th": "การตี, ความสำเร็จ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-435",
+    "word": "hit",
+    "pos": "v.",
+    "meaning_th": "ตี, ชน, กระทบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-436",
+    "word": "hockey",
+    "pos": "n.",
+    "meaning_th": "กีฬาฮอกกี้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-437",
+    "word": "hold",
+    "pos": "v.",
+    "meaning_th": "ถือ, จับ, จัดขึ้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-438",
+    "word": "hole",
+    "pos": "n.",
+    "meaning_th": "รู, หลุม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-439",
+    "word": "home",
+    "pos": "adj.",
+    "meaning_th": "เกี่ยวกับบ้าน, ภายในบ้าน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-440",
+    "word": "hope",
+    "pos": "n.",
+    "meaning_th": "ความหวัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-441",
+    "word": "huge",
+    "pos": "adj.",
+    "meaning_th": "ใหญ่โต, มหึมา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-442",
+    "word": "human",
+    "pos": "adj.",
+    "meaning_th": "ของมนุษย์, เกี่ยวกับมนุษย์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-443",
+    "word": "human",
+    "pos": "n.",
+    "meaning_th": "มนุษย์, คน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-444",
+    "word": "hurt",
+    "pos": "adj.",
+    "meaning_th": "ได้รับบาดเจ็บ, เจ็บปวด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-445",
+    "word": "hurt",
+    "pos": "v.",
+    "meaning_th": "เจ็บ, ทำร้าย, ทำให้บาดเจ็บ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-446",
+    "word": "ideal",
+    "pos": "adj.",
+    "meaning_th": "ในอุดมคติ, ดีเลิศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-447",
+    "word": "identify",
+    "pos": "v.",
+    "meaning_th": "ระบุ, ชี้ตัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-448",
+    "word": "ill",
+    "pos": "adj.",
+    "meaning_th": "ป่วย, ไม่สบาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-449",
+    "word": "illness",
+    "pos": "n.",
+    "meaning_th": "ความเจ็บป่วย, โรคภัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-450",
+    "word": "image",
+    "pos": "n.",
+    "meaning_th": "รูปภาพ, ภาพลักษณ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-451",
+    "word": "immediately",
+    "pos": "adv.",
+    "meaning_th": "ทันทีทันใด, โดยทันที",
+    "level": "A2"
+  },
+  {
+    "id": "a2-452",
+    "word": "impossible",
+    "pos": "adj.",
+    "meaning_th": "เป็นไปไม่ได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-453",
+    "word": "included",
+    "pos": "adj.",
+    "meaning_th": "ที่รวมอยู่ด้วย, รวมแล้ว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-454",
+    "word": "including",
+    "pos": "prep.",
+    "meaning_th": "รวมถึง, รวมทั้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-455",
+    "word": "increase",
+    "pos": "n.",
+    "meaning_th": "การเพิ่มขึ้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-456",
+    "word": "increase",
+    "pos": "v.",
+    "meaning_th": "เพิ่มขึ้น, เพิ่ม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-457",
+    "word": "incredible",
+    "pos": "adj.",
+    "meaning_th": "เหลือเชื่อ, ยอดเยี่ยม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-458",
+    "word": "individual",
+    "pos": "adj.",
+    "meaning_th": "แต่ละบุคคล, เฉพาะบุคคล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-459",
+    "word": "individual",
+    "pos": "n.",
+    "meaning_th": "บุคคล, แต่ละคน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-460",
+    "word": "industry",
+    "pos": "n.",
+    "meaning_th": "อุตสาหกรรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-461",
+    "word": "informal",
+    "pos": "adj.",
+    "meaning_th": "ไม่เป็นทางการ, สบายๆ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-462",
+    "word": "injury",
+    "pos": "n.",
+    "meaning_th": "อาการบาดเจ็บ, การบาดเจ็บ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-463",
+    "word": "insect",
+    "pos": "n.",
+    "meaning_th": "แมลง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-464",
+    "word": "inside",
+    "pos": "adj.",
+    "meaning_th": "ด้านใน, ข้างใน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-465",
+    "word": "inside",
+    "pos": "adv.",
+    "meaning_th": "ข้างใน, ด้านใน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-466",
+    "word": "inside",
+    "pos": "n.",
+    "meaning_th": "ด้านใน, ส่วนใน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-467",
+    "word": "inside",
+    "pos": "prep.",
+    "meaning_th": "ข้างใน, ภายใน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-468",
+    "word": "instead",
+    "pos": "adv.",
+    "meaning_th": "แทนที่, แทน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-469",
+    "word": "instruction",
+    "pos": "n.",
+    "meaning_th": "คำแนะนำ, คำสั่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-470",
+    "word": "instructor",
+    "pos": "n.",
+    "meaning_th": "ผู้สอน, ครูฝึก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-471",
+    "word": "instrument",
+    "pos": "n.",
+    "meaning_th": "เครื่องดนตรี, เครื่องมือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-472",
+    "word": "intelligent",
+    "pos": "adj.",
+    "meaning_th": "ฉลาด, มีไหวพริบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-473",
+    "word": "international",
+    "pos": "adj.",
+    "meaning_th": "ระหว่างประเทศ, สากล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-474",
+    "word": "introduction",
+    "pos": "n.",
+    "meaning_th": "การแนะนำ, บทนำ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-475",
+    "word": "invent",
+    "pos": "v.",
+    "meaning_th": "ประดิษฐ์, คิดค้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-476",
+    "word": "invention",
+    "pos": "n.",
+    "meaning_th": "สิ่งประดิษฐ์, การประดิษฐ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-477",
+    "word": "invitation",
+    "pos": "n.",
+    "meaning_th": "คำเชิญ, บัตรเชิญ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-478",
+    "word": "involve",
+    "pos": "v.",
+    "meaning_th": "เกี่ยวข้อง, เกี่ยวพัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-479",
+    "word": "item",
+    "pos": "n.",
+    "meaning_th": "สิ่งของ, รายการ, ชิ้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-480",
+    "word": "itself",
+    "pos": "pron.",
+    "meaning_th": "ตัวมันเอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-481",
+    "word": "jam",
+    "pos": "n.",
+    "meaning_th": "แยม, ผลไม้กวน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-482",
+    "word": "jazz",
+    "pos": "n.",
+    "meaning_th": "ดนตรีแจ๊ส",
+    "level": "A2"
+  },
+  {
+    "id": "a2-483",
+    "word": "jewellery",
+    "pos": "n.",
+    "meaning_th": "เครื่องประดับ, อัญมณี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-484",
+    "word": "joke",
+    "pos": "n.",
+    "meaning_th": "เรื่องตลก, มุกตลก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-485",
+    "word": "joke",
+    "pos": "v.",
+    "meaning_th": "พูดเล่น, ปล่อยมุก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-486",
+    "word": "jump",
+    "pos": "n.",
+    "meaning_th": "การกระโดด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-487",
+    "word": "jump",
+    "pos": "v.",
+    "meaning_th": "กระโดด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-488",
+    "word": "kid",
+    "pos": "n.",
+    "meaning_th": "เด็ก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-489",
+    "word": "kill",
+    "pos": "v.",
+    "meaning_th": "ฆ่า, สังหาร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-490",
+    "word": "king",
+    "pos": "n.",
+    "meaning_th": "พระราชา, กษัตริย์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-491",
+    "word": "knee",
+    "pos": "n.",
+    "meaning_th": "หัวเข่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-492",
+    "word": "knife",
+    "pos": "n.",
+    "meaning_th": "มีด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-493",
+    "word": "knock",
+    "pos": "v.",
+    "meaning_th": "เคาะ, ชน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-494",
+    "word": "lab",
+    "pos": "n.",
+    "meaning_th": "ห้องแล็บ, ห้องทดลอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-495",
+    "word": "lady",
+    "pos": "n.",
+    "meaning_th": "สุภาพสตรี, คุณผู้หญิง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-496",
+    "word": "lake",
+    "pos": "n.",
+    "meaning_th": "ทะเลสาบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-497",
+    "word": "lamp",
+    "pos": "n.",
+    "meaning_th": "โคมไฟ, ตะเกียง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-498",
+    "word": "land",
+    "pos": "v.",
+    "meaning_th": "ลงจอด, เทียบท่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-499",
+    "word": "laptop",
+    "pos": "n.",
+    "meaning_th": "แล็ปท็อป, คอมพิวเตอร์พกพา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-500",
+    "word": "last",
+    "pos": "adv.",
+    "meaning_th": "ล่าสุด, ในที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-501",
+    "word": "last",
+    "pos": "n.",
+    "meaning_th": "สิ่งสุดท้าย, คนสุดท้าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-502",
+    "word": "last",
+    "pos": "v.",
+    "meaning_th": "คงอยู่, ทนทาน, ดำเนินต่อไป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-503",
+    "word": "later",
+    "pos": "adj.",
+    "meaning_th": "ภายหลัง, ตอนหลัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-504",
+    "word": "laughter",
+    "pos": "n.",
+    "meaning_th": "การหัวเราะ, เสียงหัวเราะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-505",
+    "word": "law",
+    "pos": "n.",
+    "meaning_th": "กฎหมาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-506",
+    "word": "lawyer",
+    "pos": "n.",
+    "meaning_th": "ทนายความ, นักกฎหมาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-507",
+    "word": "lazy",
+    "pos": "adj.",
+    "meaning_th": "ขี้เกียจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-508",
+    "word": "lead",
+    "pos": "v.",
+    "meaning_th": "นำ, พาไป, นำทาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-509",
+    "word": "leader",
+    "pos": "n.",
+    "meaning_th": "ผู้นำ, หัวหน้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-510",
+    "word": "learning",
+    "pos": "n.",
+    "meaning_th": "การเรียนรู้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-511",
+    "word": "least",
+    "pos": "adv.",
+    "meaning_th": "น้อยที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-512",
+    "word": "least",
+    "pos": "det.",
+    "meaning_th": "น้อยที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-513",
+    "word": "least",
+    "pos": "pron.",
+    "meaning_th": "จำนวนน้อยที่สุด, สิ่งที่น้อยที่สุด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-514",
+    "word": "lecture",
+    "pos": "n.",
+    "meaning_th": "การบรรยาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-515",
+    "word": "lecture",
+    "pos": "v.",
+    "meaning_th": "บรรยาย, สั่งสอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-516",
+    "word": "lemon",
+    "pos": "n.",
+    "meaning_th": "มะนาวเหลือง, เลมอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-517",
+    "word": "lend",
+    "pos": "v.",
+    "meaning_th": "ให้ยืม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-518",
+    "word": "less",
+    "pos": "adv.",
+    "meaning_th": "น้อยลง, น้อยกว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-519",
+    "word": "less",
+    "pos": "det.",
+    "meaning_th": "น้อยกว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-520",
+    "word": "less",
+    "pos": "pron.",
+    "meaning_th": "จำนวนที่น้อยกว่า, สิ่งที่น้อยกว่า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-521",
+    "word": "level",
+    "pos": "n.",
+    "meaning_th": "ระดับ, ชั้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-522",
+    "word": "lifestyle",
+    "pos": "n.",
+    "meaning_th": "วิถีชีวิต, ไลฟ์สไตล์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-523",
+    "word": "lift",
+    "pos": "n.",
+    "meaning_th": "ลิฟต์, การยก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-524",
+    "word": "lift",
+    "pos": "v.",
+    "meaning_th": "ยกขึ้น, ชูขึ้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-525",
+    "word": "light",
+    "pos": "v.",
+    "meaning_th": "จุดไฟ, ส่องแสง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-526",
+    "word": "likely",
+    "pos": "adj.",
+    "meaning_th": "น่าจะเกิดขึ้น, เป็นไปได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-527",
+    "word": "link",
+    "pos": "n.",
+    "meaning_th": "ลิงก์, การเชื่อมโยง, ข้อต่อ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-528",
+    "word": "link",
+    "pos": "v.",
+    "meaning_th": "เชื่อมต่อ, เชื่อมโยง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-529",
+    "word": "listener",
+    "pos": "n.",
+    "meaning_th": "ผู้ฟัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-530",
+    "word": "little",
+    "pos": "adv.",
+    "meaning_th": "เล็กน้อย, แทบจะไม่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-531",
+    "word": "lock",
+    "pos": "n.",
+    "meaning_th": "แม่กุญแจ, ตัวล็อค",
+    "level": "A2"
+  },
+  {
+    "id": "a2-532",
+    "word": "lock",
+    "pos": "v.",
+    "meaning_th": "ล็อค, ปิดล็อค",
+    "level": "A2"
+  },
+  {
+    "id": "a2-533",
+    "word": "look",
+    "pos": "n.",
+    "meaning_th": "การมอง, การดู, รูปลักษณ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-534",
+    "word": "lorry",
+    "pos": "n.",
+    "meaning_th": "รถบรรทุก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-535",
+    "word": "lost",
+    "pos": "adj.",
+    "meaning_th": "สูญหาย, หลงทาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-536",
+    "word": "loud",
+    "pos": "adj.",
+    "meaning_th": "เสียงดัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-537",
+    "word": "loud",
+    "pos": "adv.",
+    "meaning_th": "เสียงดัง, ดัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-538",
+    "word": "loudly",
+    "pos": "adv.",
+    "meaning_th": "อย่างเสียงดัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-539",
+    "word": "lovely",
+    "pos": "adj.",
+    "meaning_th": "น่ารัก, งดงาม, น่ายินดี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-540",
+    "word": "low",
+    "pos": "adj.",
+    "meaning_th": "ต่ำ, เตี้ย, น้อย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-541",
+    "word": "low",
+    "pos": "adv.",
+    "meaning_th": "ต่ำ, ในระดับต่ำ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-542",
+    "word": "luck",
+    "pos": "n.",
+    "meaning_th": "โชค, ดวง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-543",
+    "word": "lucky",
+    "pos": "adj.",
+    "meaning_th": "โชคดี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-544",
+    "word": "mail",
+    "pos": "n.",
+    "meaning_th": "จดหมาย, ไปรษณีย์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-545",
+    "word": "mail",
+    "pos": "v.",
+    "meaning_th": "ส่งไปรษณีย์, ส่งจดหมาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-546",
+    "word": "major",
+    "pos": "adj.",
+    "meaning_th": "สำคัญ, ใหญ่, หลัก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-547",
+    "word": "male",
+    "pos": "adj.",
+    "meaning_th": "เพศชาย, ตัวผู้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-548",
+    "word": "male",
+    "pos": "n.",
+    "meaning_th": "เพศชาย, ผู้ชาย, ตัวผู้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-549",
+    "word": "manage",
+    "pos": "v.",
+    "meaning_th": "จัดการ, บริหาร, สำเร็จได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-550",
+    "word": "manager",
+    "pos": "n.",
+    "meaning_th": "ผู้จัดการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-551",
+    "word": "manner",
+    "pos": "n.",
+    "meaning_th": "มารยาท, ท่าทาง, กิริยา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-552",
+    "word": "mark",
+    "pos": "n.",
+    "meaning_th": "รอย, เครื่องหมาย, คะแนน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-553",
+    "word": "mark",
+    "pos": "v.",
+    "meaning_th": "ทำเครื่องหมาย, ให้คะแนน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-554",
+    "word": "marry",
+    "pos": "v.",
+    "meaning_th": "แต่งงาน, สมรส",
+    "level": "A2"
+  },
+  {
+    "id": "a2-555",
+    "word": "material",
+    "pos": "n.",
+    "meaning_th": "วัสดุ, วัตถุดิบ, ข้อมูล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-556",
+    "word": "mathematics",
+    "pos": "n.",
+    "meaning_th": "คณิตศาสตร์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-557",
+    "word": "maths",
+    "pos": "n.",
+    "meaning_th": "คณิตศาสตร์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-558",
+    "word": "matter",
+    "pos": "n.",
+    "meaning_th": "เรื่องราว, สสาร, ประเด็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-559",
+    "word": "matter",
+    "pos": "v.",
+    "meaning_th": "สำคัญ, มีผลกระทบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-560",
+    "word": "may",
+    "pos": "v.",
+    "meaning_th": "อาจจะ, ขออนุญาต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-561",
+    "word": "media",
+    "pos": "n.",
+    "meaning_th": "สื่อ, สื่อมวลชน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-562",
+    "word": "medical",
+    "pos": "adj.",
+    "meaning_th": "ทางการแพทย์, เกี่ยวกับการแพทย์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-563",
+    "word": "memory",
+    "pos": "n.",
+    "meaning_th": "ความจำ, ความทรงจำ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-564",
+    "word": "mention",
+    "pos": "v.",
+    "meaning_th": "กล่าวถึง, เอ่ยถึง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-565",
+    "word": "metal",
+    "pos": "n.",
+    "meaning_th": "โลหะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-566",
+    "word": "method",
+    "pos": "n.",
+    "meaning_th": "วิธี, กรรมวิธี, วิธีการ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-567",
+    "word": "middle",
+    "pos": "adj.",
+    "meaning_th": "ปานกลาง, กึ่งกลาง, ตรงกลาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-568",
+    "word": "middle",
+    "pos": "n.",
+    "meaning_th": "ตรงกลาง, กึ่งกลาง, ช่วงกลาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-569",
+    "word": "might",
+    "pos": "v.",
+    "meaning_th": "อาจจะ, น่าจะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-570",
+    "word": "mind",
+    "pos": "n.",
+    "meaning_th": "จิตใจ, ความคิด",
+    "level": "A2"
+  },
+  {
+    "id": "a2-571",
+    "word": "mind",
+    "pos": "v.",
+    "meaning_th": "รังเกียจ, ใส่ใจ, สนใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-572",
+    "word": "mine",
+    "pos": "pron.",
+    "meaning_th": "ของฉัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-573",
+    "word": "mirror",
+    "pos": "n.",
+    "meaning_th": "กระจกเงา, กระจก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-574",
+    "word": "missing",
+    "pos": "adj.",
+    "meaning_th": "หายไป, ขาดหาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-575",
+    "word": "mobile",
+    "pos": "adj.",
+    "meaning_th": "เคลื่อนที่ได้, เคลื่อนย้ายง่าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-576",
+    "word": "mobile",
+    "pos": "n.",
+    "meaning_th": "โทรศัพท์มือถือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-577",
+    "word": "monkey",
+    "pos": "n.",
+    "meaning_th": "ลิง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-578",
+    "word": "moon",
+    "pos": "n.",
+    "meaning_th": "ดวงจันทร์, พระจันทร์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-579",
+    "word": "mostly",
+    "pos": "adv.",
+    "meaning_th": "โดยส่วนใหญ่, ส่วนมาก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-580",
+    "word": "motorcycle",
+    "pos": "n.",
+    "meaning_th": "รถจักรยานยนต์, รถมอเตอร์ไซค์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-581",
+    "word": "movement",
+    "pos": "n.",
+    "meaning_th": "การเคลื่อนไหว, การเคลื่อนที่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-582",
+    "word": "musical",
+    "pos": "adj.",
+    "meaning_th": "ทางดนตรี, เกี่ยวกับดนตรี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-583",
+    "word": "musician",
+    "pos": "n.",
+    "meaning_th": "นักดนตรี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-584",
+    "word": "myself",
+    "pos": "pron.",
+    "meaning_th": "ตัวฉันเอง, ตัวเอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-585",
+    "word": "narrow",
+    "pos": "adj.",
+    "meaning_th": "แคบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-586",
+    "word": "national",
+    "pos": "adj.",
+    "meaning_th": "แห่งชาติ, ประจำชาติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-587",
+    "word": "nature",
+    "pos": "n.",
+    "meaning_th": "ธรรมชาติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-588",
+    "word": "nearly",
+    "pos": "adv.",
+    "meaning_th": "เกือบ, เกือบจะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-589",
+    "word": "necessary",
+    "pos": "adj.",
+    "meaning_th": "จำเป็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-590",
+    "word": "neck",
+    "pos": "n.",
+    "meaning_th": "คอ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-591",
+    "word": "need",
+    "pos": "n.",
+    "meaning_th": "ความต้องการ, ความจำเป็น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-592",
+    "word": "neither",
+    "pos": "det.",
+    "meaning_th": "ไม่ทั้งสอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-593",
+    "word": "neither",
+    "pos": "pron.",
+    "meaning_th": "ไม่ใช่ทั้งคู่, ทั้งสองฝ่ายไม่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-594",
+    "word": "nervous",
+    "pos": "adj.",
+    "meaning_th": "ประหม่า, กังวล, ตื่นเต้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-595",
+    "word": "network",
+    "pos": "n.",
+    "meaning_th": "เครือข่าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-596",
+    "word": "noise",
+    "pos": "n.",
+    "meaning_th": "เสียงดัง, เสียงรบกวน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-597",
+    "word": "noisy",
+    "pos": "adj.",
+    "meaning_th": "เสียงดัง, หนวกหู",
+    "level": "A2"
+  },
+  {
+    "id": "a2-598",
+    "word": "none",
+    "pos": "pron.",
+    "meaning_th": "ไม่มีเลย, ไม่มีสักคน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-599",
+    "word": "normal",
+    "pos": "adj.",
+    "meaning_th": "ปกติ, ธรรมดา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-600",
+    "word": "normally",
+    "pos": "adv.",
+    "meaning_th": "โดยปกติ, ตามปกติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-601",
+    "word": "notice",
+    "pos": "n.",
+    "meaning_th": "ประกาศ, ใบแจ้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-602",
+    "word": "notice",
+    "pos": "v.",
+    "meaning_th": "สังเกตเห็น, สังเกต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-603",
+    "word": "novel",
+    "pos": "n.",
+    "meaning_th": "นวนิยาย, นิยาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-604",
+    "word": "nowhere",
+    "pos": "adv.",
+    "meaning_th": "ไม่มีที่ไหน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-605",
+    "word": "number",
+    "pos": "v.",
+    "meaning_th": "ระบุหมายเลข, นับจำนวน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-606",
+    "word": "nut",
+    "pos": "n.",
+    "meaning_th": "ถั่ว, น็อตตัวเมีย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-607",
+    "word": "ocean",
+    "pos": "n.",
+    "meaning_th": "มหาสมุทร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-608",
+    "word": "offer",
+    "pos": "n.",
+    "meaning_th": "ข้อเสนอ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-609",
+    "word": "offer",
+    "pos": "v.",
+    "meaning_th": "เสนอ, มอบให้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-610",
+    "word": "officer",
+    "pos": "n.",
+    "meaning_th": "เจ้าหน้าที่, นายทหาร, ตำรวจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-611",
+    "word": "oil",
+    "pos": "n.",
+    "meaning_th": "น้ำมัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-612",
+    "word": "onto",
+    "pos": "prep.",
+    "meaning_th": "ไปยัง, ขึ้นไปบน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-613",
+    "word": "option",
+    "pos": "n.",
+    "meaning_th": "ทางเลือก, ตัวเลือก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-614",
+    "word": "organization",
+    "pos": "n.",
+    "meaning_th": "องค์กร, หน่วยงาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-615",
+    "word": "organize",
+    "pos": "v.",
+    "meaning_th": "จัดการ, จัดระเบียบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-616",
+    "word": "original",
+    "pos": "adj.",
+    "meaning_th": "ดั้งเดิม, ต้นฉบับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-617",
+    "word": "ourselves",
+    "pos": "pron.",
+    "meaning_th": "ตัวพวกเราเอง, พวกเราเอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-618",
+    "word": "outside",
+    "pos": "adj.",
+    "meaning_th": "ภายนอก, ข้างนอก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-619",
+    "word": "outside",
+    "pos": "n.",
+    "meaning_th": "ด้านนอก, ภายนอก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-620",
+    "word": "outside",
+    "pos": "prep.",
+    "meaning_th": "ข้างนอก, นอก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-621",
+    "word": "oven",
+    "pos": "n.",
+    "meaning_th": "เตาอบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-622",
+    "word": "own",
+    "pos": "v.",
+    "meaning_th": "เป็นเจ้าของ, ครอบครอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-623",
+    "word": "owner",
+    "pos": "n.",
+    "meaning_th": "เจ้าของ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-624",
+    "word": "pack",
+    "pos": "v.",
+    "meaning_th": "จัดของ, บรรจุ, ห่อ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-625",
+    "word": "pain",
+    "pos": "n.",
+    "meaning_th": "ความเจ็บปวด, ความเจ็บ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-626",
+    "word": "painter",
+    "pos": "n.",
+    "meaning_th": "ช่างทาสี, จิตรกร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-627",
+    "word": "palace",
+    "pos": "n.",
+    "meaning_th": "พระราชวัง, วัง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-628",
+    "word": "pants",
+    "pos": "n.",
+    "meaning_th": "กางเกง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-629",
+    "word": "parking",
+    "pos": "n.",
+    "meaning_th": "การจอดรถ, ที่จอดรถ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-630",
+    "word": "particular",
+    "pos": "adj.",
+    "meaning_th": "โดยเฉพาะ, เฉพาะเจาะจง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-631",
+    "word": "pass",
+    "pos": "v.",
+    "meaning_th": "ผ่าน, ส่งต่อ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-632",
+    "word": "passenger",
+    "pos": "n.",
+    "meaning_th": "ผู้โดยสาร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-633",
+    "word": "past",
+    "pos": "adv.",
+    "meaning_th": "ผ่านพ้น, พ้นไป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-634",
+    "word": "patient",
+    "pos": "n.",
+    "meaning_th": "ผู้ป่วย, คนไข้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-635",
+    "word": "pattern",
+    "pos": "n.",
+    "meaning_th": "รูปแบบ, ลวดลาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-636",
+    "word": "pay",
+    "pos": "n.",
+    "meaning_th": "เงินเดือน, ค่าจ้าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-637",
+    "word": "peace",
+    "pos": "n.",
+    "meaning_th": "ความสงบ, สันติภาพ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-638",
+    "word": "penny",
+    "pos": "n.",
+    "meaning_th": "เหรียญเพนนี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-639",
+    "word": "per",
+    "pos": "prep.",
+    "meaning_th": "ต่อ, ละ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-640",
+    "word": "perform",
+    "pos": "v.",
+    "meaning_th": "แสดง, ปฏิบัติงาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-641",
+    "word": "perhaps",
+    "pos": "adv.",
+    "meaning_th": "บางที, อาจจะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-642",
+    "word": "permission",
+    "pos": "n.",
+    "meaning_th": "การอนุญาต, คำอนุญาต",
+    "level": "A2"
+  },
+  {
+    "id": "a2-643",
+    "word": "personality",
+    "pos": "n.",
+    "meaning_th": "บุคลิกภาพ, นิสัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-644",
+    "word": "pet",
+    "pos": "n.",
+    "meaning_th": "สัตว์เลี้ยง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-645",
+    "word": "petrol",
+    "pos": "n.",
+    "meaning_th": "น้ำมันเบนซิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-646",
+    "word": "photograph",
+    "pos": "v.",
+    "meaning_th": "ถ่ายภาพ, ถ่ายรูป",
+    "level": "A2"
+  },
+  {
+    "id": "a2-647",
+    "word": "physical",
+    "pos": "adj.",
+    "meaning_th": "ทางกายภาพ, ทางร่างกาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-648",
+    "word": "physics",
+    "pos": "n.",
+    "meaning_th": "วิชาฟิสิกส์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-649",
+    "word": "pick",
+    "pos": "v.",
+    "meaning_th": "เลือก, เก็บ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-650",
+    "word": "pilot",
+    "pos": "n.",
+    "meaning_th": "นักบิน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-651",
+    "word": "planet",
+    "pos": "n.",
+    "meaning_th": "ดาวเคราะห์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-652",
+    "word": "plant",
+    "pos": "v.",
+    "meaning_th": "ปลูก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-653",
+    "word": "plastic",
+    "pos": "adj.",
+    "meaning_th": "ทำด้วยพลาสติก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-654",
+    "word": "plastic",
+    "pos": "n.",
+    "meaning_th": "พลาสติก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-655",
+    "word": "plate",
+    "pos": "n.",
+    "meaning_th": "จาน, แผ่น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-656",
+    "word": "platform",
+    "pos": "n.",
+    "meaning_th": "ชานชาลา, แท่น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-657",
+    "word": "please",
+    "pos": "v.",
+    "meaning_th": "ทำให้พอใจ, ถูกใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-658",
+    "word": "pleased",
+    "pos": "adj.",
+    "meaning_th": "ยินดี, พอใจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-659",
+    "word": "pocket",
+    "pos": "n.",
+    "meaning_th": "กระเป๋าเสื้อ, กระเป๋ากางเกง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-660",
+    "word": "polite",
+    "pos": "adj.",
+    "meaning_th": "สุภาพ, มีมารยาท",
+    "level": "A2"
+  },
+  {
+    "id": "a2-661",
+    "word": "pop",
+    "pos": "adj.",
+    "meaning_th": "ป็อป, ร่วมสมัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-662",
+    "word": "pop",
+    "pos": "n.",
+    "meaning_th": "เพลงป็อป, เสียงดังเป๊าะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-663",
+    "word": "population",
+    "pos": "n.",
+    "meaning_th": "ประชากร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-664",
+    "word": "position",
+    "pos": "n.",
+    "meaning_th": "ตำแหน่ง, จุดยืน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-665",
+    "word": "possession",
+    "pos": "n.",
+    "meaning_th": "ทรัพย์สิน, การครอบครอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-666",
+    "word": "possibility",
+    "pos": "n.",
+    "meaning_th": "ความเป็นไปได้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-667",
+    "word": "poster",
+    "pos": "n.",
+    "meaning_th": "โปสเตอร์, ภาพประกาศ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-668",
+    "word": "power",
+    "pos": "n.",
+    "meaning_th": "พลัง, อำนาจ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-669",
+    "word": "predict",
+    "pos": "v.",
+    "meaning_th": "ทำนาย, คาดเดา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-670",
+    "word": "present",
+    "pos": "v.",
+    "meaning_th": "นำเสนอ, มอบให้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-671",
+    "word": "president",
+    "pos": "n.",
+    "meaning_th": "ประธานาธิบดี, ประธาน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-672",
+    "word": "prevent",
+    "pos": "v.",
+    "meaning_th": "ป้องกัน, ขัดขวาง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-673",
+    "word": "print",
+    "pos": "v.",
+    "meaning_th": "พิมพ์, ตีพิมพ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-674",
+    "word": "printer",
+    "pos": "n.",
+    "meaning_th": "เครื่องพิมพ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-675",
+    "word": "prison",
+    "pos": "n.",
+    "meaning_th": "เรือนจำ, คุก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-676",
+    "word": "prize",
+    "pos": "n.",
+    "meaning_th": "รางวัล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-677",
+    "word": "process",
+    "pos": "n.",
+    "meaning_th": "กระบวนการ, ขั้นตอน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-678",
+    "word": "produce",
+    "pos": "v.",
+    "meaning_th": "ผลิต, สร้าง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-679",
+    "word": "professional",
+    "pos": "adj.",
+    "meaning_th": "มืออาชีพ, ทางวิชาชีพ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-680",
+    "word": "professor",
+    "pos": "n.",
+    "meaning_th": "ศาสตราจารย์, อาจารย์มหาวิทยาลัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-681",
+    "word": "profile",
+    "pos": "n.",
+    "meaning_th": "ประวัติโดยย่อ, ประวัติส่วนตัว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-682",
+    "word": "program",
+    "pos": "n.",
+    "meaning_th": "รายการ, โปรแกรม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-683",
+    "word": "progress",
+    "pos": "n.",
+    "meaning_th": "ความก้าวหน้า, ความคืบหน้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-684",
+    "word": "promise",
+    "pos": "n.",
+    "meaning_th": "คำสัญญา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-685",
+    "word": "promise",
+    "pos": "v.",
+    "meaning_th": "สัญญา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-686",
+    "word": "pronounce",
+    "pos": "v.",
+    "meaning_th": "ออกเสียง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-687",
+    "word": "protect",
+    "pos": "v.",
+    "meaning_th": "ปกป้อง, คุ้มครอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-688",
+    "word": "provide",
+    "pos": "v.",
+    "meaning_th": "จัดหาให้, ให้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-689",
+    "word": "pub",
+    "pos": "n.",
+    "meaning_th": "ผับ, บาร์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-690",
+    "word": "public",
+    "pos": "adj.",
+    "meaning_th": "สาธารณะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-691",
+    "word": "public",
+    "pos": "n.",
+    "meaning_th": "ที่สาธารณะ, ประชาชน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-692",
+    "word": "publish",
+    "pos": "v.",
+    "meaning_th": "ตีพิมพ์, เผยแพร่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-693",
+    "word": "pull",
+    "pos": "v.",
+    "meaning_th": "ดึง, ลาก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-694",
+    "word": "purpose",
+    "pos": "n.",
+    "meaning_th": "วัตถุประสงค์, เป้าหมาย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-695",
+    "word": "push",
+    "pos": "v.",
+    "meaning_th": "ผลัก, ดัน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-696",
+    "word": "quality",
+    "pos": "n.",
+    "meaning_th": "คุณภาพ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-697",
+    "word": "quantity",
+    "pos": "n.",
+    "meaning_th": "ปริมาณ, จำนวน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-698",
+    "word": "queen",
+    "pos": "n.",
+    "meaning_th": "ราชินี",
+    "level": "A2"
+  },
+  {
+    "id": "a2-699",
+    "word": "question",
+    "pos": "v.",
+    "meaning_th": "ซักถาม, ตั้งคำถาม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-700",
+    "word": "quietly",
+    "pos": "adv.",
+    "meaning_th": "อย่างเงียบๆ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-701",
+    "word": "race",
+    "pos": "n.",
+    "meaning_th": "การแข่งขัน, เชื้อชาติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-702",
+    "word": "race",
+    "pos": "v.",
+    "meaning_th": "วิ่งแข่ง, แข่งขันความเร็ว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-703",
+    "word": "railway",
+    "pos": "n.",
+    "meaning_th": "ทางรถไฟ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-704",
+    "word": "raise",
+    "pos": "v.",
+    "meaning_th": "ยกขึ้น, เลี้ยงดู",
+    "level": "A2"
+  },
+  {
+    "id": "a2-705",
+    "word": "rate",
+    "pos": "n.",
+    "meaning_th": "อัตรา, อัตราส่วน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-706",
+    "word": "rather",
+    "pos": "adv.",
+    "meaning_th": "ค่อนข้าง, แทนที่จะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-707",
+    "word": "reach",
+    "pos": "v.",
+    "meaning_th": "ถึง, เอื้อมถึง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-708",
+    "word": "react",
+    "pos": "v.",
+    "meaning_th": "ตอบสนอง, มีปฏิกิริยา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-709",
+    "word": "realize",
+    "pos": "v.",
+    "meaning_th": "ตระหนัก, รู้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-710",
+    "word": "recent",
+    "pos": "adj.",
+    "meaning_th": "เร็วๆ นี้, เมื่อไม่นานมานี้",
+    "level": "A2"
+  },
+  {
+    "id": "a2-711",
+    "word": "reception",
+    "pos": "n.",
+    "meaning_th": "แผนกต้อนรับ, การต้อนรับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-712",
+    "word": "recipe",
+    "pos": "n.",
+    "meaning_th": "สูตรอาหาร, ตำรับอาหาร",
+    "level": "A2"
+  },
+  {
+    "id": "a2-713",
+    "word": "recognize",
+    "pos": "v.",
+    "meaning_th": "จำได้, รู้จัก, ตระหนัก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-714",
+    "word": "recommend",
+    "pos": "v.",
+    "meaning_th": "แนะนำ, เสนอแนะ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-715",
+    "word": "record",
+    "pos": "n.",
+    "meaning_th": "บันทึก, สถิติ, แผ่นเสียง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-716",
+    "word": "record",
+    "pos": "v.",
+    "meaning_th": "บันทึก, อัดเสียง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-717",
+    "word": "recording",
+    "pos": "n.",
+    "meaning_th": "การบันทึกเสียง, สิ่งบันทึก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-718",
+    "word": "recycle",
+    "pos": "v.",
+    "meaning_th": "นำกลับมาใช้ใหม่, รีไซเคิล",
+    "level": "A2"
+  },
+  {
+    "id": "a2-719",
+    "word": "refer",
+    "pos": "v.",
+    "meaning_th": "อ้างถึง, กล่าวถึง, ส่งต่อ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-720",
+    "word": "refuse",
+    "pos": "v.",
+    "meaning_th": "ปฏิเสธ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-721",
+    "word": "region",
+    "pos": "n.",
+    "meaning_th": "ภูมิภาค, เขต, แคว้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-722",
+    "word": "regular",
+    "pos": "adj.",
+    "meaning_th": "เป็นประจำ, สม่ำเสมอ, ปกติ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-723",
+    "word": "relationship",
+    "pos": "n.",
+    "meaning_th": "ความสัมพันธ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-724",
+    "word": "remove",
+    "pos": "v.",
+    "meaning_th": "เอาออก, ลบออก, ย้าย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-725",
+    "word": "repair",
+    "pos": "v.",
+    "meaning_th": "ซ่อม, ซ่อมแซม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-726",
+    "word": "replace",
+    "pos": "v.",
+    "meaning_th": "แทนที่, สับเปลี่ยน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-727",
+    "word": "reply",
+    "pos": "n.",
+    "meaning_th": "คำตอบ, การตอบกลับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-728",
+    "word": "reply",
+    "pos": "v.",
+    "meaning_th": "ตอบ, ตอบกลับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-729",
+    "word": "report",
+    "pos": "v.",
+    "meaning_th": "รายงาน, แจ้ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-730",
+    "word": "reporter",
+    "pos": "n.",
+    "meaning_th": "ผู้สื่อข่าว, นักข่าว",
+    "level": "A2"
+  },
+  {
+    "id": "a2-731",
+    "word": "request",
+    "pos": "n.",
+    "meaning_th": "คำขอร้อง, คำร้องขอ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-732",
+    "word": "research",
+    "pos": "n.",
+    "meaning_th": "งานวิจัย, การวิจัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-733",
+    "word": "research",
+    "pos": "v.",
+    "meaning_th": "วิจัย, ค้นคว้า",
+    "level": "A2"
+  },
+  {
+    "id": "a2-734",
+    "word": "researcher",
+    "pos": "n.",
+    "meaning_th": "นักวิจัย",
+    "level": "A2"
+  },
+  {
+    "id": "a2-735",
+    "word": "respond",
+    "pos": "v.",
+    "meaning_th": "ตอบสนอง, ตอบกลับ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-736",
+    "word": "response",
+    "pos": "n.",
+    "meaning_th": "คำตอบ, การตอบสนอง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-737",
+    "word": "rest",
+    "pos": "n.",
+    "meaning_th": "การพักผ่อน, ส่วนที่เหลือ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-738",
+    "word": "rest",
+    "pos": "v.",
+    "meaning_th": "พักผ่อน, หยุดพัก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-739",
+    "word": "review",
+    "pos": "n.",
+    "meaning_th": "บทวิจารณ์, การทบทวน",
+    "level": "A2"
+  },
+  {
+    "id": "a2-740",
+    "word": "review",
+    "pos": "v.",
+    "meaning_th": "ทบทวน, ตรวจสอบ, วิจารณ์",
+    "level": "A2"
+  },
+  {
+    "id": "a2-741",
+    "word": "ride",
+    "pos": "n.",
+    "meaning_th": "การขี่, การนั่งรถ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-742",
+    "word": "ring",
+    "pos": "n.",
+    "meaning_th": "แหวน, เสียงกริ่ง",
+    "level": "A2"
+  },
+  {
+    "id": "a2-743",
+    "word": "ring",
+    "pos": "v.",
+    "meaning_th": "กดกริ่ง, สั่นกระดิ่ง, โทรหา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-744",
+    "word": "rise",
+    "pos": "v.",
+    "meaning_th": "เพิ่มขึ้น, ลอยขึ้น, ลุกขึ้น",
+    "level": "A2"
+  },
+  {
+    "id": "a2-745",
+    "word": "rock",
+    "pos": "n.",
+    "meaning_th": "หิน, ก้อนหิน, เพลงร็อก",
+    "level": "A2"
+  },
+  {
+    "id": "a2-746",
+    "word": "role",
+    "pos": "n.",
+    "meaning_th": "บทบาท, หน้าที่",
+    "level": "A2"
+  },
+  {
+    "id": "a2-747",
+    "word": "roof",
+    "pos": "n.",
+    "meaning_th": "หลังคา",
+    "level": "A2"
+  },
+  {
+    "id": "a2-748",
+    "word": "round",
+    "pos": "adj.",
+    "meaning_th": "กลม, วงกลม",
+    "level": "A2"
+  },
+  {
+    "id": "a2-749",
+    "word": "round",
+    "pos": "adv.",
+    "meaning_th": "โดยรอบ, วนรอบ",
+    "level": "A2"
+  },
+  {
+    "id": "a2-750",
+    "word": "round",
+    "pos": "prep.",
+    "meaning_th": "รอบ, ล้อมรอบ",
+    "level": "A2"
+  }
+]
