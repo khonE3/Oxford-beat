@@ -33,7 +33,7 @@ import { VirtualKeyboard } from "./VirtualKeyboard";
 type ScreenPhase = "start" | "playing" | "paused" | "gameover";
 
 const INITIAL_HUD: HudSnapshot = {
-  mode: "cascade",
+  mode: "notes",
   score: 0,
   combo: 0,
   maxCombo: 0,
@@ -49,6 +49,11 @@ const INITIAL_HUD: HudSnapshot = {
   targetWord: null,
   targetProgress: 0,
 };
+
+function computeStageBpm(stage: number, speedMultiplier: number): number {
+  const base = 104 + (stage - 1) * 4;
+  return Math.round(Math.max(88, Math.min(160, base * (0.85 + speedMultiplier * 0.15))));
+}
 
 export function GameScreen() {
   const isClient = useIsClient();
@@ -79,11 +84,30 @@ export function GameScreen() {
     return synthRef.current;
   }, []);
 
-  // Sync mute & volume state into synth
+  const currentBpm = computeStageBpm(hud.stage, settings.speedMultiplier);
+
+  // Sync mute, volume, and dynamic stage BPM into synth
   useEffect(() => {
     synthRef.current?.setMuted(settings.muted);
     synthRef.current?.setVolumes(settings.volumes);
   }, [settings.muted, settings.volumes]);
+
+  useEffect(() => {
+    synthRef.current?.setBeatBpm(currentBpm);
+  }, [currentBpm]);
+
+  // Sample Web Audio analyser & beat clock for StageVisualizerCanvas
+  const sampleAudio = useCallback(
+    (bins: Uint8Array) => {
+      if (!synthRef.current) {
+        bins.fill(0);
+        const beatFrac = ((performance.now() / 1000) * 1.8) % 1;
+        return { beatPulse: Math.exp(-beatFrac * 4), bassEnergy: 0 };
+      }
+      return synthRef.current.sampleVisuals(bins);
+    },
+    [],
+  );
 
   // Dispose synth and cancel speech on unmount
   useEffect(() => {
@@ -100,6 +124,7 @@ export function GameScreen() {
       synth.init();
       synth.setMuted(settingsRef.current.muted);
       synth.setVolumes(settingsRef.current.volumes);
+      synth.startBeat(computeStageBpm(1, speedMultiplier));
       warmUpSpeech();
 
       const pool = getWordsByFilter(level);
@@ -176,17 +201,20 @@ export function GameScreen() {
   const handlePause = useCallback(() => {
     if (phase !== "playing") return;
     cancelSpeech();
+    synthRef.current?.stopBeat();
     engineRef.current?.pause();
     setPhase("paused");
   }, [phase]);
 
   const handleResume = useCallback(() => {
     if (phase !== "paused") return;
+    synthRef.current?.startBeat(computeStageBpm(hud.stage, settingsRef.current.speedMultiplier));
     engineRef.current?.resume();
     setPhase("playing");
-  }, [phase]);
+  }, [hud.stage, phase]);
 
   const handleQuit = useCallback(() => {
+    synthRef.current?.stopBeat();
     engineRef.current?.quit();
   }, []);
 
@@ -195,7 +223,6 @@ export function GameScreen() {
     if (phase !== "playing" && phase !== "paused") return;
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
-      // Avoid double-handling when typing into the mobile system keyboard hidden input.
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
 
       if (phase === "paused") {
@@ -267,6 +294,14 @@ export function GameScreen() {
     updateSettings({ volumes: DEFAULT_VOLUMES });
   }, []);
 
+  const handleTestBeat = useCallback(() => {
+    const synth = getSynth();
+    synth.init();
+    synth.setMuted(settingsRef.current.muted);
+    synth.setVolumes(settingsRef.current.volumes);
+    synth.playTestBeat();
+  }, [getSynth]);
+
   const handleTestPiano = useCallback(() => {
     const synth = getSynth();
     synth.init();
@@ -304,13 +339,20 @@ export function GameScreen() {
         accent={settings.accent}
         volumes={settings.volumes}
         muted={settings.muted}
+        sampleAudio={sampleAudio}
         onChangeMode={(mode) => updateSettings({ mode })}
         onChangeLevel={(level) => updateSettings({ level })}
         onChangeSpeed={handleChangeSpeed}
         onTogglePronounce={() => updateSettings({ pronounceOnClear: !settings.pronounceOnClear })}
+        onToggleMute={() => {
+          const nextMuted = !settings.muted;
+          if (nextMuted) cancelSpeech();
+          updateSettings({ muted: nextMuted });
+        }}
         onChangeAccent={(accent) => updateSettings({ accent })}
         onChangeVolumes={handleChangeVolumes}
         onResetVolumes={handleResetVolumes}
+        onTestBeat={handleTestBeat}
         onTestPiano={handleTestPiano}
         onTestSfx={handleTestSfx}
         onTestVoice={handleTestVoice}
@@ -331,12 +373,13 @@ export function GameScreen() {
   }
 
   return (
-    <div className="relative flex h-dvh flex-col overflow-hidden bg-[#050507]">
-      <div className="pointer-events-none absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.09)_0%,transparent_65%)] md:block" />
+    <div className="relative flex h-dvh flex-col overflow-hidden bg-[#05060c]">
+      <div className="pointer-events-none absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.09)_0%,rgba(236,72,153,0.06)_40%,transparent_72%)] md:block" />
 
-      <div className="relative z-10 mx-auto flex min-h-0 w-full flex-1 flex-col md:max-w-[720px] md:border-x md:border-orange-500/35 md:shadow-[0_0_50px_rgba(249,115,22,0.14)]">
+      <div className="relative z-10 mx-auto flex min-h-0 w-full flex-1 flex-col md:max-w-[740px] md:border-x md:border-cyan-500/30 md:shadow-[0_0_50px_rgba(34,211,238,0.12)]">
         <HUD
           hud={hud}
+          bpm={currentBpm}
           muted={settings.muted}
           pronounceOnClear={settings.pronounceOnClear}
           onToggleMute={() => {
@@ -358,8 +401,11 @@ export function GameScreen() {
             engine={session.engine}
             isPlaying={phase === "playing"}
             lanes={lanes}
+            combo={hud.combo}
+            multiplier={hud.multiplier}
             targetWord={hud.targetWord}
             targetProgress={hud.targetProgress}
+            sampleAudio={sampleAudio}
             onHudUpdate={setHud}
             onAudioEvent={handleAudioEvent}
           />
@@ -386,6 +432,7 @@ export function GameScreen() {
           onChangeSpeed={handleChangeSpeed}
           onChangeVolumes={handleChangeVolumes}
           onResetVolumes={handleResetVolumes}
+          onTestBeat={handleTestBeat}
           onTestPiano={handleTestPiano}
           onTestSfx={handleTestSfx}
           onTestVoice={handleTestVoice}

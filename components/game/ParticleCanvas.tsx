@@ -6,6 +6,7 @@ import { ParticleSystem } from "@/lib/fx/particles";
 export interface ParticleCanvasHandle {
   spark: (x: number, y: number, color: string, count?: number) => void;
   burst: (x: number, y: number, color: string, width?: number, count?: number) => void;
+  ring: (x: number, y: number, color: string, maxRadius?: number) => void;
   resize: (width: number, height: number) => void;
 }
 
@@ -29,6 +30,7 @@ export const ParticleCanvas = forwardRef<ParticleCanvasHandle>(function Particle
     () => ({
       spark: (x, y, color, count) => sysRef.current?.spark(x, y, color, count),
       burst: (x, y, color, width, count) => sysRef.current?.burst(x, y, color, width, count),
+      ring: (x, y, color, maxRadius) => sysRef.current?.ring(x, y, color, maxRadius),
       resize: (w, h) => sysRef.current?.resize(w, h),
     }),
     [],

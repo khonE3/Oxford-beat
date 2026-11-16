@@ -31,26 +31,22 @@ export function SpeedControl({ speedMultiplier, onChange, compact = false }: Spe
     <div
       className={
         compact
-          ? "space-y-2.5 rounded-xl border border-zinc-800 bg-zinc-950/90 p-3.5 text-left"
-          : "space-y-3"
+          ? "space-y-2.5 rounded-xl border border-cyan-500/25 bg-[#090b14]/90 p-3.5 text-left"
+          : "space-y-2.5"
       }
     >
       <div className="flex items-center justify-between gap-2">
-        <span
-          className={`inline-flex items-center gap-1.5 font-bold tracking-wider uppercase ${
-            compact ? "font-mono text-xs text-zinc-200" : "text-xs text-zinc-200 sm:text-sm"
-          }`}
-        >
-          <Gauge className="h-3.5 w-3.5 text-orange-400" aria-hidden="true" />
-          {compact ? "Note Speed" : "ความเร็วโน้ต (3 โหมด + ปรับแมนนวล)"}
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs font-bold tracking-wider text-cyan-200 uppercase">
+          <Gauge className="h-3.5 w-3.5 text-cyan-400" aria-hidden="true" />
+          {compact ? "Note Speed" : "Note Speed (3 โหมด + ปรับแมนนวล)"}
         </span>
         <div className="flex items-center gap-1.5">
           {!matchedPreset && (
-            <span className="rounded bg-orange-500/20 px-1.5 py-0.5 font-mono text-[10px] font-bold text-orange-300 uppercase">
+            <span className="rounded border border-pink-500/40 bg-pink-500/15 px-1.5 py-0.5 font-mono text-[10px] font-bold text-pink-300 uppercase">
               Manual
             </span>
           )}
-          <span className="font-mono text-xs font-extrabold text-amber-300 tabular-nums">
+          <span className="rounded-md border border-cyan-500/40 bg-cyan-500/10 px-2 py-0.5 font-mono text-xs font-extrabold text-cyan-300 tabular-nums">
             {speedMultiplier.toFixed(2)}x
           </span>
         </div>
@@ -66,14 +62,14 @@ export function SpeedControl({ speedMultiplier, onChange, compact = false }: Spe
               key={s}
               type="button"
               onClick={() => onChange(s, mult)}
-              className={`rounded-xl border px-2.5 py-2 text-center transition active:scale-[0.98] ${
+              className={`rounded-xl border px-2.5 py-2 text-center transition duration-150 active:translate-y-[1px] active:scale-[0.97] ${
                 active
-                  ? "border-amber-400 bg-amber-500/20 text-amber-200 shadow-[0_0_16px_rgba(245,158,11,0.25)]"
-                  : "border-zinc-800 bg-zinc-950/75 text-zinc-200 hover:border-zinc-700"
+                  ? "border-cyan-400 bg-gradient-to-b from-cyan-500/20 to-violet-500/15 text-cyan-100 shadow-[0_0_18px_rgba(34,211,238,0.22)]"
+                  : "border-zinc-800 bg-[#0b0e18] text-zinc-300 hover:border-cyan-500/40 hover:bg-zinc-900"
               }`}
             >
               <div className="font-mono text-xs font-bold sm:text-sm">{SPEED_LABELS[s].title}</div>
-              <div className="text-[11px] text-zinc-300">
+              <div className="text-[11px] text-zinc-400">
                 {SPEED_LABELS[s].subtitle} ({mult.toFixed(2)}x)
               </div>
             </button>
@@ -82,7 +78,7 @@ export function SpeedControl({ speedMultiplier, onChange, compact = false }: Spe
       </div>
 
       {/* Manual Speed Slider */}
-      <div className="space-y-1 rounded-xl border border-zinc-800/90 bg-zinc-950/70 px-3 py-2">
+      <div className="space-y-1.5 rounded-xl border border-zinc-800/90 bg-[#090b14]/80 px-3 py-2">
         <div className="flex items-center justify-between text-xs text-zinc-300">
           <label htmlFor={compact ? "speed-slider-pause" : "speed-slider-start"} className="font-medium">
             ปรับความเร็วแบบแมนนวล
@@ -102,7 +98,7 @@ export function SpeedControl({ speedMultiplier, onChange, compact = false }: Spe
             const nextMult = Number(e.target.value);
             onChange(nearestPreset(nextMult), nextMult);
           }}
-          className="h-2 w-full cursor-grab appearance-none rounded-lg bg-zinc-800 accent-orange-500 active:cursor-grabbing"
+          className="h-2 w-full cursor-grab appearance-none rounded-lg bg-zinc-800 accent-cyan-400 active:cursor-grabbing"
         />
       </div>
     </div>

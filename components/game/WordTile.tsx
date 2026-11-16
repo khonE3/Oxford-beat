@@ -61,18 +61,18 @@ export const WordTile = memo(function WordTile({
           onAnimationEnd={() => {
             if (shaking) onShakeEnd(uid);
           }}
-          className={`relative flex flex-col items-center justify-center overflow-hidden rounded-2xl border bg-zinc-950/95 backdrop-blur-md transition-[box-shadow,border-color,transform] duration-150 ${boxSizeClass} ${
+          className={`relative flex flex-col items-center justify-center overflow-hidden rounded-2xl border bg-[#0d1222]/95 shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] transition-[box-shadow,border-color,transform] duration-100 ${boxSizeClass} ${
             locked
-              ? "scale-[1.06] border-orange-400 shadow-[0_0_28px_rgba(249,115,22,0.65)] ring-2 ring-orange-400/70"
+              ? "scale-[1.07] border-cyan-300 shadow-[0_0_24px_rgba(34,211,238,0.55),inset_0_1px_0_rgba(255,255,255,0.3)] ring-1 ring-cyan-300/80"
               : `${laneStyle.border} ${laneStyle.glow}`
-          } ${shaking ? "animate-tile-shake border-rose-500 ring-2 ring-rose-500/60" : ""}`}
+          } ${shaking ? "animate-tile-shake border-rose-500 ring-2 ring-rose-500/70" : ""}`}
         >
           <div className={`absolute top-0 right-0 left-0 h-1.5 sm:h-2 ${laneStyle.topBar}`} />
           <span className={`font-mono font-black tracking-wide text-white lowercase ${letterSizeClass}`}>
             {letter ?? ""}
           </span>
           {locked && (
-            <span className="mt-0.5 font-mono text-[9px] font-bold tracking-widest text-orange-300 uppercase sm:text-[10px]">
+            <span className="mt-0.5 font-mono text-[9px] font-extrabold tracking-widest text-cyan-300 uppercase sm:text-[10px]">
               NEXT
             </span>
           )}
@@ -102,13 +102,13 @@ export const WordTile = memo(function WordTile({
         onAnimationEnd={() => {
           if (shaking) onShakeEnd(uid);
         }}
-        className={`relative flex max-w-[144px] flex-col items-center overflow-hidden rounded-xl border bg-zinc-950/95 px-3 pt-3.5 pb-3 backdrop-blur-md transition-[box-shadow,border-color,transform] duration-150 sm:max-w-[176px] sm:px-3.5 sm:pt-4 sm:pb-3.5 ${
+        className={`relative flex max-w-[144px] flex-col items-center overflow-hidden rounded-2xl border bg-[#0d1222]/95 px-3 pt-3.5 pb-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] transition-[box-shadow,border-color,transform] duration-100 sm:max-w-[176px] sm:px-3.5 sm:pt-4 sm:pb-3.5 ${
           locked
-            ? "scale-[1.05] border-orange-400 shadow-[0_0_28px_rgba(249,115,22,0.55)] ring-2 ring-orange-400/60"
+            ? "scale-[1.05] border-cyan-300 shadow-[0_0_24px_rgba(34,211,238,0.5),inset_0_1px_0_rgba(255,255,255,0.28)] ring-1 ring-cyan-300/70"
             : `${laneStyle.border} ${laneStyle.glow}`
-        } ${shaking ? "animate-tile-shake border-rose-500 ring-2 ring-rose-500/60" : ""}`}
+        } ${shaking ? "animate-tile-shake border-rose-500 ring-2 ring-rose-500/70" : ""}`}
       >
-        {/* Top osu!mania lane color bar */}
+        {/* Top crystal lane color bar */}
         <div className={`absolute top-0 right-0 left-0 h-1.5 ${laneStyle.topBar}`} />
 
         {/* Top badges */}
@@ -120,7 +120,7 @@ export const WordTile = memo(function WordTile({
         {/* English word with typed / next / remaining highlight */}
         <div className={`font-mono font-extrabold tracking-wide lowercase whitespace-nowrap ${wordSizeClass}`}>
           {donePart && (
-            <span className="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.85)]">
+            <span className="text-emerald-300 drop-shadow-[0_0_8px_rgba(52,211,153,0.85)]">
               {donePart}
             </span>
           )}
@@ -128,13 +128,13 @@ export const WordTile = memo(function WordTile({
             <span
               className={`relative inline-block ${
                 locked
-                  ? "text-white underline decoration-orange-400 decoration-2 underline-offset-4"
+                  ? "text-white underline decoration-cyan-400 decoration-2 underline-offset-4"
                   : "text-white"
               }`}
             >
               {nextChar}
               {locked && (
-                <span className="animate-caret absolute right-0 -bottom-1 left-0 h-0.5 rounded-full bg-orange-400" />
+                <span className="animate-caret absolute right-0 -bottom-1 left-0 h-0.5 rounded-full bg-cyan-400" />
               )}
             </span>
           )}
@@ -143,7 +143,7 @@ export const WordTile = memo(function WordTile({
           )}
         </div>
 
-        {/* Thai meaning */}
+        {/* Thai meaning (distinct warm amber hue from English text) */}
         <div className="mt-1.5 max-w-full truncate text-center text-xs font-medium text-amber-200 sm:text-sm">
           {word.meaning_th}
         </div>

@@ -88,6 +88,7 @@ export type Accent = "en-GB" | "en-US";
 
 export interface VolumeSettings {
   master: number;
+  beat: number;
   piano: number;
   sfx: number;
   voice: number;
@@ -95,6 +96,7 @@ export interface VolumeSettings {
 
 export const DEFAULT_VOLUMES: VolumeSettings = {
   master: 0.85,
+  beat: 0.45,
   piano: 0.8,
   sfx: 0.75,
   voice: 0.9,

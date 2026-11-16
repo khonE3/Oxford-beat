@@ -10,15 +10,26 @@ interface Particle {
   shape: "dot" | "spark";
 }
 
-const MAX_PARTICLES = 450;
+interface ShockRing {
+  x: number;
+  y: number;
+  life: number;
+  maxLife: number;
+  maxRadius: number;
+  color: string;
+}
+
+const MAX_PARTICLES = 480;
+const MAX_RINGS = 24;
 const GRAVITY = 520; // px/s²
 
 /**
- * Lightweight particle renderer for a full-size overlay canvas.
- * It only runs its own rAF loop while particles are alive.
+ * Lightweight particle + shockwave renderer for a full-size overlay canvas.
+ * Only runs its own rAF loop while particles or shockwave rings are alive.
  */
 export class ParticleSystem {
   private particles: Particle[] = [];
+  private rings: ShockRing[] = [];
   private ctx: CanvasRenderingContext2D | null;
   private raf = 0;
   private last = 0;
@@ -45,19 +56,34 @@ export class ParticleSystem {
     this.particles.push(p);
   }
 
-  /** Small spark for a correct keystroke. */
-  spark(x: number, y: number, color: string, count = 7): void {
+  /** Expanding rhythm shockwave ring on hit or completion. */
+  ring(x: number, y: number, color: string, maxRadius = 64): void {
+    if (this.rings.length >= MAX_RINGS) this.rings.shift();
+    this.rings.push({
+      x,
+      y,
+      life: 0,
+      maxLife: 0.36,
+      maxRadius,
+      color,
+    });
+    this.ensureRunning();
+  }
+
+  /** Small spark + subtle ring for a correct keystroke. */
+  spark(x: number, y: number, color: string, count = 9): void {
+    this.ring(x, y, color, 44);
     for (let i = 0; i < count; i++) {
-      const angle = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.1;
-      const speed = 90 + Math.random() * 160;
+      const angle = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.2;
+      const speed = 95 + Math.random() * 175;
       this.add({
         x,
         y,
         vx: Math.cos(angle) * speed,
         vy: Math.sin(angle) * speed,
         life: 0,
-        maxLife: 0.35 + Math.random() * 0.25,
-        size: 1.5 + Math.random() * 1.8,
+        maxLife: 0.32 + Math.random() * 0.22,
+        size: 1.6 + Math.random() * 1.8,
         color,
         shape: "spark",
       });
@@ -65,21 +91,23 @@ export class ParticleSystem {
     this.ensureRunning();
   }
 
-  /** Large explosion when a word tile is destroyed. */
-  burst(x: number, y: number, color: string, width = 120, count = 42): void {
+  /** Large explosion + double shockwave ring when a note or word is cleared. */
+  burst(x: number, y: number, color: string, width = 120, count = 44): void {
+    this.ring(x, y, color, Math.max(76, width * 0.65));
+    this.ring(x, y, "#ffffff", Math.max(46, width * 0.38));
     for (let i = 0; i < count; i++) {
       const angle = Math.random() * Math.PI * 2;
-      const speed = 120 + Math.random() * 320;
+      const speed = 130 + Math.random() * 340;
       this.add({
-        x: x + (Math.random() - 0.5) * width * 0.8,
-        y: y + (Math.random() - 0.5) * 30,
+        x: x + (Math.random() - 0.5) * width * 0.75,
+        y: y + (Math.random() - 0.5) * 28,
         vx: Math.cos(angle) * speed,
-        vy: Math.sin(angle) * speed - 120,
+        vy: Math.sin(angle) * speed - 125,
         life: 0,
-        maxLife: 0.5 + Math.random() * 0.5,
-        size: 2 + Math.random() * 3,
-        color: Math.random() < 0.25 ? "#ffffff" : color,
-        shape: Math.random() < 0.5 ? "spark" : "dot",
+        maxLife: 0.45 + Math.random() * 0.48,
+        size: 2 + Math.random() * 3.2,
+        color: Math.random() < 0.28 ? "#ffffff" : color,
+        shape: Math.random() < 0.55 ? "spark" : "dot",
       });
     }
     this.ensureRunning();
@@ -101,6 +129,24 @@ export class ParticleSystem {
     ctx.clearRect(0, 0, this.width, this.height);
     ctx.globalCompositeOperation = "lighter";
 
+    // Draw expanding rhythm rings
+    const aliveRings: ShockRing[] = [];
+    for (const r of this.rings) {
+      r.life += dt;
+      if (r.life >= r.maxLife) continue;
+      const prog = r.life / r.maxLife;
+      const eased = 1 - Math.pow(1 - prog, 3);
+      const radius = 8 + eased * r.maxRadius;
+      ctx.globalAlpha = (1 - prog) * 0.85;
+      ctx.strokeStyle = r.color;
+      ctx.lineWidth = Math.max(1, (1 - prog) * 3.5);
+      ctx.beginPath();
+      ctx.arc(r.x, r.y, radius, 0, Math.PI * 2);
+      ctx.stroke();
+      aliveRings.push(r);
+    }
+    this.rings = aliveRings;
+
     const alive: Particle[] = [];
     for (const p of this.particles) {
       p.life += dt;
@@ -114,10 +160,10 @@ export class ParticleSystem {
       ctx.fillStyle = p.color;
       ctx.strokeStyle = p.color;
       if (p.shape === "spark") {
-        ctx.lineWidth = p.size * 0.8;
+        ctx.lineWidth = p.size * 0.85;
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
-        ctx.lineTo(p.x - p.vx * 0.03, p.y - p.vy * 0.03);
+        ctx.lineTo(p.x - p.vx * 0.032, p.y - p.vy * 0.032);
         ctx.stroke();
       } else {
         ctx.beginPath();
@@ -130,7 +176,7 @@ export class ParticleSystem {
     ctx.globalAlpha = 1;
     ctx.globalCompositeOperation = "source-over";
 
-    if (alive.length > 0) {
+    if (alive.length > 0 || aliveRings.length > 0) {
       this.raf = requestAnimationFrame(this.frame);
     } else {
       ctx.clearRect(0, 0, this.width, this.height);
@@ -142,5 +188,6 @@ export class ParticleSystem {
     if (this.raf) cancelAnimationFrame(this.raf);
     this.raf = 0;
     this.particles = [];
+    this.rings = [];
   }
 }

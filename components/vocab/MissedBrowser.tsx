@@ -38,18 +38,18 @@ export function MissedBrowser() {
   }, [isClient, missedMap]);
 
   return (
-    <main className="cyber-grid min-h-dvh px-4 py-6 sm:py-8">
+    <main className="cyber-grid min-h-dvh bg-gradient-to-b from-[#06070d] via-[#090d1e] to-[#0f091a] px-4 py-6 sm:py-8">
       <div className="mx-auto max-w-3xl space-y-5">
         <header className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-orange-400 hover:text-orange-300 hover:underline"
+              className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-cyan-400 hover:text-cyan-300 hover:underline"
             >
               <ArrowLeft className="h-4 w-4" aria-hidden="true" />
               กลับหน้าเกม
             </Link>
-            <h1 className="mt-1 font-mono text-2xl font-black text-white sm:text-3xl">
+            <h1 className="mt-1 bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text font-mono text-2xl font-black text-transparent sm:text-3xl">
               Missed &amp; Tricky Words
             </h1>
             <p className="text-sm text-zinc-300">
@@ -58,7 +58,7 @@ export function MissedBrowser() {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <div className="flex rounded-xl border border-zinc-800 bg-zinc-900 p-1">
+            <div className="flex rounded-xl border border-zinc-800 bg-[#080b16] p-1">
               {(
                 [
                   { id: "en-GB", label: "UK" },
@@ -71,7 +71,7 @@ export function MissedBrowser() {
                   onClick={() => updateSettings({ accent: opt.id })}
                   className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
                     settings.accent === opt.id
-                      ? "bg-orange-500/20 text-orange-300"
+                      ? "bg-cyan-500/20 text-cyan-300"
                       : "text-zinc-400 hover:text-zinc-100"
                   }`}
                 >
@@ -82,9 +82,9 @@ export function MissedBrowser() {
             </div>
             <Link
               href="/vocab"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-zinc-700 bg-zinc-900 px-3.5 py-2 text-sm font-semibold text-zinc-200 transition hover:border-orange-500/40 hover:bg-zinc-800"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-zinc-700 bg-[#080b16] px-3.5 py-2 text-sm font-semibold text-zinc-200 transition hover:border-cyan-400/50 hover:bg-zinc-900"
             >
-              <BookOpen className="h-4 w-4 text-orange-400" aria-hidden="true" />
+              <BookOpen className="h-4 w-4 text-cyan-400" aria-hidden="true" />
               คลังคำศัพท์
             </Link>
             {records.length > 0 && (
@@ -101,18 +101,18 @@ export function MissedBrowser() {
         </header>
 
         {!isClient ? (
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/70 py-12 text-center text-sm text-zinc-300">
+          <div className="rounded-2xl border border-zinc-800 bg-[#080b16]/90 py-12 text-center text-sm text-zinc-300">
             กำลังโหลดข้อมูล...
           </div>
         ) : records.length === 0 ? (
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/70 px-4 py-12 text-center">
+          <div className="rounded-2xl border border-cyan-500/25 bg-[#080b16]/90 px-4 py-12 text-center">
             <p className="text-base font-semibold text-zinc-100">ยังไม่มีคำศัพท์ที่พลาด</p>
             <p className="mt-1 text-sm text-zinc-300">
               เมื่อเล่นเกมแล้วมีคำที่ตกเส้นหรือพิมพ์ผิด ระบบจะบันทึกมาแสดงที่นี่ให้อัตโนมัติ
             </p>
             <Link
               href="/"
-              className="mt-4 inline-block rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 px-5 py-2.5 font-mono text-sm font-black text-zinc-950 uppercase shadow-lg shadow-orange-500/20"
+              className="mt-4 inline-block rounded-xl bg-gradient-to-r from-cyan-400 to-pink-500 px-5 py-2.5 font-mono text-sm font-black text-zinc-950 uppercase shadow-[0_0_24px_rgba(34,211,238,0.28)] transition hover:brightness-110 active:scale-[0.99]"
             >
               ไปเล่นเกมเลย
             </Link>

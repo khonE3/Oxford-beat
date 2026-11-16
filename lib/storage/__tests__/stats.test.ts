@@ -15,6 +15,7 @@ describe("storage settings & missed records", () => {
   test("normalizeSettings preserves partial volume overrides", () => {
     const partial = normalizeSettings({ volumes: { master: 0.5 } as typeof DEFAULT_VOLUMES });
     expect(partial.volumes.master).toBe(0.5);
+    expect(partial.volumes.beat).toBe(DEFAULT_VOLUMES.beat);
     expect(partial.volumes.piano).toBe(DEFAULT_VOLUMES.piano);
     expect(partial.volumes.sfx).toBe(DEFAULT_VOLUMES.sfx);
     expect(partial.volumes.voice).toBe(DEFAULT_VOLUMES.voice);

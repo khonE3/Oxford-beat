@@ -52,7 +52,7 @@ export function VirtualKeyboard({
 
   if (mode === "system") {
     return (
-      <div className="z-30 flex items-center justify-between gap-2 border-t border-zinc-800 bg-[#09090b]/95 px-3 py-2 backdrop-blur-md">
+      <div className="z-30 flex items-center justify-between gap-2 border-t border-cyan-500/20 bg-[#070a14]/95 px-3 py-2 backdrop-blur-md">
         <input
           ref={inputRef}
           type="text"
@@ -82,7 +82,7 @@ export function VirtualKeyboard({
         <button
           type="button"
           onClick={() => inputRef.current?.focus()}
-          className="inline-flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-lg border border-orange-500/50 bg-orange-500/15 px-3 py-2 text-xs font-semibold text-orange-200 transition active:scale-[0.98]"
+          className="inline-flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl border border-cyan-400/50 bg-cyan-500/15 px-3 py-2 text-xs font-semibold text-cyan-100 transition active:scale-[0.98]"
         >
           <Keyboard className="h-4 w-4 shrink-0" aria-hidden="true" />
           แตะเพื่อเปิดคีย์บอร์ดระบบ
@@ -95,10 +95,10 @@ export function VirtualKeyboard({
               triggerPress("__system_unlock__");
               onCancelLock();
             }}
-            className={`inline-flex cursor-pointer items-center gap-1 rounded-lg border px-3 py-2 font-mono text-xs font-bold transition duration-75 ${
+            className={`inline-flex cursor-pointer items-center gap-1 rounded-xl border px-3 py-2 font-mono text-xs font-bold transition duration-75 ${
               pressedKey === "__system_unlock__"
-                ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
-                : "border-zinc-700 bg-zinc-800 text-zinc-200"
+                ? "translate-y-[1px] scale-[0.92] border-cyan-300 bg-cyan-500/25 text-cyan-100 shadow-[0_0_12px_rgba(34,211,238,0.45)]"
+                : "border-zinc-700 bg-zinc-900 text-zinc-200"
             }`}
           >
             <Delete className="h-4 w-4" aria-hidden="true" />
@@ -108,7 +108,7 @@ export function VirtualKeyboard({
         <button
           type="button"
           onClick={onToggleMode}
-          className="cursor-pointer rounded-lg border border-zinc-700 bg-zinc-900 px-2.5 py-2 text-xs font-medium text-zinc-200 transition hover:border-orange-500/50 active:scale-95"
+          className="cursor-pointer rounded-xl border border-zinc-700 bg-zinc-900 px-2.5 py-2 text-xs font-medium text-zinc-200 transition hover:border-cyan-400/50 active:scale-95"
           title="สลับกลับไปใช้คีย์บอร์ดในเกม"
         >
           คีย์บอร์ดเกม
@@ -118,7 +118,7 @@ export function VirtualKeyboard({
   }
 
   return (
-    <div className="z-30 select-none border-t border-zinc-800 bg-[#09090b]/95 px-1.5 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur-md">
+    <div className="z-30 select-none border-t border-cyan-500/20 bg-[#070a14]/95 px-1.5 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur-md">
       <div className="mx-auto flex max-w-lg flex-col gap-1.5">
         {ROWS.map((row, rowIndex) => (
           <div key={rowIndex} className="flex justify-center gap-1">
@@ -131,10 +131,10 @@ export function VirtualKeyboard({
                 }}
                 title="สลับไปใช้คีย์บอร์ดระบบ"
                 aria-label="สลับไปใช้คีย์บอร์ดระบบ"
-                className={`flex h-11 min-w-[2.4rem] cursor-pointer items-center justify-center rounded-lg border px-1.5 transition duration-75 ${
+                className={`flex h-11 min-w-[2.4rem] cursor-pointer items-center justify-center rounded-xl border px-1.5 transition duration-75 ${
                   pressedKey === "__toggle__"
-                    ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
-                    : "border-zinc-700 bg-zinc-900 text-zinc-200 hover:border-orange-500/50"
+                    ? "translate-y-[1px] scale-[0.92] border-cyan-300 bg-cyan-500/25 text-cyan-100 shadow-[0_0_12px_rgba(34,211,238,0.45)]"
+                    : "border-zinc-700/90 bg-[#0d1222] text-zinc-200 hover:border-cyan-400/50"
                 }`}
               >
                 <Keyboard className="h-4 w-4" aria-hidden="true" />
@@ -152,10 +152,10 @@ export function VirtualKeyboard({
                     triggerPress(key);
                     onChar(key);
                   }}
-                  className={`flex h-11 flex-1 cursor-pointer items-center justify-center rounded-lg border font-mono text-base font-bold lowercase transition duration-75 sm:text-lg ${
+                  className={`flex h-11 flex-1 cursor-pointer items-center justify-center rounded-xl border font-mono text-base font-bold lowercase shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] transition duration-75 sm:text-lg ${
                     isPressed
-                      ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
-                      : "border-zinc-700 bg-zinc-800/95 text-zinc-100 hover:bg-zinc-700"
+                      ? "translate-y-[1px] scale-[0.92] border-cyan-300 bg-cyan-500/30 text-white shadow-[0_0_14px_rgba(34,211,238,0.5)]"
+                      : "border-zinc-700/80 bg-[#0e1426] text-zinc-100 hover:border-cyan-400/40 hover:bg-[#141c34]"
                   }`}
                 >
                   {key}
@@ -173,12 +173,12 @@ export function VirtualKeyboard({
                 }}
                 aria-label="ปลดล็อกคำที่เลือกอยู่"
                 title="ปลดล็อกคำ (Backspace)"
-                className={`flex h-11 min-w-[2.7rem] cursor-pointer items-center justify-center rounded-lg border px-2 font-mono text-sm font-bold transition duration-75 ${
+                className={`flex h-11 min-w-[2.7rem] cursor-pointer items-center justify-center rounded-xl border px-2 font-mono text-sm font-bold transition duration-75 ${
                   pressedKey === "__backspace__"
-                    ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
+                    ? "translate-y-[1px] scale-[0.92] border-pink-400 bg-pink-500/30 text-white shadow-[0_0_14px_rgba(236,72,153,0.45)]"
                     : hasLock
-                      ? "border-amber-400/60 bg-amber-500/20 text-amber-200"
-                      : "border-zinc-700 bg-zinc-900 text-zinc-500"
+                      ? "border-pink-400/60 bg-pink-500/20 text-pink-200"
+                      : "border-zinc-700/90 bg-[#0d1222] text-zinc-500"
                 }`}
               >
                 <Delete className="h-4 w-4" aria-hidden="true" />

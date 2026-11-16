@@ -53,19 +53,19 @@ export function VocabBrowser() {
   }, [query, level, pos]);
 
   return (
-    <main className="cyber-grid min-h-dvh px-4 py-6 sm:py-8">
+    <main className="cyber-grid min-h-dvh bg-gradient-to-b from-[#06070d] via-[#090d1e] to-[#0f091a] px-4 py-6 sm:py-8">
       <div className="mx-auto max-w-4xl space-y-5">
         {/* Header */}
         <header className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-orange-400 hover:text-orange-300 hover:underline"
+              className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-cyan-400 hover:text-cyan-300 hover:underline"
             >
               <ArrowLeft className="h-4 w-4" aria-hidden="true" />
               กลับหน้าเกม
             </Link>
-            <h1 className="mt-1 font-mono text-2xl font-black text-white sm:text-3xl">
+            <h1 className="mt-1 bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text font-mono text-2xl font-black text-transparent sm:text-3xl">
               Oxford 3000 Vocabulary
             </h1>
             <p className="text-sm text-zinc-300">
@@ -73,7 +73,7 @@ export function VocabBrowser() {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
-            <div className="flex rounded-xl border border-zinc-800 bg-zinc-900 p-1">
+            <div className="flex rounded-xl border border-zinc-800 bg-[#080b16] p-1">
               {(
                 [
                   { id: "en-GB", label: "UK" },
@@ -86,7 +86,7 @@ export function VocabBrowser() {
                   onClick={() => updateSettings({ accent: opt.id })}
                   className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
                     settings.accent === opt.id
-                      ? "bg-orange-500/20 text-orange-300"
+                      ? "bg-cyan-500/20 text-cyan-300"
                       : "text-zinc-400 hover:text-zinc-100"
                   }`}
                 >
@@ -97,7 +97,7 @@ export function VocabBrowser() {
             </div>
             <Link
               href="/missed"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-rose-500/40 bg-rose-500/10 px-3.5 py-2 text-sm font-semibold text-rose-200 transition hover:bg-rose-500/20"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-pink-500/40 bg-pink-500/10 px-3.5 py-2 text-sm font-semibold text-pink-200 transition hover:bg-pink-500/20"
             >
               <Target className="h-4 w-4" aria-hidden="true" />
               ดูคำที่พลาดบ่อย
@@ -106,7 +106,7 @@ export function VocabBrowser() {
         </header>
 
         {/* Filters */}
-        <section className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/90 p-4 backdrop-blur-md">
+        <section className="space-y-3 rounded-2xl border border-cyan-500/25 bg-[#080b16]/90 p-4 backdrop-blur-md">
           <div className="relative">
             <Search
               className="pointer-events-none absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-zinc-400"
@@ -120,7 +120,7 @@ export function VocabBrowser() {
                 setVisibleCount(PAGE_SIZE);
               }}
               placeholder="ค้นหาคำศัพท์ภาษาอังกฤษ หรือ คำแปลภาษาไทย..."
-              className="w-full rounded-xl border border-zinc-700 bg-zinc-950/90 py-2.5 pr-3.5 pl-10 text-sm text-zinc-100 placeholder-zinc-400 focus:border-orange-500 focus:outline-none"
+              className="w-full rounded-xl border border-zinc-700 bg-[#0b0e1a] py-2.5 pr-3.5 pl-10 text-sm text-zinc-100 placeholder-zinc-400 focus:border-cyan-400 focus:outline-none"
             />
           </div>
 
@@ -136,8 +136,8 @@ export function VocabBrowser() {
                   }}
                   className={`rounded-lg border px-3 py-1.5 font-mono text-xs font-bold transition ${
                     level === lv
-                      ? "border-orange-500 bg-orange-500/20 text-orange-200"
-                      : "border-zinc-800 bg-zinc-950/70 text-zinc-300 hover:border-zinc-700 hover:text-white"
+                      ? "border-cyan-400 bg-cyan-500/20 text-cyan-200"
+                      : "border-zinc-800 bg-[#0b0e1a] text-zinc-300 hover:border-zinc-700 hover:text-white"
                   }`}
                 >
                   {lv}
@@ -185,7 +185,7 @@ export function VocabBrowser() {
                 <button
                   type="button"
                   onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                  className="rounded-xl border border-orange-500/50 bg-orange-500/15 px-6 py-2.5 font-mono text-sm font-bold text-orange-200 transition hover:bg-orange-500/25 active:scale-[0.99]"
+                  className="rounded-xl border border-cyan-400/50 bg-cyan-500/15 px-6 py-2.5 font-mono text-sm font-bold text-cyan-200 transition hover:bg-cyan-500/25 active:scale-[0.99]"
                 >
                   โหลดเพิ่มเติม ({Math.min(PAGE_SIZE, filtered.length - visibleCount)} / เหลือ{" "}
                   {filtered.length - visibleCount} คำ)

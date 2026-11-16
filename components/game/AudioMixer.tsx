@@ -1,7 +1,7 @@
 "use client";
 
 import type { ComponentType } from "react";
-import { Mic, Music2, Play, RotateCcw, SlidersHorizontal, Volume2, Zap } from "lucide-react";
+import { Disc3, Mic, Music2, Play, RotateCcw, SlidersHorizontal, Volume2, Zap } from "lucide-react";
 import { DEFAULT_VOLUMES, type VolumeSettings } from "@/lib/storage/stats";
 
 interface AudioMixerProps {
@@ -9,6 +9,7 @@ interface AudioMixerProps {
   muted?: boolean;
   onChange: (patch: Partial<VolumeSettings>) => void;
   onReset: () => void;
+  onTestBeat?: () => void;
   onTestPiano?: () => void;
   onTestSfx?: () => void;
   onTestVoice?: () => void;
@@ -19,12 +20,42 @@ const CHANNELS: Array<{
   label: string;
   Icon: ComponentType<{ className?: string }>;
   accent: string;
-  testKey?: "piano" | "sfx" | "voice";
+  iconColor: string;
+  testKey?: "beat" | "piano" | "sfx" | "voice";
 }> = [
-  { key: "master", label: "Master (เสียงรวมทั้งหมด)", Icon: Volume2, accent: "accent-orange-500" },
-  { key: "piano", label: "Piano (โน้ตเปียโน & คอร์ด)", Icon: Music2, accent: "accent-amber-400", testKey: "piano" },
-  { key: "sfx", label: "SFX (เอฟเฟกต์แจ้งเตือน)", Icon: Zap, accent: "accent-orange-400", testKey: "sfx" },
-  { key: "voice", label: "Voice (เสียงอ่านคำศัพท์)", Icon: Mic, accent: "accent-emerald-400", testKey: "voice" },
+  { key: "master", label: "Master (เสียงรวมทั้งหมด)", Icon: Volume2, accent: "accent-cyan-400", iconColor: "text-cyan-400" },
+  {
+    key: "beat",
+    label: "Beat Groove (จังหวะดนตรี)",
+    Icon: Disc3,
+    accent: "accent-pink-500",
+    iconColor: "text-pink-400",
+    testKey: "beat",
+  },
+  {
+    key: "piano",
+    label: "Piano (โน้ตเปียโน & คอร์ด)",
+    Icon: Music2,
+    accent: "accent-violet-400",
+    iconColor: "text-violet-400",
+    testKey: "piano",
+  },
+  {
+    key: "sfx",
+    label: "SFX (เอฟเฟกต์แจ้งเตือน)",
+    Icon: Zap,
+    accent: "accent-amber-400",
+    iconColor: "text-amber-400",
+    testKey: "sfx",
+  },
+  {
+    key: "voice",
+    label: "Voice (เสียงอ่านคำศัพท์)",
+    Icon: Mic,
+    accent: "accent-emerald-400",
+    iconColor: "text-emerald-400",
+    testKey: "voice",
+  },
 ];
 
 export function AudioMixer({
@@ -32,28 +63,31 @@ export function AudioMixer({
   muted = false,
   onChange,
   onReset,
+  onTestBeat,
   onTestPiano,
   onTestSfx,
   onTestVoice,
 }: AudioMixerProps) {
   const isDefault =
     volumes.master === DEFAULT_VOLUMES.master &&
+    volumes.beat === DEFAULT_VOLUMES.beat &&
     volumes.piano === DEFAULT_VOLUMES.piano &&
     volumes.sfx === DEFAULT_VOLUMES.sfx &&
     volumes.voice === DEFAULT_VOLUMES.voice;
 
   const handlers = {
+    beat: onTestBeat,
     piano: onTestPiano,
     sfx: onTestSfx,
     voice: onTestVoice,
   };
 
   return (
-    <div className="space-y-3 rounded-xl border border-zinc-800 bg-zinc-950/90 p-3.5 text-left">
+    <div className="space-y-3 rounded-xl border border-cyan-500/25 bg-[#090b14]/90 p-3.5 text-left">
       <div className="flex items-center justify-between gap-2">
-        <span className="inline-flex items-center gap-2 font-mono text-xs font-bold tracking-wider text-zinc-200 uppercase">
-          <SlidersHorizontal className="h-3.5 w-3.5 text-orange-400" aria-hidden="true" />
-          Audio Mixer
+        <span className="inline-flex items-center gap-2 font-mono text-xs font-bold tracking-wider text-cyan-200 uppercase">
+          <SlidersHorizontal className="h-3.5 w-3.5 text-cyan-400" aria-hidden="true" />
+          Sound Studio Mixer
         </span>
         <div className="flex items-center gap-2">
           {muted && (
@@ -65,7 +99,7 @@ export function AudioMixer({
             <button
               type="button"
               onClick={onReset}
-              className="inline-flex items-center gap-1 text-xs text-zinc-400 underline decoration-zinc-600 underline-offset-2 hover:text-orange-300"
+              className="inline-flex items-center gap-1 text-xs text-zinc-400 underline decoration-zinc-600 underline-offset-2 hover:text-cyan-300"
             >
               <RotateCcw className="h-3 w-3" aria-hidden="true" />
               รีเซ็ต
@@ -86,7 +120,7 @@ export function AudioMixer({
                   htmlFor={`vol-${ch.key}`}
                   className="inline-flex items-center gap-1.5 font-medium text-zinc-100"
                 >
-                  <Icon className="h-3.5 w-3.5 text-orange-400" aria-hidden="true" />
+                  <Icon className={`h-3.5 w-3.5 ${ch.iconColor}`} aria-hidden="true" />
                   {ch.label}
                 </label>
                 <div className="flex items-center gap-2">
@@ -99,7 +133,7 @@ export function AudioMixer({
                       onClick={testFn}
                       title="ทดสอบเสียง"
                       aria-label={`ทดสอบเสียง ${ch.label}`}
-                      className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-700 bg-zinc-900 text-zinc-200 transition hover:border-orange-500/60 hover:text-orange-300 active:scale-95"
+                      className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-700 bg-zinc-900 text-zinc-200 transition hover:border-cyan-400/60 hover:text-cyan-300 active:scale-95"
                     >
                       <Play className="h-3 w-3 fill-current" aria-hidden="true" />
                     </button>

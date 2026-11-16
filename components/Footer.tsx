@@ -4,11 +4,11 @@ const GITHUB_URL = "https://github.com/khonE3";
 
 export function Footer() {
   return (
-    <footer className="mt-2 border-t border-zinc-800/80 pt-5 pb-2">
+    <footer className="mt-2 border-t border-cyan-500/20 pt-4 pb-2">
       <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-zinc-400 sm:text-sm">
         <p className="flex items-center gap-1.5">
           <span>สร้างโดย</span>
-          <span className="font-mono font-bold text-orange-300">Gotjitag</span>
+          <span className="font-mono font-bold text-cyan-300">Gotjitag</span>
         </p>
 
         <a
@@ -16,7 +16,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="เปิด GitHub ของ Gotjitag (@khonE3) ในแท็บใหม่"
-          className="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/80 px-3 py-1.5 font-mono text-xs font-semibold text-zinc-200 transition hover:border-orange-500/50 hover:bg-zinc-900 hover:text-orange-300"
+          className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-zinc-700/80 bg-[#080b16]/90 px-3 py-1.5 font-mono text-xs font-semibold text-zinc-200 transition hover:border-cyan-400/60 hover:bg-[#0d1222] hover:text-cyan-300"
         >
           <svg
             viewBox="0 0 24 24"

@@ -6,42 +6,42 @@ export interface LaneStyle {
   keyHint: string;
 }
 
-const LANE_ORANGE: LaneStyle = {
-  topBar: "bg-orange-500",
-  border: "border-orange-500/70",
-  glow: "shadow-[0_0_22px_rgba(249,115,22,0.28)]",
-  hex: "#f97316",
-  keyHint: "bg-orange-500/15 text-orange-300 border-orange-500/35",
+const LANE_CYAN: LaneStyle = {
+  topBar: "bg-gradient-to-r from-cyan-400 to-sky-400",
+  border: "border-cyan-400/75",
+  glow: "shadow-[0_0_20px_rgba(34,211,238,0.28)]",
+  hex: "#22d3ee",
+  keyHint: "bg-cyan-400/15 text-cyan-200 border-cyan-400/40",
 };
 
-const LANE_SILVER: LaneStyle = {
-  topBar: "bg-zinc-100",
-  border: "border-zinc-300/65",
-  glow: "shadow-[0_0_22px_rgba(244,244,245,0.22)]",
-  hex: "#f4f4f5",
-  keyHint: "bg-zinc-100/10 text-zinc-200 border-zinc-400/35",
+const LANE_MAGENTA: LaneStyle = {
+  topBar: "bg-gradient-to-r from-pink-500 to-rose-400",
+  border: "border-pink-500/75",
+  glow: "shadow-[0_0_20px_rgba(236,72,153,0.28)]",
+  hex: "#ec4899",
+  keyHint: "bg-pink-500/15 text-pink-200 border-pink-500/40",
 };
 
 const LANE_AMBER: LaneStyle = {
-  topBar: "bg-amber-400",
-  border: "border-amber-400/70",
-  glow: "shadow-[0_0_22px_rgba(251,191,36,0.28)]",
+  topBar: "bg-gradient-to-r from-amber-300 to-orange-400",
+  border: "border-amber-400/75",
+  glow: "shadow-[0_0_20px_rgba(251,191,36,0.28)]",
   hex: "#fbbf24",
-  keyHint: "bg-amber-400/15 text-amber-200 border-amber-400/35",
+  keyHint: "bg-amber-400/15 text-amber-200 border-amber-400/40",
 };
 
-const LANE_CORAL: LaneStyle = {
-  topBar: "bg-rose-500",
-  border: "border-rose-500/70",
-  glow: "shadow-[0_0_22px_rgba(244,63,94,0.28)]",
-  hex: "#f43f5e",
-  keyHint: "bg-rose-500/15 text-rose-300 border-rose-500/35",
+const LANE_VIOLET: LaneStyle = {
+  topBar: "bg-gradient-to-r from-violet-400 to-fuchsia-400",
+  border: "border-violet-400/75",
+  glow: "shadow-[0_0_20px_rgba(168,85,247,0.28)]",
+  hex: "#a855f7",
+  keyHint: "bg-violet-400/15 text-violet-200 border-violet-400/40",
 };
 
-const FOUR_LANE_STYLES: readonly LaneStyle[] = [LANE_ORANGE, LANE_SILVER, LANE_AMBER, LANE_CORAL];
-const THREE_LANE_STYLES: readonly LaneStyle[] = [LANE_ORANGE, LANE_SILVER, LANE_CORAL];
+const FOUR_LANE_STYLES: readonly LaneStyle[] = [LANE_CYAN, LANE_MAGENTA, LANE_AMBER, LANE_VIOLET];
+const THREE_LANE_STYLES: readonly LaneStyle[] = [LANE_CYAN, LANE_AMBER, LANE_MAGENTA];
 
-/** Distinct osu!mania-inspired note colors per lane. */
+/** Cyber-Stage Neon Idol crystal note colors per lane. */
 export function getLaneStyle(lane: number, totalLanes: number): LaneStyle {
   const palette = totalLanes <= 3 ? THREE_LANE_STYLES : FOUR_LANE_STYLES;
   const idx = ((lane % palette.length) + palette.length) % palette.length;

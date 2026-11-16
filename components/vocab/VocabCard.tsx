@@ -24,8 +24,8 @@ export function VocabCard({ word, extra, highlightDanger = false }: VocabCardPro
 
   return (
     <div
-      className={`group flex items-center justify-between gap-3 rounded-xl border bg-zinc-900/90 px-4 py-3 backdrop-blur-sm transition hover:bg-zinc-900 ${
-        highlightDanger ? "border-rose-500/50 bg-rose-950/20" : style.border
+      className={`group flex items-center justify-between gap-3 rounded-xl border bg-[#080b16]/90 px-4 py-3 transition hover:bg-[#0d1222] ${
+        highlightDanger ? "border-rose-500/50 bg-rose-950/15" : style.border
       }`}
     >
       <div className="min-w-0 flex-1">
@@ -45,7 +45,7 @@ export function VocabCard({ word, extra, highlightDanger = false }: VocabCardPro
             onClick={() => speak(word.word, { accent: settings.accent, volume: voiceVolume })}
             aria-label={`ฟังเสียงคำว่า ${word.word}`}
             title={`ฟังเสียงอ่าน (${word.word})`}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-700 bg-zinc-800 text-zinc-100 transition hover:border-orange-500/70 hover:bg-orange-500/15 hover:text-orange-300 active:scale-95"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-700 bg-zinc-900 text-zinc-100 transition hover:border-cyan-400/70 hover:bg-cyan-500/15 hover:text-cyan-300 active:scale-95"
           >
             <Volume2 className="h-4 w-4" />
           </button>
