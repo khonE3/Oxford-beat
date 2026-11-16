@@ -6,7 +6,7 @@ import { cancelSpeech, speak, warmUpSpeech } from "@/lib/audio/speech";
 import { GameEngine } from "@/lib/engine/GameEngine";
 import { WordDeck } from "@/lib/engine/deck";
 import { MAX_LIVES, comboMultiplier } from "@/lib/engine/scoring";
-import type { GameEvent, GameSummary, HudSnapshot, SpeedSetting } from "@/lib/engine/types";
+import type { GameEvent, GameMode, GameSummary, HudSnapshot, SpeedSetting } from "@/lib/engine/types";
 import { useIsClient, useMediaQuery, useStoredJson } from "@/lib/hooks/useStorage";
 import {
   DEFAULT_SETTINGS,
@@ -33,6 +33,7 @@ import { VirtualKeyboard } from "./VirtualKeyboard";
 type ScreenPhase = "start" | "playing" | "paused" | "gameover";
 
 const INITIAL_HUD: HudSnapshot = {
+  mode: "cascade",
   score: 0,
   combo: 0,
   maxCombo: 0,
@@ -45,6 +46,8 @@ const INITIAL_HUD: HudSnapshot = {
   wordsCleared: 0,
   lockedUid: null,
   nextLetter: null,
+  targetWord: null,
+  targetProgress: 0,
 };
 
 export function GameScreen() {
@@ -92,7 +95,7 @@ export function GameScreen() {
   }, []);
 
   const beginSession = useCallback(
-    (level: LevelFilter, speed: SpeedSetting) => {
+    (level: LevelFilter, speed: SpeedSetting, speedMultiplier: number, mode: GameMode) => {
       const synth = getSynth();
       synth.init();
       synth.setMuted(settingsRef.current.muted);
@@ -107,7 +110,9 @@ export function GameScreen() {
       const engine = new GameEngine({
         deck,
         speed,
+        speedMultiplier,
         filter: level,
+        mode,
         lanes: isMobileWidth ? 3 : 4,
       });
 
@@ -133,11 +138,15 @@ export function GameScreen() {
         }
         case "destroy": {
           const tier = event.multiplier - 1;
-          synth.playChord(tier);
-          const cur = settingsRef.current;
-          const voiceVolume = cur.muted ? 0 : cur.volumes.master * cur.volumes.voice;
-          if (cur.pronounceOnClear && voiceVolume > 0) {
-            speak(event.word.word, { accent: cur.accent, volume: voiceVolume });
+          if (event.kind === "note" && !event.wordCompleted) {
+            synth.playLetter(event.combo % 8, tier);
+          } else {
+            synth.playChord(tier);
+            const cur = settingsRef.current;
+            const voiceVolume = cur.muted ? 0 : cur.volumes.master * cur.volumes.voice;
+            if (cur.pronounceOnClear && voiceVolume > 0) {
+              speak(event.word.word, { accent: cur.accent, volume: voiceVolume });
+            }
           }
           break;
         }
@@ -280,17 +289,24 @@ export function GameScreen() {
     speak("oxford", { accent: cur.accent, volume: vol });
   }, []);
 
+  const handleChangeSpeed = useCallback((speed: SpeedSetting, speedMultiplier: number) => {
+    engineRef.current?.setSpeed(speed, speedMultiplier);
+    updateSettings({ speed, speedMultiplier });
+  }, []);
+
   if (phase === "start") {
     return (
       <StartScreen
+        mode={settings.mode}
         level={settings.level}
-        speed={settings.speed}
+        speedMultiplier={settings.speedMultiplier}
         pronounceOnClear={settings.pronounceOnClear}
         accent={settings.accent}
         volumes={settings.volumes}
         muted={settings.muted}
+        onChangeMode={(mode) => updateSettings({ mode })}
         onChangeLevel={(level) => updateSettings({ level })}
-        onChangeSpeed={(speed) => updateSettings({ speed })}
+        onChangeSpeed={handleChangeSpeed}
         onTogglePronounce={() => updateSettings({ pronounceOnClear: !settings.pronounceOnClear })}
         onChangeAccent={(accent) => updateSettings({ accent })}
         onChangeVolumes={handleChangeVolumes}
@@ -298,7 +314,7 @@ export function GameScreen() {
         onTestPiano={handleTestPiano}
         onTestSfx={handleTestSfx}
         onTestVoice={handleTestVoice}
-        onStart={() => beginSession(settings.level, settings.speed)}
+        onStart={() => beginSession(settings.level, settings.speed, settings.speedMultiplier, settings.mode)}
       />
     );
   }
@@ -308,7 +324,7 @@ export function GameScreen() {
       <GameOverSummary
         summary={summary}
         saveResult={saveResult}
-        onPlayAgain={() => beginSession(settings.level, settings.speed)}
+        onPlayAgain={() => beginSession(settings.level, settings.speed, settings.speedMultiplier, settings.mode)}
         onBackToMenu={() => setPhase("start")}
       />
     );
@@ -318,7 +334,7 @@ export function GameScreen() {
     <div className="relative flex h-dvh flex-col overflow-hidden bg-[#050507]">
       <div className="pointer-events-none absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.09)_0%,transparent_65%)] md:block" />
 
-      <div className="relative z-10 mx-auto flex min-h-0 w-full flex-1 flex-col md:max-w-[660px] md:border-x md:border-orange-500/35 md:shadow-[0_0_50px_rgba(249,115,22,0.14)]">
+      <div className="relative z-10 mx-auto flex min-h-0 w-full flex-1 flex-col md:max-w-[720px] md:border-x md:border-orange-500/35 md:shadow-[0_0_50px_rgba(249,115,22,0.14)]">
         <HUD
           hud={hud}
           muted={settings.muted}
@@ -342,6 +358,8 @@ export function GameScreen() {
             engine={session.engine}
             isPlaying={phase === "playing"}
             lanes={lanes}
+            targetWord={hud.targetWord}
+            targetProgress={hud.targetProgress}
             onHudUpdate={setHud}
             onAudioEvent={handleAudioEvent}
           />
@@ -351,7 +369,6 @@ export function GameScreen() {
       {showMobileKeyboard && (
         <VirtualKeyboard
           mode={settings.inputMode}
-          nextLetter={hud.nextLetter}
           hasLock={hud.lockedUid !== null}
           onChar={(ch) => engineRef.current?.input(ch)}
           onCancelLock={() => engineRef.current?.cancelLock()}
@@ -363,8 +380,10 @@ export function GameScreen() {
 
       {phase === "paused" && (
         <PauseOverlay
+          speedMultiplier={settings.speedMultiplier}
           volumes={settings.volumes}
           muted={settings.muted}
+          onChangeSpeed={handleChangeSpeed}
           onChangeVolumes={handleChangeVolumes}
           onResetVolumes={handleResetVolumes}
           onTestPiano={handleTestPiano}

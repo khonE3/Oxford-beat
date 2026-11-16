@@ -9,13 +9,15 @@ import {
   ChevronUp,
   Globe,
   MessageSquareText,
+  Music2,
   Play,
   SlidersHorizontal,
   Target,
+  Type,
 } from "lucide-react";
 import { speak } from "@/lib/audio/speech";
-import { SPEED_LABELS } from "@/lib/engine/scoring";
-import type { SpeedSetting } from "@/lib/engine/types";
+import { MODE_LABELS } from "@/lib/engine/scoring";
+import type { GameMode, SpeedSetting } from "@/lib/engine/types";
 import { useIsClient, useStoredJson } from "@/lib/hooks/useStorage";
 import {
   DEFAULT_STATS,
@@ -30,16 +32,20 @@ import {
 import { getWordsByFilter } from "@/lib/vocab";
 import { LEVEL_FILTERS, LEVEL_FILTER_LABELS, type LevelFilter } from "@/lib/vocab/types";
 import { AudioMixer } from "./AudioMixer";
+import { SpeedControl } from "./SpeedControl";
+import { Footer } from "@/components/Footer";
 
 interface StartScreenProps {
+  mode: GameMode;
   level: LevelFilter;
-  speed: SpeedSetting;
+  speedMultiplier: number;
   pronounceOnClear: boolean;
   accent: Accent;
   volumes: VolumeSettings;
   muted: boolean;
+  onChangeMode: (mode: GameMode) => void;
   onChangeLevel: (level: LevelFilter) => void;
-  onChangeSpeed: (speed: SpeedSetting) => void;
+  onChangeSpeed: (speed: SpeedSetting, speedMultiplier: number) => void;
   onTogglePronounce: () => void;
   onChangeAccent: (accent: Accent) => void;
   onChangeVolumes: (patch: Partial<VolumeSettings>) => void;
@@ -53,12 +59,14 @@ interface StartScreenProps {
 const EMPTY_MISSED: MissMap = {};
 
 export function StartScreen({
+  mode,
   level,
-  speed,
+  speedMultiplier,
   pronounceOnClear,
   accent,
   volumes,
   muted,
+  onChangeMode,
   onChangeLevel,
   onChangeSpeed,
   onTogglePronounce,
@@ -133,6 +141,55 @@ export function StartScreen({
 
         {/* Configuration Card */}
         <section className="space-y-5 rounded-2xl border border-zinc-800 bg-zinc-900/90 p-4 shadow-2xl backdrop-blur-md sm:p-6">
+          {/* Game Mode */}
+          <div>
+            <div className="mb-2 text-xs font-bold tracking-wider text-zinc-200 uppercase sm:text-sm">
+              โหมดการเล่น (Game Mode)
+            </div>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {(["notes", "cascade"] as const).map((m) => {
+                const active = mode === m;
+                const info = MODE_LABELS[m];
+                const Icon = m === "notes" ? Music2 : Type;
+                return (
+                  <button
+                    key={m}
+                    type="button"
+                    onClick={() => onChangeMode(m)}
+                    className={`flex items-start gap-3 rounded-xl border px-3.5 py-3 text-left transition active:scale-[0.98] ${
+                      active
+                        ? "border-orange-500 bg-orange-500/20 shadow-[0_0_20px_rgba(249,115,22,0.28)]"
+                        : "border-zinc-800 bg-zinc-950/75 hover:border-zinc-700"
+                    }`}
+                  >
+                    <div
+                      className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border ${
+                        active
+                          ? "border-orange-400/60 bg-orange-500/20 text-orange-300"
+                          : "border-zinc-700 bg-zinc-900 text-zinc-400"
+                      }`}
+                    >
+                      <Icon className="h-4.5 w-4.5" aria-hidden="true" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className={`font-mono text-sm font-bold ${active ? "text-orange-200" : "text-white"}`}>
+                          {info.title}
+                        </span>
+                        {m === "notes" && (
+                          <span className="rounded bg-amber-400/20 px-1.5 py-0.5 font-mono text-[10px] font-extrabold text-amber-300">
+                            THAPSTER
+                          </span>
+                        )}
+                      </div>
+                      <div className="mt-0.5 text-xs text-zinc-300">{info.subtitle}</div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {/* CEFR Level */}
           <div>
             <div className="mb-2 flex items-center justify-between">
@@ -179,32 +236,8 @@ export function StartScreen({
             )}
           </div>
 
-          {/* Initial Speed */}
-          <div>
-            <div className="mb-2 text-xs font-bold tracking-wider text-zinc-200 uppercase sm:text-sm">
-              ความเร็วเริ่มต้น (Initial Speed)
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {(["slow", "normal", "fast"] as const).map((s) => {
-                const active = speed === s;
-                return (
-                  <button
-                    key={s}
-                    type="button"
-                    onClick={() => onChangeSpeed(s)}
-                    className={`rounded-xl border px-3 py-2.5 text-center transition active:scale-[0.98] ${
-                      active
-                        ? "border-amber-400 bg-amber-500/20 text-amber-200 shadow-[0_0_16px_rgba(245,158,11,0.25)]"
-                        : "border-zinc-800 bg-zinc-950/75 text-zinc-200 hover:border-zinc-700"
-                    }`}
-                  >
-                    <span className="font-mono text-sm font-bold">{SPEED_LABELS[s].title}</span>
-                    <span className="ml-1.5 text-xs text-zinc-300">({SPEED_LABELS[s].subtitle})</span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+          {/* Note Speed (3 modes + manual) */}
+          <SpeedControl speedMultiplier={speedMultiplier} onChange={onChangeSpeed} />
 
           {/* Pronunciation Settings */}
           <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-950/80 px-3.5 py-3">
@@ -397,6 +430,8 @@ export function StartScreen({
             </details>
           </div>
         </section>
+
+        <Footer />
       </div>
     </main>
   );

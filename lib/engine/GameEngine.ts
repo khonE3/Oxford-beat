@@ -2,9 +2,12 @@ import type { LevelFilter, VocabWord } from "../vocab/types";
 import type { Rng, WordDeck } from "./deck";
 import {
   MAX_LIVES,
+  SPEED_MULTIPLIER,
   calcAccuracy,
   calcWpm,
+  clampCustomSpeed,
   comboMultiplier,
+  notePoints,
   stageForCleared,
   stageParams,
   wordPoints,
@@ -12,6 +15,7 @@ import {
 import type {
   GameEvent,
   GameEventListener,
+  GameMode,
   GameStatus,
   GameSummary,
   HudSnapshot,
@@ -23,14 +27,18 @@ import type {
 export interface GameEngineOptions {
   deck: WordDeck;
   speed: SpeedSetting;
+  speedMultiplier?: number;
   filter: LevelFilter;
   lanes: number;
+  mode?: GameMode;
   maxLives?: number;
   rng?: Rng;
 }
 
 /** Minimum fall progress the newest tile in a lane must have before another spawns in it. */
 export const MIN_LANE_GAP = 0.32;
+/** Smaller lane gap for single-letter notes in Beat Notes mode. */
+export const MIN_NOTE_LANE_GAP = 0.16;
 /** Max number of on-screen words sharing the same first letter. */
 const MAX_SAME_INITIAL = 2;
 /** Live WPM is computed over at least this many ms to avoid wild early values. */
@@ -43,9 +51,11 @@ const LIVE_WPM_MIN_MS = 10_000;
 export class GameEngine {
   status: GameStatus = "idle";
   lanes: number;
+  readonly mode: GameMode;
 
   private readonly deck: WordDeck;
-  private readonly speed: SpeedSetting;
+  private speed: SpeedSetting;
+  private speedMultiplier: number;
   private readonly filter: LevelFilter;
   private readonly maxLives: number;
   private readonly rng: Rng;
@@ -56,6 +66,17 @@ export class GameEngine {
   private uidSeq = 0;
   private lastLane = -1;
   private spawnAccMs = 0;
+
+  private wordInstanceSeq = 0;
+  private activeTarget: {
+    instanceId: number;
+    word: VocabWord;
+    spawnCursor: number;
+    cleared: number;
+    missed: number;
+    typos: number;
+    totalPoints: number;
+  } | null = null;
 
   private score = 0;
   private combo = 0;
@@ -71,7 +92,9 @@ export class GameEngine {
   constructor(options: GameEngineOptions) {
     this.deck = options.deck;
     this.speed = options.speed;
+    this.speedMultiplier = clampCustomSpeed(options.speedMultiplier ?? SPEED_MULTIPLIER[options.speed]);
     this.filter = options.filter;
+    this.mode = options.mode ?? "cascade";
     this.lanes = Math.max(1, options.lanes);
     this.maxLives = options.maxLives ?? MAX_LIVES;
     this.lives = this.maxLives;
@@ -113,12 +136,17 @@ export class GameEngine {
     for (const t of this.tiles) if (t.lane >= n) t.lane = t.lane % n;
   }
 
+  setSpeed(speed: SpeedSetting, speedMultiplier?: number): void {
+    this.speed = speed;
+    this.speedMultiplier = clampCustomSpeed(speedMultiplier ?? SPEED_MULTIPLIER[speed]);
+  }
+
   // ------------------------------------------------------------- game loop
 
   update(dtMs: number): void {
     if (this.status !== "playing" || dtMs <= 0) return;
     this.elapsedMs += dtMs;
-    const params = stageParams(this.stage, this.speed);
+    const params = stageParams(this.stage, this.speedMultiplier);
     const delta = (params.fallSpeed * dtMs) / 1000;
 
     for (const t of this.tiles) t.p += delta;
@@ -126,11 +154,26 @@ export class GameEngine {
     // Tiles that reached the hit line.
     const fallen = this.tiles.filter((t) => t.p >= 1);
     for (const t of fallen) {
+      if (!this.tiles.some((cur) => cur.uid === t.uid)) continue;
       this.removeTile(t.uid);
       if (this.lockedUid === t.uid) this.lockedUid = null;
       this.lives = Math.max(0, this.lives - 1);
-      this.played.push({ word: t.word, outcome: "missed", typos: t.errors, points: 0 });
-      this.emit({ type: "miss", uid: t.uid, word: t.word, lives: this.lives });
+
+      if (t.kind === "note") {
+        // One life lost per word in Beat Notes; clear remaining notes of the missed word so one miss doesn't drain all lives at once.
+        if (this.activeTarget && t.wordInstanceId === this.activeTarget.instanceId) {
+          this.activeTarget.missed++;
+          const remainingCount = this.tiles.filter((cur) => cur.wordInstanceId === t.wordInstanceId).length;
+          this.activeTarget.missed += remainingCount;
+          this.tiles = this.tiles.filter((cur) => cur.wordInstanceId !== t.wordInstanceId);
+        }
+        this.emit({ type: "miss", uid: t.uid, word: t.word, lives: this.lives });
+        this.finalizeActiveWordIfDone();
+      } else {
+        this.played.push({ word: t.word, outcome: "missed", typos: t.errors, points: 0 });
+        this.emit({ type: "miss", uid: t.uid, word: t.word, lives: this.lives });
+      }
+
       if (this.lives <= 0) {
         this.finish();
         return;
@@ -139,22 +182,33 @@ export class GameEngine {
 
     // Spawning.
     this.spawnAccMs += dtMs;
-    const due = this.spawnAccMs >= params.spawnIntervalMs || this.tiles.length === 0;
-    if (due && this.tiles.length < Math.min(params.maxOnScreen, this.lanes * 2)) {
-      if (this.spawn()) this.spawnAccMs = 0;
+    if (this.mode === "notes") {
+      if (!this.activeTarget && this.tiles.length === 0) {
+        if (this.spawnWordNotes()) this.spawnAccMs = 0;
+      }
+    } else {
+      const due = this.spawnAccMs >= params.spawnIntervalMs || this.tiles.length === 0;
+      if (due && this.tiles.length < Math.min(params.maxOnScreen, this.lanes * 2)) {
+        if (this.spawn()) this.spawnAccMs = 0;
+      }
     }
   }
 
-  private spawn(): boolean {
+  private pickLane(minGap: number): number | null {
     const eligible: number[] = [];
     for (let lane = 0; lane < this.lanes; lane++) {
       let minP = Number.POSITIVE_INFINITY;
       for (const t of this.tiles) if (t.lane === lane && t.p < minP) minP = t.p;
-      if (minP > MIN_LANE_GAP) eligible.push(lane);
+      if (minP > minGap) eligible.push(lane);
     }
-    if (eligible.length === 0) return false;
+    if (eligible.length === 0) return null;
     const preferred = eligible.length > 1 ? eligible.filter((l) => l !== this.lastLane) : eligible;
-    const lane = preferred[Math.floor(this.rng() * preferred.length)];
+    return preferred[Math.floor(this.rng() * preferred.length)];
+  }
+
+  private spawn(): boolean {
+    const lane = this.pickLane(MIN_LANE_GAP);
+    if (lane === null) return false;
 
     const onScreenIds = new Set(this.tiles.map((t) => t.word.id));
     const initialCounts = new Map<string, number>();
@@ -166,11 +220,88 @@ export class GameEngine {
       (w) => !onScreenIds.has(w.id) && (initialCounts.get(w.word[0]) ?? 0) < MAX_SAME_INITIAL,
     );
 
-    const tile: TileState = { uid: ++this.uidSeq, word, lane, p: 0, typed: 0, errors: 0 };
+    const tile: TileState = { uid: ++this.uidSeq, kind: "word", word, lane, p: 0, typed: 0, errors: 0 };
     this.tiles.push(tile);
     this.lastLane = lane;
     this.emit({ type: "spawn", tile: { ...tile } });
     return true;
+  }
+
+  private spawnWordNotes(): boolean {
+    if (this.activeTarget) return false;
+    const word = this.deck.draw();
+    const chars = word.word.split("");
+    const len = chars.length;
+    const maxPerRow = this.lanes <= 3 ? 6 : 8;
+    const rowCount = Math.ceil(len / maxPerRow);
+    const basePerRow = Math.ceil(len / rowCount);
+
+    const instanceId = ++this.wordInstanceSeq;
+    this.activeTarget = {
+      instanceId,
+      word,
+      spawnCursor: len,
+      cleared: 0,
+      missed: 0,
+      typos: 0,
+      totalPoints: 0,
+    };
+
+    // Split letters into balanced rows; row 0 is at the top of the word, rowCount - 1 is at the bottom,
+    // or keep reading order (row 0 drops slightly lower so first letters are hit first from left to right).
+    let cursor = 0;
+    for (let r = 0; r < rowCount; r++) {
+      const remaining = len - cursor;
+      const rowsLeft = rowCount - r;
+      const colsInRow = Math.min(basePerRow, Math.ceil(remaining / rowsLeft));
+      for (let c = 0; c < colsInRow; c++) {
+        const letterIndex = cursor++;
+        const letter = chars[letterIndex];
+        // Slight left-to-right stair-step so letters fall in reading order (first letter lowest).
+        const startP = -(r * 0.14 + c * 0.018);
+        const tile: TileState = {
+          uid: ++this.uidSeq,
+          kind: "note",
+          word,
+          lane: c % this.lanes,
+          p: startP,
+          typed: 0,
+          errors: 0,
+          letter,
+          letterIndex,
+          wordInstanceId: instanceId,
+          colIndex: c,
+          rowCols: colsInRow,
+        };
+        this.tiles.push(tile);
+        this.emit({ type: "spawn", tile: { ...tile } });
+      }
+    }
+    return true;
+  }
+
+  private finalizeActiveWordIfDone(): boolean {
+    const target = this.activeTarget;
+    if (!target) return false;
+    if (target.cleared + target.missed < target.word.word.length) return false;
+
+    const wordCompleted = target.missed === 0;
+    this.played.push({
+      word: target.word,
+      outcome: wordCompleted ? "cleared" : "missed",
+      typos: target.typos,
+      points: target.totalPoints,
+    });
+    if (wordCompleted) {
+      this.wordsCleared++;
+      const stage = stageForCleared(this.wordsCleared);
+      if (stage !== this.stage) {
+        this.stage = stage;
+        this.emit({ type: "stage", stage });
+      }
+    }
+    this.activeTarget = null;
+    return wordCompleted;
   }
 
   private removeTile(uid: number): void {
@@ -184,6 +315,10 @@ export class GameEngine {
     if (this.status !== "playing") return false;
     const ch = rawChar.toLowerCase();
     if (!/^[a-z]$/.test(ch)) return false;
+
+    if (this.mode === "notes") {
+      return this.inputNote(ch);
+    }
 
     const locked = this.getLockedTile();
     if (locked) {
@@ -210,6 +345,56 @@ export class GameEngine {
     this.emit({ type: "lock", uid: target.uid });
     this.acceptLetter(target, ch);
     return true;
+  }
+
+  private inputNote(ch: string): boolean {
+    const target = this.getNextNoteTile();
+    if (!target) return false;
+
+    if (ch !== target.letter) {
+      target.errors++;
+      if (this.activeTarget && target.wordInstanceId === this.activeTarget.instanceId) {
+        this.activeTarget.typos++;
+      }
+      this.registerWrong(target.uid);
+      return false;
+    }
+
+    this.correctKeys++;
+    this.removeTile(target.uid);
+    this.combo++;
+    this.maxCombo = Math.max(this.maxCombo, this.combo);
+    const { points, judgment } = notePoints(target.word, target.p, this.combo);
+    this.score += points;
+
+    if (this.activeTarget && target.wordInstanceId === this.activeTarget.instanceId) {
+      this.activeTarget.cleared++;
+      this.activeTarget.totalPoints += points;
+    }
+    const wordCompleted = this.finalizeActiveWordIfDone();
+
+    this.emit({
+      type: "destroy",
+      uid: target.uid,
+      kind: "note",
+      word: target.word,
+      points,
+      combo: this.combo,
+      multiplier: comboMultiplier(this.combo),
+      wordCompleted,
+      judgment,
+    });
+    return true;
+  }
+
+  private getNextNoteTile(): TileState | null {
+    let next: TileState | null = null;
+    for (const t of this.tiles) {
+      const idx = t.letterIndex ?? Number.MAX_SAFE_INTEGER;
+      const nextIdx = next?.letterIndex ?? Number.MAX_SAFE_INTEGER;
+      if (!next || idx < nextIdx) next = t;
+    }
+    return next;
   }
 
   /** Releases the current lock (Backspace / Esc). Progress on that word is reset. */
@@ -248,10 +433,12 @@ export class GameEngine {
     this.emit({
       type: "destroy",
       uid: tile.uid,
+      kind: "word",
       word: tile.word,
       points,
       combo: this.combo,
       multiplier: comboMultiplier(this.combo),
+      wordCompleted: true,
     });
     const stage = stageForCleared(this.wordsCleared);
     if (stage !== this.stage) {
@@ -261,6 +448,15 @@ export class GameEngine {
   }
 
   private finish(): void {
+    if (this.activeTarget && (this.activeTarget.missed > 0 || this.activeTarget.typos > 0)) {
+      this.played.push({
+        word: this.activeTarget.word,
+        outcome: "missed",
+        typos: this.activeTarget.typos,
+        points: this.activeTarget.totalPoints,
+      });
+    }
+    this.activeTarget = null;
     this.status = "over";
     // Words still on screen are counted as neither cleared nor missed.
     this.tiles = [];
@@ -285,8 +481,30 @@ export class GameEngine {
   }
 
   getHud(): HudSnapshot {
+    if (this.mode === "notes") {
+      const nextNote = this.getNextNoteTile();
+      return {
+        mode: this.mode,
+        score: this.score,
+        combo: this.combo,
+        maxCombo: this.maxCombo,
+        multiplier: comboMultiplier(this.combo),
+        lives: this.lives,
+        maxLives: this.maxLives,
+        stage: this.stage,
+        wpm: calcWpm(this.correctKeys, Math.max(this.elapsedMs, LIVE_WPM_MIN_MS)),
+        accuracy: calcAccuracy(this.correctKeys, this.wrongKeys),
+        wordsCleared: this.wordsCleared,
+        lockedUid: nextNote?.uid ?? null,
+        nextLetter: nextNote?.letter ?? null,
+        targetWord: this.activeTarget?.word ?? null,
+        targetProgress: this.activeTarget?.cleared ?? 0,
+      };
+    }
+
     const locked = this.getLockedTile();
     return {
+      mode: this.mode,
       score: this.score,
       combo: this.combo,
       maxCombo: this.maxCombo,
@@ -299,11 +517,14 @@ export class GameEngine {
       wordsCleared: this.wordsCleared,
       lockedUid: locked?.uid ?? null,
       nextLetter: locked ? locked.word.word[locked.typed] ?? null : null,
+      targetWord: null,
+      targetProgress: 0,
     };
   }
 
   getSummary(): GameSummary {
     return {
+      mode: this.mode,
       score: this.score,
       wpm: calcWpm(this.correctKeys, this.elapsedMs),
       accuracy: calcAccuracy(this.correctKeys, this.wrongKeys),

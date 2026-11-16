@@ -1,5 +1,5 @@
 import type { CefrLevel, VocabWord } from "../vocab/types";
-import type { SpeedSetting } from "./types";
+import type { GameMode, NoteJudgment, SpeedSetting } from "./types";
 
 export const MAX_LIVES = 5;
 export const WORDS_PER_STAGE = 10;
@@ -14,10 +14,33 @@ export const LEVEL_MULTIPLIER: Record<CefrLevel, number> = { A1: 1, A2: 1.2, B1:
 
 export const SPEED_MULTIPLIER: Record<SpeedSetting, number> = { slow: 0.75, normal: 1, fast: 1.3 };
 
+export const MIN_CUSTOM_SPEED = 0.5;
+export const MAX_CUSTOM_SPEED = 2.5;
+export const CUSTOM_SPEED_STEP = 0.05;
+
+export function clampCustomSpeed(value: number): number {
+  if (!Number.isFinite(value)) return SPEED_MULTIPLIER.normal;
+  const clamped = Math.min(MAX_CUSTOM_SPEED, Math.max(MIN_CUSTOM_SPEED, value));
+  return Math.round(clamped * 100) / 100;
+}
+
 export const SPEED_LABELS: Record<SpeedSetting, { title: string; subtitle: string }> = {
   slow: { title: "Slow", subtitle: "ช้า" },
   normal: { title: "Normal", subtitle: "ปกติ" },
   fast: { title: "Fast", subtitle: "เร็ว" },
+};
+
+export const MODE_LABELS: Record<GameMode, { title: string; subtitle: string; badge: string }> = {
+  cascade: {
+    title: "Word Cascade",
+    subtitle: "พิมพ์คำศัพท์เต็มคำที่ตกลงมา",
+    badge: "Word Cascade",
+  },
+  notes: {
+    title: "Beat Notes",
+    subtitle: "โน้ตตัวอักษรทีละตัว (แบบ Thapster)",
+    badge: "Beat Notes",
+  },
 };
 
 /** Combo thresholds for x2 / x3 / x4. */
@@ -42,6 +65,19 @@ export function wordPoints(word: VocabWord, progress: number, combo: number): nu
   return Math.round(base * LEVEL_MULTIPLIER[word.level] * speedBonus(progress) * comboMultiplier(combo));
 }
 
+export function noteJudgment(progress: number): NoteJudgment {
+  if (progress >= 0.72) return "PERFECT";
+  if (progress >= 0.45) return "GREAT";
+  return "HIT";
+}
+
+export function notePoints(word: VocabWord, progress: number, combo: number): { points: number; judgment: NoteJudgment } {
+  const judgment = noteJudgment(progress);
+  const judgmentMult = judgment === "PERFECT" ? 1.5 : judgment === "GREAT" ? 1.2 : 1.0;
+  const points = Math.round(15 * LEVEL_MULTIPLIER[word.level] * judgmentMult * comboMultiplier(combo));
+  return { points, judgment };
+}
+
 export function stageForCleared(wordsCleared: number): number {
   return 1 + Math.floor(wordsCleared / WORDS_PER_STAGE);
 }
@@ -53,9 +89,12 @@ export interface StageParams {
   maxOnScreen: number;
 }
 
-export function stageParams(stage: number, speed: SpeedSetting): StageParams {
+export function stageParams(stage: number, speedOrMultiplier: SpeedSetting | number): StageParams {
   const s = Math.max(0, stage - 1);
-  const speedMult = SPEED_MULTIPLIER[speed];
+  const speedMult =
+    typeof speedOrMultiplier === "number"
+      ? clampCustomSpeed(speedOrMultiplier)
+      : SPEED_MULTIPLIER[speedOrMultiplier];
   const fallMult = Math.min(1.08 ** s, MAX_FALL_MULTIPLIER);
   return {
     fallSpeed: (speedMult * fallMult) / BASE_FALL_SECONDS,

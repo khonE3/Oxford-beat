@@ -114,7 +114,7 @@ export function AudioMixer({
                 step={1}
                 value={pct}
                 onChange={(e) => onChange({ [ch.key]: Number(e.target.value) / 100 })}
-                className={`h-2 w-full cursor-pointer appearance-none rounded-lg bg-zinc-800 ${ch.accent}`}
+                className={`h-2 w-full cursor-grab appearance-none rounded-lg bg-zinc-800 active:cursor-grabbing ${ch.accent}`}
               />
             </div>
           );

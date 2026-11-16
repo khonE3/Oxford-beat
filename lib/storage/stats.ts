@@ -1,5 +1,6 @@
 import type { DeckState } from "../engine/deck";
-import type { GameSummary, SpeedSetting } from "../engine/types";
+import { SPEED_MULTIPLIER, clampCustomSpeed } from "../engine/scoring";
+import type { GameMode, GameSummary, SpeedSetting } from "../engine/types";
 import type { LevelFilter } from "../vocab/types";
 
 const PREFIX = "neonkeys:v1:";
@@ -100,8 +101,10 @@ export const DEFAULT_VOLUMES: VolumeSettings = {
 };
 
 export interface Settings {
+  mode: GameMode;
   level: LevelFilter;
   speed: SpeedSetting;
+  speedMultiplier: number;
   muted: boolean;
   inputMode: InputMode;
   pronounceOnClear: boolean;
@@ -110,8 +113,10 @@ export interface Settings {
 }
 
 export const DEFAULT_SETTINGS: Settings = {
+  mode: "cascade",
   level: "A1-A2",
   speed: "normal",
+  speedMultiplier: SPEED_MULTIPLIER.normal,
   muted: false,
   inputMode: "virtual",
   pronounceOnClear: true,
@@ -120,9 +125,16 @@ export const DEFAULT_SETTINGS: Settings = {
 };
 
 export function normalizeSettings(raw: Partial<Settings> | null | undefined): Settings {
+  const speed = raw?.speed ?? DEFAULT_SETTINGS.speed;
+  const speedMultiplier =
+    typeof raw?.speedMultiplier === "number" && Number.isFinite(raw.speedMultiplier)
+      ? clampCustomSpeed(raw.speedMultiplier)
+      : SPEED_MULTIPLIER[speed];
   return {
     ...DEFAULT_SETTINGS,
     ...raw,
+    speed,
+    speedMultiplier,
     volumes: {
       ...DEFAULT_VOLUMES,
       ...(raw?.volumes ?? {}),

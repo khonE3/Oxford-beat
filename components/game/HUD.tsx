@@ -1,6 +1,7 @@
 "use client";
 
-import { Heart, MessageSquareText, Pause, Volume2, VolumeX } from "lucide-react";
+import { Heart, MessageSquareText, Music2, Pause, Type, Volume2, VolumeX } from "lucide-react";
+import { MODE_LABELS } from "@/lib/engine/scoring";
 import type { HudSnapshot } from "@/lib/engine/types";
 
 interface HUDProps {
@@ -55,8 +56,24 @@ export function HUD({
         </div>
       </div>
 
-      {/* Center: Combo */}
-      <div className="flex items-center gap-1.5">
+      {/* Center: Mode Status + Combo */}
+      <div className="flex items-center gap-2">
+        <span
+          className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 font-mono text-[11px] font-bold tracking-wide ${
+            hud.mode === "notes"
+              ? "border-amber-400/50 bg-amber-500/15 text-amber-200"
+              : "border-orange-500/45 bg-orange-500/15 text-orange-200"
+          }`}
+          title={`โหมดปัจจุบัน: ${MODE_LABELS[hud.mode].title}`}
+        >
+          {hud.mode === "notes" ? (
+            <Music2 className="h-3 w-3 shrink-0" aria-hidden="true" />
+          ) : (
+            <Type className="h-3 w-3 shrink-0" aria-hidden="true" />
+          )}
+          <span className="hidden xs:inline sm:inline">{MODE_LABELS[hud.mode].badge}</span>
+        </span>
+
         {hud.combo > 0 ? (
           <div className="flex items-center gap-1.5 rounded-full border border-orange-500/50 bg-orange-500/15 px-3 py-1 shadow-[0_0_16px_rgba(249,115,22,0.3)]">
             <span className="font-mono text-xs font-extrabold text-orange-200 tabular-nums sm:text-sm">
@@ -69,7 +86,7 @@ export function HUD({
             )}
           </div>
         ) : (
-          <span className="hidden font-mono text-xs font-semibold text-zinc-500 sm:inline">READY</span>
+          <span className="hidden font-mono text-xs font-semibold text-zinc-500 md:inline">READY</span>
         )}
       </div>
 

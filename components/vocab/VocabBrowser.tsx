@@ -13,6 +13,7 @@ import {
 } from "@/lib/storage/stats";
 import { ALL_WORDS } from "@/lib/vocab";
 import type { CefrLevel, PartOfSpeech } from "@/lib/vocab/types";
+import { Footer } from "@/components/Footer";
 import { VocabCard } from "./VocabCard";
 
 const LEVELS: Array<"ALL" | CefrLevel> = ["ALL", "A1", "A2", "B1", "B2"];
@@ -193,6 +194,8 @@ export function VocabBrowser() {
             )}
           </>
         )}
+
+        <Footer />
       </div>
     </main>
   );

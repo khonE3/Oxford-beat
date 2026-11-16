@@ -34,7 +34,7 @@ export function VocabCard({ word, extra, highlightDanger = false }: VocabCardPro
           <PosBadge pos={word.pos} />
           <LevelBadge level={word.level} />
         </div>
-        <p className="mt-1 truncate text-sm font-medium text-zinc-200 sm:text-base">{word.meaning_th}</p>
+        <p className="mt-1 truncate text-sm font-medium text-amber-200 sm:text-base">{word.meaning_th}</p>
       </div>
 
       <div className="flex shrink-0 items-center gap-2">

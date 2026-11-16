@@ -2,7 +2,10 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { GameEngine } from "@/lib/engine/GameEngine";
-import type { GameEvent, HudSnapshot, TileState } from "@/lib/engine/types";
+import type { GameEvent, HudSnapshot, NoteJudgment, TileState } from "@/lib/engine/types";
+import type { VocabWord } from "@/lib/vocab/types";
+import { LevelBadge } from "../vocab/LevelBadge";
+import { PosBadge } from "../vocab/PosBadge";
 import { getLaneStyle } from "./laneTheme";
 import { ParticleCanvas, type ParticleCanvasHandle } from "./ParticleCanvas";
 import { WordTile } from "./WordTile";
@@ -13,12 +16,15 @@ interface FloatingScore {
   y: number;
   points: number;
   color: string;
+  judgment?: NoteJudgment;
 }
 
 interface GameBoardProps {
   engine: GameEngine;
   isPlaying: boolean;
   lanes: number;
+  targetWord: VocabWord | null;
+  targetProgress: number;
   onHudUpdate: (hud: HudSnapshot) => void;
   onAudioEvent: (event: GameEvent) => void;
 }
@@ -29,6 +35,8 @@ export function GameBoard({
   engine,
   isPlaying,
   lanes,
+  targetWord,
+  targetProgress,
   onHudUpdate,
   onAudioEvent,
 }: GameBoardProps) {
@@ -62,7 +70,15 @@ export function GameBoard({
       if (!el) continue;
       const elW = el.offsetWidth || 120;
       const elH = el.offsetHeight || 72;
-      const cx = tile.lane * laneWidth + laneWidth / 2;
+      let cx: number;
+      if (tile.kind === "note" && tile.rowCols && tile.colIndex !== undefined) {
+        const colW = Math.min(laneWidth, (width - 20) / Math.max(1, tile.rowCols));
+        const totalRowW = colW * tile.rowCols;
+        const startX = (width - totalRowW) / 2;
+        cx = startX + tile.colIndex * colW + colW / 2;
+      } else {
+        cx = tile.lane * laneWidth + laneWidth / 2;
+      }
       const x = Math.max(4, Math.min(width - elW - 4, cx - elW / 2));
       const y = tile.p * hitLineY - elH;
       el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
@@ -115,6 +131,10 @@ export function GameBoard({
       switch (event.type) {
         case "spawn":
           setTiles(engine.getTiles().map((t) => ({ ...t })));
+          if (engine.mode === "notes") {
+            setLockedUid(engine.getHud().lockedUid);
+            onHudUpdate(engine.getHud());
+          }
           requestAnimationFrame(syncDomTransforms);
           break;
         case "lock":
@@ -172,14 +192,17 @@ export function GameBoard({
           particlesRef.current?.burst(cx, cy, color, Math.max(100, laneWidth * 0.7));
 
           const fid = ++floatingSeqRef.current;
-          setFloatingScores((prev) => [...prev.slice(-6), { id: fid, x: cx, y: cy, points: event.points, color }]);
+          setFloatingScores((prev) => [
+            ...prev.slice(-6),
+            { id: fid, x: cx, y: cy, points: event.points, color, judgment: event.judgment },
+          ]);
           const timer = setTimeout(() => {
             timersRef.current.delete(timer);
             setFloatingScores((prev) => prev.filter((f) => f.id !== fid));
           }, 750);
           timersRef.current.add(timer);
 
-          setLockedUid(null);
+          setLockedUid(engine.mode === "notes" ? engine.getHud().lockedUid : null);
           setTiles(engine.getTiles().map((t) => ({ ...t })));
           onHudUpdate(engine.getHud());
           break;
@@ -253,12 +276,50 @@ export function GameBoard({
         ))}
       </div>
 
-      {/* Falling word tiles */}
+      {/* Target Word Banner for Beat Notes mode */}
+      {engine.mode === "notes" && targetWord && (
+        <div className="pointer-events-none absolute top-3 right-3 left-3 z-20 flex justify-center">
+          <div className="flex max-w-lg flex-col items-center rounded-2xl border border-orange-500/45 bg-zinc-950/90 px-5 py-3 text-center shadow-[0_8px_30px_rgba(0,0,0,0.75)] backdrop-blur-md">
+            <div className="mb-1 flex items-center gap-2">
+              <PosBadge pos={targetWord.pos} />
+              <LevelBadge level={targetWord.level} />
+            </div>
+            <div className="font-mono text-3xl font-black tracking-[0.12em] lowercase sm:text-4xl">
+              {targetWord.word.split("").map((ch, idx) => {
+                const done = idx < targetProgress;
+                const current = idx === targetProgress;
+                return (
+                  <span
+                    key={idx}
+                    className={
+                      done
+                        ? "text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.75)]"
+                        : current
+                          ? "text-white underline decoration-orange-400 decoration-2 underline-offset-4"
+                          : "text-zinc-400"
+                    }
+                  >
+                    {ch}
+                  </span>
+                );
+              })}
+            </div>
+            <div className="mt-1.5 text-sm font-medium text-amber-200 sm:text-base">
+              {targetWord.meaning_th}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Falling word / note tiles */}
       <div className="pointer-events-none absolute inset-0 z-10">
         {tiles.map((tile) => (
           <WordTile
             key={tile.uid}
             uid={tile.uid}
+            kind={tile.kind}
+            letter={tile.letter}
+            rowCols={tile.rowCols}
             word={tile.word}
             lane={tile.lane}
             totalLanes={lanes}
@@ -281,9 +342,14 @@ export function GameBoard({
         <div
           key={f.id}
           style={{ left: f.x, top: f.y, color: f.color }}
-          className="animate-float-up pointer-events-none absolute z-30 font-mono text-base font-black drop-shadow-[0_0_10px_rgba(0,0,0,0.9)] sm:text-lg"
+          className="animate-float-up pointer-events-none absolute z-30 text-center font-mono font-black drop-shadow-[0_0_10px_rgba(0,0,0,0.95)]"
         >
-          +{f.points}
+          {f.judgment && (
+            <div className="text-[11px] tracking-widest text-amber-300 uppercase">
+              {f.judgment}
+            </div>
+          )}
+          <div className="text-base sm:text-lg">+{f.points}</div>
         </div>
       ))}
 

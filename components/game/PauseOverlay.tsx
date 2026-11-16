@@ -1,12 +1,16 @@
 "use client";
 
 import { Flag, Play } from "lucide-react";
+import type { SpeedSetting } from "@/lib/engine/types";
 import type { VolumeSettings } from "@/lib/storage/stats";
 import { AudioMixer } from "./AudioMixer";
+import { SpeedControl } from "./SpeedControl";
 
 interface PauseOverlayProps {
+  speedMultiplier: number;
   volumes: VolumeSettings;
   muted: boolean;
+  onChangeSpeed: (speed: SpeedSetting, speedMultiplier: number) => void;
   onChangeVolumes: (patch: Partial<VolumeSettings>) => void;
   onResetVolumes: () => void;
   onTestPiano: () => void;
@@ -17,8 +21,10 @@ interface PauseOverlayProps {
 }
 
 export function PauseOverlay({
+  speedMultiplier,
   volumes,
   muted,
+  onChangeSpeed,
   onChangeVolumes,
   onResetVolumes,
   onTestPiano,
@@ -29,14 +35,19 @@ export function PauseOverlay({
 }: PauseOverlayProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-950/50 p-4">
-      <div className="w-full max-w-md rounded-2xl border border-orange-500/35 bg-zinc-900/90 p-5 text-center shadow-2xl backdrop-blur-md sm:p-6">
+      <div className="max-h-[92dvh] w-full max-w-md overflow-y-auto rounded-2xl border border-orange-500/35 bg-zinc-900/90 p-5 text-center shadow-2xl backdrop-blur-md sm:p-6">
         <div className="font-mono text-xs font-bold tracking-widest text-orange-400 uppercase">
           Game Paused
         </div>
         <h2 className="mt-1 text-2xl font-bold text-white">พักเกมชั่วคราว</h2>
         <p className="mt-1 text-sm text-zinc-300">กด Resume หรือ Esc / Space เพื่อเล่นต่อ</p>
 
-        <div className="mt-4">
+        <div className="mt-4 space-y-3">
+          <SpeedControl
+            compact
+            speedMultiplier={speedMultiplier}
+            onChange={onChangeSpeed}
+          />
           <AudioMixer
             volumes={volumes}
             muted={muted}

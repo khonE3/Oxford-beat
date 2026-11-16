@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Delete, Keyboard } from "lucide-react";
 import type { InputMode } from "@/lib/storage/stats";
 
@@ -10,9 +10,10 @@ const ROWS = [
   ["z", "x", "c", "v", "b", "n", "m"],
 ] as const;
 
+const PRESS_FEEDBACK_MS = 110;
+
 interface VirtualKeyboardProps {
   mode: InputMode;
-  nextLetter: string | null;
   hasLock: boolean;
   onChar: (ch: string) => void;
   onCancelLock: () => void;
@@ -21,13 +22,33 @@ interface VirtualKeyboardProps {
 
 export function VirtualKeyboard({
   mode,
-  nextLetter,
   hasLock,
   onChar,
   onCancelLock,
   onToggleMode,
 }: VirtualKeyboardProps) {
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const pressTimerRef = useRef<number | null>(null);
+  const [pressedKey, setPressedKey] = useState<string | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (pressTimerRef.current !== null) {
+        window.clearTimeout(pressTimerRef.current);
+      }
+    };
+  }, []);
+
+  const triggerPress = (keyId: string) => {
+    if (pressTimerRef.current !== null) {
+      window.clearTimeout(pressTimerRef.current);
+    }
+    setPressedKey(keyId);
+    pressTimerRef.current = window.setTimeout(() => {
+      setPressedKey(null);
+      pressTimerRef.current = null;
+    }, PRESS_FEEDBACK_MS);
+  };
 
   if (mode === "system") {
     return (
@@ -61,19 +82,24 @@ export function VirtualKeyboard({
         <button
           type="button"
           onClick={() => inputRef.current?.focus()}
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-orange-500/50 bg-orange-500/15 px-3 py-2 text-xs font-semibold text-orange-200 active:scale-[0.99]"
+          className="inline-flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-lg border border-orange-500/50 bg-orange-500/15 px-3 py-2 text-xs font-semibold text-orange-200 transition active:scale-[0.98]"
         >
           <Keyboard className="h-4 w-4 shrink-0" aria-hidden="true" />
-          แตะเพื่อเปิดคีย์บอร์ดระบบ {nextLetter ? `(ตัวถัดไป: ${nextLetter.toUpperCase()})` : ""}
+          แตะเพื่อเปิดคีย์บอร์ดระบบ
         </button>
         {hasLock && (
           <button
             type="button"
             onPointerDown={(e) => {
               e.preventDefault();
+              triggerPress("__system_unlock__");
               onCancelLock();
             }}
-            className="inline-flex items-center gap-1 rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 font-mono text-xs font-bold text-zinc-200"
+            className={`inline-flex cursor-pointer items-center gap-1 rounded-lg border px-3 py-2 font-mono text-xs font-bold transition duration-75 ${
+              pressedKey === "__system_unlock__"
+                ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
+                : "border-zinc-700 bg-zinc-800 text-zinc-200"
+            }`}
           >
             <Delete className="h-4 w-4" aria-hidden="true" />
             ปลดล็อก
@@ -82,7 +108,7 @@ export function VirtualKeyboard({
         <button
           type="button"
           onClick={onToggleMode}
-          className="rounded-lg border border-zinc-700 bg-zinc-900 px-2.5 py-2 text-xs font-medium text-zinc-200 hover:border-orange-500/50"
+          className="cursor-pointer rounded-lg border border-zinc-700 bg-zinc-900 px-2.5 py-2 text-xs font-medium text-zinc-200 transition hover:border-orange-500/50 active:scale-95"
           title="สลับกลับไปใช้คีย์บอร์ดในเกม"
         >
           คีย์บอร์ดเกม
@@ -99,28 +125,36 @@ export function VirtualKeyboard({
             {rowIndex === 2 && (
               <button
                 type="button"
-                onClick={onToggleMode}
+                onClick={() => {
+                  triggerPress("__toggle__");
+                  onToggleMode();
+                }}
                 title="สลับไปใช้คีย์บอร์ดระบบ"
                 aria-label="สลับไปใช้คีย์บอร์ดระบบ"
-                className="flex h-11 min-w-[2.4rem] items-center justify-center rounded-lg border border-zinc-700 bg-zinc-900 px-1.5 text-zinc-200 transition hover:border-orange-500/50 active:scale-95"
+                className={`flex h-11 min-w-[2.4rem] cursor-pointer items-center justify-center rounded-lg border px-1.5 transition duration-75 ${
+                  pressedKey === "__toggle__"
+                    ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
+                    : "border-zinc-700 bg-zinc-900 text-zinc-200 hover:border-orange-500/50"
+                }`}
               >
                 <Keyboard className="h-4 w-4" aria-hidden="true" />
               </button>
             )}
 
             {row.map((key) => {
-              const isHint = nextLetter === key;
+              const isPressed = pressedKey === key;
               return (
                 <button
                   key={key}
                   type="button"
                   onPointerDown={(e) => {
                     e.preventDefault();
+                    triggerPress(key);
                     onChar(key);
                   }}
-                  className={`flex h-11 flex-1 items-center justify-center rounded-lg border font-mono text-sm font-bold uppercase transition-transform active:scale-90 sm:text-base ${
-                    isHint
-                      ? "border-orange-400 bg-orange-500/25 text-orange-200 shadow-[0_0_12px_rgba(249,115,22,0.45)]"
+                  className={`flex h-11 flex-1 cursor-pointer items-center justify-center rounded-lg border font-mono text-base font-bold lowercase transition duration-75 sm:text-lg ${
+                    isPressed
+                      ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
                       : "border-zinc-700 bg-zinc-800/95 text-zinc-100 hover:bg-zinc-700"
                   }`}
                 >
@@ -134,14 +168,17 @@ export function VirtualKeyboard({
                 type="button"
                 onPointerDown={(e) => {
                   e.preventDefault();
+                  triggerPress("__backspace__");
                   onCancelLock();
                 }}
                 aria-label="ปลดล็อกคำที่เลือกอยู่"
                 title="ปลดล็อกคำ (Backspace)"
-                className={`flex h-11 min-w-[2.7rem] items-center justify-center rounded-lg border px-2 font-mono text-sm font-bold transition active:scale-90 ${
-                  hasLock
-                    ? "border-amber-400/60 bg-amber-500/20 text-amber-200"
-                    : "border-zinc-700 bg-zinc-900 text-zinc-500"
+                className={`flex h-11 min-w-[2.7rem] cursor-pointer items-center justify-center rounded-lg border px-2 font-mono text-sm font-bold transition duration-75 ${
+                  pressedKey === "__backspace__"
+                    ? "translate-y-[1px] scale-[0.92] border-orange-400/80 bg-orange-500/25 text-orange-100 shadow-[0_0_10px_rgba(249,115,22,0.35)]"
+                    : hasLock
+                      ? "border-amber-400/60 bg-amber-500/20 text-amber-200"
+                      : "border-zinc-700 bg-zinc-900 text-zinc-500"
                 }`}
               >
                 <Delete className="h-4 w-4" aria-hidden="true" />

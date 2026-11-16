@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { BookOpen, Home, RotateCcw, Trophy, Volume2 } from "lucide-react";
-import { SPEED_LABELS } from "@/lib/engine/scoring";
+import { MODE_LABELS, SPEED_LABELS } from "@/lib/engine/scoring";
 import type { GameSummary } from "@/lib/engine/types";
 import type { SaveResult } from "@/lib/storage/stats";
 import { LEVEL_FILTER_LABELS } from "@/lib/vocab/types";
@@ -39,7 +39,10 @@ export function GameOverSummary({
             Session Complete
           </div>
           <h1 className="mt-1 font-mono text-3xl font-black text-white sm:text-4xl">GAME OVER</h1>
-          <div className="mt-2 flex items-center justify-center gap-2 font-mono text-xs text-zinc-300">
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-2 font-mono text-xs text-zinc-300">
+            <span className="rounded-md border border-orange-500/40 bg-orange-500/15 px-2.5 py-0.5 text-orange-200">
+              {MODE_LABELS[summary.mode].title}
+            </span>
             <span className="rounded-md border border-zinc-700 bg-zinc-900 px-2.5 py-0.5 text-orange-300">
               {LEVEL_FILTER_LABELS[summary.filter].title}
             </span>
@@ -73,11 +76,11 @@ export function GameOverSummary({
             <Metric label="Stage / Time" value={`Lv.${summary.stage} • ${timeFormatted}`} />
           </div>
 
-          <div className="mt-5 flex flex-col gap-2.5 sm:flex-row">
+          <div className="mt-5 flex flex-col gap-2.5">
             <button
               type="button"
               onClick={onPlayAgain}
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 py-3 font-mono text-sm font-black tracking-wider text-zinc-950 uppercase shadow-[0_0_24px_rgba(249,115,22,0.35)] transition hover:brightness-110 active:scale-[0.99]"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 py-3 font-mono text-sm font-black tracking-wider text-zinc-950 uppercase shadow-[0_0_24px_rgba(249,115,22,0.35)] transition hover:brightness-110 active:scale-[0.99]"
             >
               <RotateCcw className="h-4 w-4" aria-hidden="true" />
               เล่นอีกครั้ง (Play Again)
@@ -85,7 +88,7 @@ export function GameOverSummary({
             <button
               type="button"
               onClick={onBackToMenu}
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800/90 px-5 py-3 text-sm font-semibold text-zinc-100 transition hover:border-orange-500/40 hover:bg-zinc-800 active:scale-[0.99]"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800/90 px-5 py-3 text-sm font-semibold text-zinc-100 transition hover:border-orange-500/40 hover:bg-zinc-800 active:scale-[0.99]"
             >
               <Home className="h-4 w-4" aria-hidden="true" />
               หน้าหลัก

@@ -16,6 +16,7 @@ import {
   type Settings,
 } from "@/lib/storage/stats";
 import { getWordById } from "@/lib/vocab";
+import { Footer } from "@/components/Footer";
 import { VocabCard } from "./VocabCard";
 
 const EMPTY_MISSED: MissMap = {};
@@ -144,6 +145,8 @@ export function MissedBrowser() {
             ))}
           </section>
         )}
+
+        <Footer />
       </div>
     </main>
   );
