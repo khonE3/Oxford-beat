@@ -218,6 +218,14 @@ export function GameScreen() {
     engineRef.current?.quit();
   }, []);
 
+  const handleBackToMenu = useCallback(() => {
+    cancelSpeech();
+    synthRef.current?.stopBeat();
+    engineRef.current = null;
+    setSession(null);
+    setPhase("start");
+  }, []);
+
   // Physical keyboard listener
   useEffect(() => {
     if (phase !== "playing" && phase !== "paused") return;
@@ -247,11 +255,7 @@ export function GameScreen() {
 
       if (e.key === "Escape") {
         e.preventDefault();
-        if (engineRef.current?.getLockedTile()) {
-          engineRef.current.cancelLock();
-        } else {
-          handlePause();
-        }
+        handlePause();
         return;
       }
 
@@ -373,10 +377,10 @@ export function GameScreen() {
   }
 
   return (
-    <div className="relative flex h-dvh flex-col overflow-hidden bg-[#05060c]">
-      <div className="pointer-events-none absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.09)_0%,rgba(236,72,153,0.06)_40%,transparent_72%)] md:block" />
+    <div className="relative flex h-dvh flex-col overflow-hidden bg-[#09090b]">
+      <div className="pointer-events-none absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.09)_0%,transparent_65%)] md:block" />
 
-      <div className="relative z-10 mx-auto flex min-h-0 w-full flex-1 flex-col md:max-w-[740px] md:border-x md:border-cyan-500/30 md:shadow-[0_0_50px_rgba(34,211,238,0.12)]">
+      <div className="relative z-10 mx-auto flex min-h-0 w-full flex-1 flex-col md:max-w-[740px] md:border-x md:border-orange-500/30 md:shadow-[0_0_50px_rgba(249,115,22,0.12)]">
         <HUD
           hud={hud}
           bpm={currentBpm}
@@ -438,6 +442,7 @@ export function GameScreen() {
           onTestVoice={handleTestVoice}
           onResume={handleResume}
           onQuit={handleQuit}
+          onBackToMenu={handleBackToMenu}
         />
       )}
     </div>

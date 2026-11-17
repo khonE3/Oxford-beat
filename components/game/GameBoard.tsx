@@ -228,13 +228,13 @@ export function GameBoard({
           stageVisRef.current?.flashLane(approxLane, 1);
 
           if (event.judgment === "PERFECT") {
-            showJudgement("PERFECT!!", "text-cyan-300 drop-shadow-[0_0_16px_rgba(34,211,238,0.95)]");
+            showJudgement("PERFECT!!", "text-amber-300 drop-shadow-[0_0_16px_rgba(251,191,36,0.95)]");
           } else if (event.judgment === "GREAT") {
-            showJudgement("GREAT!", "text-amber-300 drop-shadow-[0_0_14px_rgba(251,191,36,0.9)]");
+            showJudgement("GREAT!", "text-orange-300 drop-shadow-[0_0_14px_rgba(249,115,22,0.9)]");
           } else if (event.judgment === "HIT") {
             showJudgement("HIT!", "text-emerald-300 drop-shadow-[0_0_12px_rgba(52,211,153,0.85)]");
           } else {
-            showJudgement("CLEAR!", "text-pink-300 drop-shadow-[0_0_14px_rgba(236,72,153,0.85)]");
+            showJudgement("CLEAR!", "text-orange-300 drop-shadow-[0_0_14px_rgba(249,115,22,0.85)]");
           }
 
           const fid = ++floatingSeqRef.current;
@@ -308,7 +308,7 @@ export function GameBoard({
   return (
     <div
       ref={boardRef}
-      className="cyber-grid relative flex-1 overflow-hidden bg-gradient-to-b from-[#06070d] via-[#090d1d] to-[#110a1c]"
+      className="cyber-grid relative flex-1 overflow-hidden bg-gradient-to-b from-[#09090b] via-[#0e0e12] to-[#170f09]"
     >
       {/* Sound-Reactive Spectrum & Lane Spotlight Beams */}
       <StageVisualizerCanvas
@@ -321,48 +321,46 @@ export function GameBoard({
         sampleAudio={sampleAudio}
       />
 
-      {/* Lane dividers */}
-      <div
-        className="pointer-events-none absolute inset-0 z-1 grid"
-        style={{ gridTemplateColumns: `repeat(${lanes}, minmax(0, 1fr))` }}
-      >
-        {Array.from({ length: lanes }, (_, i) => (
-          <div
-            key={i}
-            className="h-full border-r border-cyan-400/12 last:border-r-0"
-          />
-        ))}
-      </div>
+      {/* Lane dividers (only shown in fixed-lane Word Cascade mode) */}
+      {engine.mode === "cascade" && (
+        <div
+          className="pointer-events-none absolute inset-0 z-1 grid"
+          style={{ gridTemplateColumns: `repeat(${lanes}, minmax(0, 1fr))` }}
+        >
+          {Array.from({ length: lanes }, (_, i) => (
+            <div
+              key={i}
+              className="h-full border-r border-orange-500/12 last:border-r-0"
+            />
+          ))}
+        </div>
+      )}
 
-      {/* Big Transparent Center Stage Combo (Arcaea / Cytus style) */}
+      {/* Big Transparent Center Stage Combo */}
       {combo >= 2 && (
         <div className="pointer-events-none absolute inset-0 z-5 flex flex-col items-center justify-center select-none">
           <div
             className={`font-mono text-6xl font-black tracking-tighter tabular-nums sm:text-7xl ${
               multiplier >= 4
-                ? "text-pink-400/25"
+                ? "text-amber-300/24"
                 : multiplier >= 3
-                  ? "text-amber-300/22"
-                  : "text-cyan-300/20"
+                  ? "text-orange-400/22"
+                  : "text-orange-300/18"
             }`}
           >
             {combo}
           </div>
-          <div className="font-mono text-xs font-extrabold tracking-[0.4em] text-white/25 uppercase sm:text-sm">
+          <div className="font-mono text-xs font-extrabold tracking-[0.38em] text-white/25 uppercase sm:text-sm">
             {multiplier > 1 ? `FEVER x${multiplier}` : "COMBO"}
           </div>
         </div>
       )}
 
-      {/* Target Word Lyric Display for Beat Notes mode */}
+      {/* Compact Target Word Lyric Display for Beat Notes mode */}
       {engine.mode === "notes" && targetWord && (
-        <div className="pointer-events-none absolute top-3 right-3 left-3 z-20 flex justify-center">
-          <div className="flex max-w-lg flex-col items-center rounded-2xl border border-cyan-400/40 bg-[#080c18]/90 px-5 py-2.5 text-center shadow-[0_8px_32px_rgba(0,0,0,0.75),0_0_24px_rgba(34,211,238,0.16)] backdrop-blur-md">
-            <div className="mb-1 flex items-center gap-2">
-              <PosBadge pos={targetWord.pos} />
-              <LevelBadge level={targetWord.level} />
-            </div>
-            <div className="font-mono text-3xl font-black tracking-[0.12em] lowercase sm:text-4xl">
+        <div className="pointer-events-none absolute top-2 right-2 left-2 z-20 flex justify-center">
+          <div className="flex max-w-lg flex-col items-center rounded-xl border border-orange-500/45 bg-[#111114]/92 px-4 py-2 text-center shadow-[0_8px_28px_rgba(0,0,0,0.75)] backdrop-blur-md">
+            <div className="font-mono text-2xl leading-tight font-black tracking-[0.12em] lowercase sm:text-3xl">
               {targetWord.word.split("").map((ch, idx) => {
                 const done = idx < targetProgress;
                 const current = idx === targetProgress;
@@ -373,7 +371,7 @@ export function GameBoard({
                       done
                         ? "text-emerald-300 drop-shadow-[0_0_8px_rgba(52,211,153,0.85)]"
                         : current
-                          ? "text-white underline decoration-cyan-400 decoration-2 underline-offset-4"
+                          ? "text-white underline decoration-orange-400 decoration-2 underline-offset-4"
                           : "text-zinc-400"
                     }
                   >
@@ -382,8 +380,12 @@ export function GameBoard({
                 );
               })}
             </div>
-            <div className="mt-1 text-sm font-medium text-amber-200 sm:text-base">
-              {targetWord.meaning_th}
+            <div className="mt-1 flex flex-wrap items-center justify-center gap-2">
+              <PosBadge pos={targetWord.pos} />
+              <LevelBadge level={targetWord.level} />
+              <span className="font-sans text-xs font-medium text-sky-200 sm:text-sm">
+                {targetWord.meaning_th}
+              </span>
             </div>
           </div>
         </div>
@@ -434,7 +436,7 @@ export function GameBoard({
           className="animate-float-up pointer-events-none absolute z-30 text-center font-mono font-black drop-shadow-[0_0_10px_rgba(0,0,0,0.95)]"
         >
           {f.judgment && (
-            <div className="text-[10px] tracking-widest text-white uppercase">
+            <div className="text-xs tracking-widest text-white uppercase">
               {f.judgment}
             </div>
           )}
@@ -442,32 +444,41 @@ export function GameBoard({
         </div>
       ))}
 
-      {/* Hit Line & Prism Lane Receptors */}
+      {/* Hit Line & Lane Receptors */}
       <div
-        className="pointer-events-none absolute right-0 bottom-0 left-0 z-10 bg-gradient-to-t from-pink-500/20 via-cyan-500/8 to-transparent"
+        className="pointer-events-none absolute right-0 bottom-0 left-0 z-10 bg-gradient-to-t from-orange-500/20 via-orange-500/8 to-transparent"
         style={{ height: DANGER_ZONE_HEIGHT }}
       >
-        <div className="animate-hit-line h-[3px] w-full bg-gradient-to-r from-cyan-400 via-white to-pink-500" />
-        {/* Lane Receptor Diamonds */}
-        <div
-          className="grid h-full items-center"
-          style={{ gridTemplateColumns: `repeat(${lanes}, minmax(0, 1fr))` }}
-        >
-          {Array.from({ length: lanes }, (_, i) => {
-            const ls = getLaneStyle(i, lanes);
-            return (
-              <div key={i} className="flex flex-col items-center justify-center gap-0.5">
-                <div
-                  className={`h-3 w-8 rounded-full border ${ls.border} bg-white/10 shadow-[0_0_10px_currentColor]`}
-                  style={{ color: ls.hex }}
-                />
-              </div>
-            );
-          })}
-        </div>
-        <span className="pointer-events-none absolute right-0 bottom-1 left-0 text-center font-mono text-[9px] font-bold tracking-[0.28em] text-cyan-200/70 uppercase">
-          Judgement Line
-        </span>
+        <div className="animate-hit-line h-[3px] w-full bg-gradient-to-r from-orange-500 via-amber-300 to-orange-500" />
+        {engine.mode === "cascade" ? (
+          <div
+            className="grid h-full items-center"
+            style={{ gridTemplateColumns: `repeat(${lanes}, minmax(0, 1fr))` }}
+          >
+            {Array.from({ length: lanes }, (_, i) => {
+              const ls = getLaneStyle(i, lanes);
+              return (
+                <div key={i} className="flex flex-col items-center justify-center">
+                  <div
+                    className={`h-3 w-8 rounded-full border ${ls.border} bg-white/10 shadow-[0_0_10px_currentColor]`}
+                    style={{ color: ls.hex }}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="flex h-full items-center justify-center">
+            <span className="font-mono text-[10px] font-bold tracking-[0.26em] text-orange-200/80 uppercase">
+              Judgement Line • Hit Zone
+            </span>
+          </div>
+        )}
+        {engine.mode === "cascade" && (
+          <span className="pointer-events-none absolute right-0 bottom-1 left-0 text-center font-mono text-[10px] font-bold tracking-[0.26em] text-orange-200/75 uppercase">
+            Judgement Line
+          </span>
+        )}
       </div>
 
       {/* Red flash when a life is lost */}

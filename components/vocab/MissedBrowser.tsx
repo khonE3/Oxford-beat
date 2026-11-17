@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
-import { ArrowLeft, BookOpen, Check, Globe, Trash2 } from "lucide-react";
+import { Check, Globe, Play, Target, Trash2 } from "lucide-react";
 import { useIsClient, useStoredJson } from "@/lib/hooks/useStorage";
 import {
   DEFAULT_SETTINGS,
@@ -17,6 +17,7 @@ import {
 } from "@/lib/storage/stats";
 import { getWordById } from "@/lib/vocab";
 import { Footer } from "@/components/Footer";
+import { GameNavbar } from "@/components/GameNavbar";
 import { VocabCard } from "./VocabCard";
 
 const EMPTY_MISSED: MissMap = {};
@@ -38,27 +39,28 @@ export function MissedBrowser() {
   }, [isClient, missedMap]);
 
   return (
-    <main className="cyber-grid min-h-dvh bg-gradient-to-b from-[#06070d] via-[#090d1e] to-[#0f091a] px-4 py-6 sm:py-8">
-      <div className="mx-auto max-w-3xl space-y-5">
-        <header className="flex flex-wrap items-center justify-between gap-3">
+    <main className="cyber-grid min-h-dvh bg-[#09090b] px-3 py-4 sm:px-6 sm:py-6">
+      <div className="mx-auto max-w-5xl space-y-5">
+        {/* Persistent Navigation */}
+        <GameNavbar
+          activePath="/missed"
+          muted={settings.muted}
+          onToggleMute={() => updateSettings({ muted: !settings.muted })}
+        />
+
+        <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-zinc-800 bg-[#111114] px-5 py-4">
           <div>
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-cyan-400 hover:text-cyan-300 hover:underline"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              กลับหน้าเกม
-            </Link>
-            <h1 className="mt-1 bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text font-mono text-2xl font-black text-transparent sm:text-3xl">
-              Missed &amp; Tricky Words
+            <h1 className="inline-flex items-center gap-2.5 font-mono text-2xl font-black text-white sm:text-3xl">
+              <Target className="h-6 w-6 shrink-0 text-rose-400 sm:h-7 sm:w-7" aria-hidden="true" />
+              <span>Missed &amp; Tricky Words</span>
             </h1>
-            <p className="text-sm text-zinc-300">
+            <p className="mt-1 font-sans text-sm text-zinc-300">
               คำศัพท์ที่ตกเส้นหรือพิมพ์ผิดบ่อย เรียงตามความถี่เพื่อทบทวน
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <div className="flex rounded-xl border border-zinc-800 bg-[#080b16] p-1">
+            <div className="flex rounded-xl border border-zinc-800 bg-[#0b0b0e] p-1">
               {(
                 [
                   { id: "en-GB", label: "UK" },
@@ -69,9 +71,9 @@ export function MissedBrowser() {
                   key={opt.id}
                   type="button"
                   onClick={() => updateSettings({ accent: opt.id })}
-                  className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
+                  className={`inline-flex min-h-10 items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
                     settings.accent === opt.id
-                      ? "bg-cyan-500/20 text-cyan-300"
+                      ? "bg-orange-500/20 text-orange-200"
                       : "text-zinc-400 hover:text-zinc-100"
                   }`}
                 >
@@ -80,40 +82,35 @@ export function MissedBrowser() {
                 </button>
               ))}
             </div>
-            <Link
-              href="/vocab"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-zinc-700 bg-[#080b16] px-3.5 py-2 text-sm font-semibold text-zinc-200 transition hover:border-cyan-400/50 hover:bg-zinc-900"
-            >
-              <BookOpen className="h-4 w-4 text-cyan-400" aria-hidden="true" />
-              คลังคำศัพท์
-            </Link>
+
             {records.length > 0 && (
               <button
                 type="button"
                 onClick={clearMissed}
-                className="inline-flex items-center gap-1.5 rounded-xl border border-rose-500/40 bg-rose-500/10 px-3.5 py-2 text-sm font-semibold text-rose-200 transition hover:bg-rose-500/20"
+                className="inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-rose-500/45 bg-rose-500/10 px-4 py-2 font-sans text-sm font-semibold text-rose-200 transition hover:bg-rose-500/20 active:scale-[0.98]"
               >
                 <Trash2 className="h-4 w-4" aria-hidden="true" />
                 ล้างรายการทั้งหมด
               </button>
             )}
           </div>
-        </header>
+        </section>
 
         {!isClient ? (
-          <div className="rounded-2xl border border-zinc-800 bg-[#080b16]/90 py-12 text-center text-sm text-zinc-300">
+          <div className="rounded-2xl border border-zinc-800 bg-[#111114] py-12 text-center font-sans text-sm text-zinc-300">
             กำลังโหลดข้อมูล...
           </div>
         ) : records.length === 0 ? (
-          <div className="rounded-2xl border border-cyan-500/25 bg-[#080b16]/90 px-4 py-12 text-center">
-            <p className="text-base font-semibold text-zinc-100">ยังไม่มีคำศัพท์ที่พลาด</p>
-            <p className="mt-1 text-sm text-zinc-300">
+          <div className="rounded-2xl border border-zinc-800 bg-[#111114] px-4 py-12 text-center">
+            <p className="font-sans text-base font-bold text-zinc-100">ยังไม่มีคำศัพท์ที่พลาดเลย</p>
+            <p className="mt-1 font-sans text-sm text-zinc-300">
               เมื่อเล่นเกมแล้วมีคำที่ตกเส้นหรือพิมพ์ผิด ระบบจะบันทึกมาแสดงที่นี่ให้อัตโนมัติ
             </p>
             <Link
               href="/"
-              className="mt-4 inline-block rounded-xl bg-gradient-to-r from-cyan-400 to-pink-500 px-5 py-2.5 font-mono text-sm font-black text-zinc-950 uppercase shadow-[0_0_24px_rgba(34,211,238,0.28)] transition hover:brightness-110 active:scale-[0.99]"
+              className="mt-5 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-amber-400 px-6 py-3 font-sans text-sm font-extrabold text-zinc-950 shadow-[0_0_24px_rgba(249,115,22,0.28)] transition hover:brightness-110 active:scale-[0.99]"
             >
+              <Play className="h-4 w-4 fill-current" aria-hidden="true" />
               ไปเล่นเกมเลย
             </Link>
           </div>
@@ -135,9 +132,9 @@ export function MissedBrowser() {
                       onClick={() => removeMissed(word.id)}
                       title="ทำเครื่องหมายว่าจำได้แล้ว (นำออกจากรายการ)"
                       aria-label="ทำเครื่องหมายว่าจำได้แล้ว"
-                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-700 bg-zinc-800 text-zinc-200 transition hover:border-emerald-400/60 hover:bg-emerald-500/15 hover:text-emerald-200"
+                      className="flex h-11 w-11 items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900 text-zinc-200 transition hover:border-emerald-400/60 hover:bg-emerald-500/15 hover:text-emerald-200 active:scale-95"
                     >
-                      <Check className="h-4 w-4" aria-hidden="true" />
+                      <Check className="h-4.5 w-4.5" aria-hidden="true" />
                     </button>
                   </div>
                 }

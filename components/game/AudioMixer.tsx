@@ -7,6 +7,7 @@ import { DEFAULT_VOLUMES, type VolumeSettings } from "@/lib/storage/stats";
 interface AudioMixerProps {
   volumes: VolumeSettings;
   muted?: boolean;
+  compact?: boolean;
   onChange: (patch: Partial<VolumeSettings>) => void;
   onReset: () => void;
   onTestBeat?: () => void;
@@ -18,42 +19,54 @@ interface AudioMixerProps {
 const CHANNELS: Array<{
   key: keyof VolumeSettings;
   label: string;
+  shortLabel: string;
   Icon: ComponentType<{ className?: string }>;
   accent: string;
   iconColor: string;
   testKey?: "beat" | "piano" | "sfx" | "voice";
 }> = [
-  { key: "master", label: "Master (เสียงรวมทั้งหมด)", Icon: Volume2, accent: "accent-cyan-400", iconColor: "text-cyan-400" },
+  {
+    key: "master",
+    label: "เสียงรวมทั้งหมด (Master)",
+    shortLabel: "Master",
+    Icon: Volume2,
+    accent: "accent-orange-500",
+    iconColor: "text-orange-400",
+  },
   {
     key: "beat",
-    label: "Beat Groove (จังหวะดนตรี)",
+    label: "จังหวะดนตรี (Beat Groove)",
+    shortLabel: "Beat",
     Icon: Disc3,
-    accent: "accent-pink-500",
-    iconColor: "text-pink-400",
+    accent: "accent-rose-400",
+    iconColor: "text-rose-400",
     testKey: "beat",
   },
   {
     key: "piano",
-    label: "Piano (โน้ตเปียโน & คอร์ด)",
+    label: "โน้ตเปียโน & คอร์ด (Piano)",
+    shortLabel: "Piano",
     Icon: Music2,
-    accent: "accent-violet-400",
-    iconColor: "text-violet-400",
+    accent: "accent-amber-400",
+    iconColor: "text-amber-300",
     testKey: "piano",
   },
   {
     key: "sfx",
-    label: "SFX (เอฟเฟกต์แจ้งเตือน)",
+    label: "เอฟเฟกต์แจ้งเตือน (SFX)",
+    shortLabel: "SFX",
     Icon: Zap,
-    accent: "accent-amber-400",
-    iconColor: "text-amber-400",
+    accent: "accent-orange-400",
+    iconColor: "text-orange-300",
     testKey: "sfx",
   },
   {
     key: "voice",
-    label: "Voice (เสียงอ่านคำศัพท์)",
+    label: "เสียงอ่านคำศัพท์ (Voice)",
+    shortLabel: "Voice",
     Icon: Mic,
-    accent: "accent-emerald-400",
-    iconColor: "text-emerald-400",
+    accent: "accent-sky-400",
+    iconColor: "text-sky-300",
     testKey: "voice",
   },
 ];
@@ -61,6 +74,7 @@ const CHANNELS: Array<{
 export function AudioMixer({
   volumes,
   muted = false,
+  compact = false,
   onChange,
   onReset,
   onTestBeat,
@@ -82,16 +96,93 @@ export function AudioMixer({
     voice: onTestVoice,
   };
 
+  if (compact) {
+    return (
+      <div className="space-y-1.5 rounded-xl border border-zinc-800 bg-[#0b0b0e] p-2.5 text-left">
+        <div className="flex items-center justify-between gap-2 pb-0.5">
+          <span className="inline-flex items-center gap-1.5 font-mono text-xs font-bold tracking-wider text-orange-300 uppercase">
+            <SlidersHorizontal className="h-3.5 w-3.5 text-orange-400" aria-hidden="true" />
+            Audio Mixer
+          </span>
+          <div className="flex items-center gap-2">
+            {muted && (
+              <span className="rounded bg-rose-500/20 px-1.5 py-0.5 font-mono text-[11px] font-bold text-rose-300">
+                MUTED
+              </span>
+            )}
+            {!isDefault && (
+              <button
+                type="button"
+                onClick={onReset}
+                className="inline-flex items-center gap-1 rounded px-1.5 py-0.5 font-sans text-xs font-medium text-zinc-300 underline decoration-zinc-600 underline-offset-2 hover:text-orange-300"
+              >
+                <RotateCcw className="h-3 w-3" aria-hidden="true" />
+                รีเซ็ต
+              </button>
+            )}
+          </div>
+        </div>
+
+        <div className="space-y-1.5">
+          {CHANNELS.map((ch) => {
+            const pct = Math.round(volumes[ch.key] * 100);
+            const testFn = ch.testKey ? handlers[ch.testKey] : undefined;
+            const { Icon } = ch;
+            return (
+              <div key={ch.key} className="flex items-center gap-2">
+                <label
+                  htmlFor={`vol-compact-${ch.key}`}
+                  className="inline-flex w-20 shrink-0 items-center gap-1.5 font-mono text-xs font-semibold text-zinc-100"
+                >
+                  <Icon className={`h-3.5 w-3.5 shrink-0 ${ch.iconColor}`} aria-hidden="true" />
+                  <span>{ch.shortLabel}</span>
+                </label>
+                <input
+                  id={`vol-compact-${ch.key}`}
+                  type="range"
+                  min={0}
+                  max={100}
+                  step={1}
+                  value={pct}
+                  onChange={(e) => onChange({ [ch.key]: Number(e.target.value) / 100 })}
+                  className={`h-2 flex-1 cursor-grab appearance-none rounded-lg bg-zinc-800 active:cursor-grabbing ${ch.accent}`}
+                />
+                <span className="w-9 shrink-0 text-right font-mono text-xs font-bold text-zinc-200 tabular-nums">
+                  {pct}%
+                </span>
+                <div className="flex w-7 shrink-0 justify-end">
+                  {testFn ? (
+                    <button
+                      type="button"
+                      onClick={testFn}
+                      title="ทดสอบเสียง"
+                      aria-label={`ทดสอบเสียง ${ch.label}`}
+                      className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-700 bg-zinc-900 text-zinc-200 transition hover:border-orange-500/70 hover:text-orange-300 active:scale-95"
+                    >
+                      <Play className="h-3 w-3 fill-current" aria-hidden="true" />
+                    </button>
+                  ) : (
+                    <span className="h-7 w-7" aria-hidden="true" />
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="space-y-3 rounded-xl border border-cyan-500/25 bg-[#090b14]/90 p-3.5 text-left">
+    <div className="space-y-3 rounded-xl border border-zinc-800 bg-[#0b0b0e] p-3.5 text-left">
       <div className="flex items-center justify-between gap-2">
-        <span className="inline-flex items-center gap-2 font-mono text-xs font-bold tracking-wider text-cyan-200 uppercase">
-          <SlidersHorizontal className="h-3.5 w-3.5 text-cyan-400" aria-hidden="true" />
+        <span className="inline-flex items-center gap-2 font-mono text-xs font-bold tracking-wider text-orange-300 uppercase">
+          <SlidersHorizontal className="h-4 w-4 text-orange-400" aria-hidden="true" />
           Sound Studio Mixer
         </span>
         <div className="flex items-center gap-2">
           {muted && (
-            <span className="rounded bg-rose-500/20 px-1.5 py-0.5 font-mono text-[11px] font-bold text-rose-300">
+            <span className="rounded bg-rose-500/20 px-2 py-0.5 font-mono text-xs font-bold text-rose-300">
               MUTED
             </span>
           )}
@@ -99,32 +190,32 @@ export function AudioMixer({
             <button
               type="button"
               onClick={onReset}
-              className="inline-flex items-center gap-1 text-xs text-zinc-400 underline decoration-zinc-600 underline-offset-2 hover:text-cyan-300"
+              className="inline-flex min-h-9 items-center gap-1 rounded-lg px-2 text-xs font-sans font-medium text-zinc-300 underline decoration-zinc-600 underline-offset-2 hover:text-orange-300"
             >
-              <RotateCcw className="h-3 w-3" aria-hidden="true" />
+              <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
               รีเซ็ต
             </button>
           )}
         </div>
       </div>
 
-      <div className="space-y-2.5">
+      <div className="space-y-3">
         {CHANNELS.map((ch) => {
           const pct = Math.round(volumes[ch.key] * 100);
           const testFn = ch.testKey ? handlers[ch.testKey] : undefined;
           const { Icon } = ch;
           return (
             <div key={ch.key} className="space-y-1.5">
-              <div className="flex items-center justify-between gap-2 text-xs sm:text-sm">
+              <div className="flex items-center justify-between gap-2 text-sm">
                 <label
                   htmlFor={`vol-${ch.key}`}
-                  className="inline-flex items-center gap-1.5 font-medium text-zinc-100"
+                  className="inline-flex items-center gap-2 font-sans font-medium text-zinc-100"
                 >
-                  <Icon className={`h-3.5 w-3.5 ${ch.iconColor}`} aria-hidden="true" />
+                  <Icon className={`h-4 w-4 shrink-0 ${ch.iconColor}`} aria-hidden="true" />
                   {ch.label}
                 </label>
                 <div className="flex items-center gap-2">
-                  <span className="w-10 text-right font-mono text-xs font-bold text-zinc-200 tabular-nums">
+                  <span className="w-11 text-right font-mono text-xs font-bold text-zinc-200 tabular-nums">
                     {pct}%
                   </span>
                   {testFn && (
@@ -133,9 +224,9 @@ export function AudioMixer({
                       onClick={testFn}
                       title="ทดสอบเสียง"
                       aria-label={`ทดสอบเสียง ${ch.label}`}
-                      className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-700 bg-zinc-900 text-zinc-200 transition hover:border-cyan-400/60 hover:text-cyan-300 active:scale-95"
+                      className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-700 bg-zinc-900 text-zinc-200 transition hover:border-orange-500/70 hover:text-orange-300 active:scale-95 sm:h-11 sm:w-11"
                     >
-                      <Play className="h-3 w-3 fill-current" aria-hidden="true" />
+                      <Play className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
                     </button>
                   )}
                 </div>
@@ -148,7 +239,7 @@ export function AudioMixer({
                 step={1}
                 value={pct}
                 onChange={(e) => onChange({ [ch.key]: Number(e.target.value) / 100 })}
-                className={`h-2 w-full cursor-grab appearance-none rounded-lg bg-zinc-800 active:cursor-grabbing ${ch.accent}`}
+                className={`h-2.5 w-full cursor-grab appearance-none rounded-lg bg-zinc-800 active:cursor-grabbing ${ch.accent}`}
               />
             </div>
           );

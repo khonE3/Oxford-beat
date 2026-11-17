@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ArrowLeft, Globe, Search, Target } from "lucide-react";
+import { BookOpen, Globe, Search } from "lucide-react";
 import { useStoredJson } from "@/lib/hooks/useStorage";
 import {
   DEFAULT_SETTINGS,
@@ -14,6 +13,7 @@ import {
 import { ALL_WORDS } from "@/lib/vocab";
 import type { CefrLevel, PartOfSpeech } from "@/lib/vocab/types";
 import { Footer } from "@/components/Footer";
+import { GameNavbar } from "@/components/GameNavbar";
 import { VocabCard } from "./VocabCard";
 
 const LEVELS: Array<"ALL" | CefrLevel> = ["ALL", "A1", "A2", "B1", "B2"];
@@ -53,63 +53,56 @@ export function VocabBrowser() {
   }, [query, level, pos]);
 
   return (
-    <main className="cyber-grid min-h-dvh bg-gradient-to-b from-[#06070d] via-[#090d1e] to-[#0f091a] px-4 py-6 sm:py-8">
-      <div className="mx-auto max-w-4xl space-y-5">
-        {/* Header */}
-        <header className="flex flex-wrap items-center justify-between gap-3">
+    <main className="cyber-grid min-h-dvh bg-[#09090b] px-3 py-4 sm:px-6 sm:py-6">
+      <div className="mx-auto max-w-5xl space-y-5">
+        {/* Persistent Navigation */}
+        <GameNavbar
+          activePath="/vocab"
+          muted={settings.muted}
+          onToggleMute={() => updateSettings({ muted: !settings.muted })}
+        />
+
+        {/* Page Header + Accent Selector */}
+        <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-zinc-800 bg-[#111114] px-5 py-4">
           <div>
-            <Link
-              href="/"
-              className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-cyan-400 hover:text-cyan-300 hover:underline"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              กลับหน้าเกม
-            </Link>
-            <h1 className="mt-1 bg-gradient-to-r from-cyan-300 via-white to-pink-300 bg-clip-text font-mono text-2xl font-black text-transparent sm:text-3xl">
-              Oxford 3000 Vocabulary
+            <h1 className="inline-flex items-center gap-2.5 font-mono text-2xl font-black text-white sm:text-3xl">
+              <BookOpen className="h-6 w-6 shrink-0 text-orange-400 sm:h-7 sm:w-7" aria-hidden="true" />
+              <span>Oxford 3000 Vocabulary</span>
             </h1>
-            <p className="text-sm text-zinc-300">
-              คลังคำศัพท์ทั้งหมด {ALL_WORDS.length} คำ (แสดง {filtered.length} คำ)
+            <p className="mt-1 font-sans text-sm text-zinc-300">
+              คลังคำศัพท์ทั้งหมด {ALL_WORDS.length.toLocaleString()} คำ (กำลังแสดง {filtered.length.toLocaleString()} คำ)
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-2">
-            <div className="flex rounded-xl border border-zinc-800 bg-[#080b16] p-1">
-              {(
-                [
-                  { id: "en-GB", label: "UK" },
-                  { id: "en-US", label: "US" },
-                ] as const
-              ).map((opt) => (
-                <button
-                  key={opt.id}
-                  type="button"
-                  onClick={() => updateSettings({ accent: opt.id })}
-                  className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
-                    settings.accent === opt.id
-                      ? "bg-cyan-500/20 text-cyan-300"
-                      : "text-zinc-400 hover:text-zinc-100"
-                  }`}
-                >
-                  <Globe className="h-3.5 w-3.5" aria-hidden="true" />
-                  {opt.label}
-                </button>
-              ))}
-            </div>
-            <Link
-              href="/missed"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-pink-500/40 bg-pink-500/10 px-3.5 py-2 text-sm font-semibold text-pink-200 transition hover:bg-pink-500/20"
-            >
-              <Target className="h-4 w-4" aria-hidden="true" />
-              ดูคำที่พลาดบ่อย
-            </Link>
+
+          <div className="flex items-center gap-1.5 rounded-xl border border-zinc-800 bg-[#0b0b0e] p-1">
+            {(
+              [
+                { id: "en-GB", label: "UK Accent" },
+                { id: "en-US", label: "US Accent" },
+              ] as const
+            ).map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => updateSettings({ accent: opt.id })}
+                className={`inline-flex min-h-10 items-center gap-1.5 rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
+                  settings.accent === opt.id
+                    ? "bg-orange-500/20 text-orange-200"
+                    : "text-zinc-400 hover:text-zinc-100"
+                }`}
+              >
+                <Globe className="h-3.5 w-3.5" aria-hidden="true" />
+                {opt.label}
+              </button>
+            ))}
           </div>
-        </header>
+        </section>
 
         {/* Filters */}
-        <section className="space-y-3 rounded-2xl border border-cyan-500/25 bg-[#080b16]/90 p-4 backdrop-blur-md">
+        <section className="space-y-3 rounded-2xl border border-zinc-800 bg-[#111114] p-4">
           <div className="relative">
             <Search
-              className="pointer-events-none absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-zinc-400"
+              className="pointer-events-none absolute top-1/2 left-3.5 h-4.5 w-4.5 -translate-y-1/2 text-zinc-400"
               aria-hidden="true"
             />
             <input
@@ -120,12 +113,12 @@ export function VocabBrowser() {
                 setVisibleCount(PAGE_SIZE);
               }}
               placeholder="ค้นหาคำศัพท์ภาษาอังกฤษ หรือ คำแปลภาษาไทย..."
-              className="w-full rounded-xl border border-zinc-700 bg-[#0b0e1a] py-2.5 pr-3.5 pl-10 text-sm text-zinc-100 placeholder-zinc-400 focus:border-cyan-400 focus:outline-none"
+              className="min-h-11 w-full rounded-xl border border-zinc-700 bg-[#0b0b0e] py-2.5 pr-4 pl-10 font-sans text-sm text-zinc-100 placeholder-zinc-400 focus:border-orange-500 focus:outline-none"
             />
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-2">
               {LEVELS.map((lv) => (
                 <button
                   key={lv}
@@ -134,10 +127,10 @@ export function VocabBrowser() {
                     setLevel(lv);
                     setVisibleCount(PAGE_SIZE);
                   }}
-                  className={`rounded-lg border px-3 py-1.5 font-mono text-xs font-bold transition ${
+                  className={`min-h-10 rounded-xl border px-3.5 py-1.5 font-mono text-xs font-bold transition ${
                     level === lv
-                      ? "border-cyan-400 bg-cyan-500/20 text-cyan-200"
-                      : "border-zinc-800 bg-[#0b0e1a] text-zinc-300 hover:border-zinc-700 hover:text-white"
+                      ? "border-orange-500 bg-orange-500/20 text-orange-200"
+                      : "border-zinc-800 bg-[#0b0b0e] text-zinc-300 hover:border-zinc-700 hover:text-white"
                   }`}
                 >
                   {lv}
@@ -154,10 +147,10 @@ export function VocabBrowser() {
                     setPos(p);
                     setVisibleCount(PAGE_SIZE);
                   }}
-                  className={`rounded-lg border px-2.5 py-1.5 font-mono text-xs font-medium transition ${
+                  className={`min-h-10 rounded-xl border px-3 py-1.5 font-mono text-xs font-medium transition ${
                     pos === p
                       ? "border-amber-400 bg-amber-500/20 text-amber-200"
-                      : "border-zinc-800 bg-zinc-950/70 text-zinc-300 hover:border-zinc-700 hover:text-white"
+                      : "border-zinc-800 bg-[#0b0b0e] text-zinc-300 hover:border-zinc-700 hover:text-white"
                   }`}
                 >
                   {p === "ALL" ? "All POS" : p}
@@ -169,7 +162,7 @@ export function VocabBrowser() {
 
         {/* Word Grid */}
         {filtered.length === 0 ? (
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/70 py-12 text-center text-sm text-zinc-300">
+          <div className="rounded-2xl border border-zinc-800 bg-[#111114] py-12 text-center font-sans text-sm text-zinc-300">
             ไม่พบคำศัพท์ที่ตรงกับเงื่อนไขการค้นหา
           </div>
         ) : (
@@ -185,7 +178,7 @@ export function VocabBrowser() {
                 <button
                   type="button"
                   onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                  className="rounded-xl border border-cyan-400/50 bg-cyan-500/15 px-6 py-2.5 font-mono text-sm font-bold text-cyan-200 transition hover:bg-cyan-500/25 active:scale-[0.99]"
+                  className="min-h-11 rounded-xl border border-orange-500/50 bg-orange-500/15 px-6 py-2.5 font-sans text-sm font-bold text-orange-200 transition hover:bg-orange-500/25 active:scale-[0.99]"
                 >
                   โหลดเพิ่มเติม ({Math.min(PAGE_SIZE, filtered.length - visibleCount)} / เหลือ{" "}
                   {filtered.length - visibleCount} คำ)

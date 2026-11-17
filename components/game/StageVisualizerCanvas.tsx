@@ -30,8 +30,8 @@ interface AmbientMote {
   hue: string;
 }
 
-const MOTES_COUNT = 26;
-const LOBBY_COLORS = ["#22d3ee", "#ec4899", "#fbbf24", "#a855f7"] as const;
+const MOTES_COUNT = 22;
+const STAGE_COLORS = ["#f97316", "#fbbf24", "#38bdf8", "#fb7185"] as const;
 
 export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisualizerProps>(
   function StageVisualizerCanvas(
@@ -75,10 +75,10 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
       const motes: AmbientMote[] = Array.from({ length: MOTES_COUNT }, (_, i) => ({
         x: Math.random(),
         y: Math.random(),
-        r: 1.2 + Math.random() * 2.1,
-        speed: 0.018 + Math.random() * 0.032,
-        alpha: 0.16 + Math.random() * 0.35,
-        hue: LOBBY_COLORS[i % LOBBY_COLORS.length],
+        r: 1.1 + Math.random() * 1.9,
+        speed: 0.015 + Math.random() * 0.025,
+        alpha: 0.14 + Math.random() * 0.28,
+        hue: STAGE_COLORS[i % STAGE_COLORS.length],
       }));
 
       let width = 0;
@@ -123,40 +123,37 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
         const pulse = p.active ? audioSample.beatPulse : 0.2;
         const bass = Math.max(audioSample.bassEnergy, pulse * 0.42);
 
-        // Smooth audio bins (or gentle procedural wave when idle)
         const barCount = p.variant === "lobby" ? 28 : 24;
         for (let i = 0; i < barCount; i++) {
           const rawBin = p.sampleAudio ? bins[i % 16] / 255 : 0;
           const synthetic =
             (0.2 + 0.55 * pulse) *
             (0.45 + 0.55 * Math.abs(Math.sin(tSec * 2.4 + i * 0.42)));
-          const target = Math.max(rawBin, p.active ? synthetic * 0.55 : synthetic * 0.25);
+          const target = Math.max(rawBin, p.active ? synthetic * 0.52 : synthetic * 0.22);
           smoothedBins[i] += (target - smoothedBins[i]) * Math.min(1, dt * 14);
         }
 
         // 1. Rising ambient rhythm motes
         ctx.save();
         for (const m of motes) {
-          m.y -= m.speed * dt * (1 + bass * 1.2);
+          m.y -= m.speed * dt * (1 + bass * 1.15);
           if (m.y < -0.04) {
             m.y = 1.04;
             m.x = Math.random();
           }
-          const mx = m.x * width;
-          const my = m.y * height;
-          ctx.globalAlpha = m.alpha * (0.65 + pulse * 0.45);
+          ctx.globalAlpha = m.alpha * (0.65 + pulse * 0.4);
           ctx.fillStyle = m.hue;
           ctx.beginPath();
-          ctx.arc(mx, my, m.r, 0, Math.PI * 2);
+          ctx.arc(m.x * width, m.y * height, m.r, 0, Math.PI * 2);
           ctx.fill();
         }
         ctx.restore();
 
         if (p.variant === "lobby") {
-          // Bottom acoustic horizon spectrum in Lobby
+          // Bottom acoustic horizon spectrum in Lobby (Studio Flame palette)
           const gap = 4;
           const bw = Math.max(4, (width - gap * (barCount - 1)) / barCount);
-          const maxBarH = Math.min(130, height * 0.2);
+          const maxBarH = Math.min(120, height * 0.18);
 
           ctx.save();
           ctx.globalCompositeOperation = "lighter";
@@ -165,10 +162,10 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
             const h = 8 + val * maxBarH;
             const x = i * (bw + gap);
             const y = height - h;
-            const color = i % 3 === 0 ? "#22d3ee" : i % 3 === 1 ? "#ec4899" : "#a855f7";
+            const color = i % 3 === 0 ? "#f97316" : i % 3 === 1 ? "#fbbf24" : "#38bdf8";
             const grad = ctx.createLinearGradient(0, height, 0, y);
-            grad.addColorStop(0, `${color}44`);
-            grad.addColorStop(1, `${color}12`);
+            grad.addColorStop(0, `${color}3a`);
+            grad.addColorStop(1, `${color}0e`);
             ctx.fillStyle = grad;
             ctx.fillRect(x, y, bw, h);
           }
@@ -179,7 +176,7 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
           const laneWidth = width / laneCount;
           const hitY = Math.max(120, height - p.dangerZoneHeight);
 
-          // 2. Lane Spotlight Beams (triggered on hit/destroy)
+          // 2. Lane Spotlight Beams
           ctx.save();
           ctx.globalCompositeOperation = "lighter";
           for (let i = 0; i < laneCount; i++) {
@@ -189,9 +186,9 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
               const x = i * laneWidth;
               const beamGrad = ctx.createLinearGradient(0, hitY, 0, hitY * 0.15);
               beamGrad.addColorStop(0, color);
-              beamGrad.addColorStop(0.55, `${color}38`);
+              beamGrad.addColorStop(0.55, `${color}36`);
               beamGrad.addColorStop(1, `${color}00`);
-              ctx.globalAlpha = Math.min(0.5, flash * 0.42);
+              ctx.globalAlpha = Math.min(0.46, flash * 0.4);
               ctx.fillStyle = beamGrad;
               ctx.fillRect(x + 2, 0, laneWidth - 4, hitY);
               laneFlashRef.current[i] = Math.max(0, flash - dt * 3.8);
@@ -200,7 +197,7 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
 
           // 3. Spectrum Equalizer rising behind the Hit Line
           const barW = Math.max(3, (width - (barCount - 1) * 3) / barCount);
-          const maxEqH = Math.min(92, hitY * 0.24);
+          const maxEqH = Math.min(86, hitY * 0.22);
           for (let i = 0; i < barCount; i++) {
             const val = smoothedBins[i];
             const h = 4 + val * maxEqH;
@@ -208,7 +205,7 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
             const laneIdx = Math.min(laneCount - 1, Math.floor((x / width) * laneCount));
             const laneHex = getLaneStyle(laneIdx, laneCount).hex;
             const grad = ctx.createLinearGradient(0, hitY, 0, hitY - h);
-            grad.addColorStop(0, `${laneHex}40`);
+            grad.addColorStop(0, `${laneHex}38`);
             grad.addColorStop(1, `${laneHex}05`);
             ctx.globalAlpha = 0.72;
             ctx.fillStyle = grad;
@@ -220,14 +217,14 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
           if (feverLevel > 0) {
             const sideAlpha = (0.14 + pulse * 0.18) * feverLevel;
             const leftGrad = ctx.createLinearGradient(0, 0, 56, 0);
-            leftGrad.addColorStop(0, `rgba(34, 211, 238, ${sideAlpha})`);
-            leftGrad.addColorStop(1, "rgba(34, 211, 238, 0)");
+            leftGrad.addColorStop(0, `rgba(249, 115, 22, ${sideAlpha})`);
+            leftGrad.addColorStop(1, "rgba(249, 115, 22, 0)");
             ctx.fillStyle = leftGrad;
             ctx.fillRect(0, 0, 56, height);
 
             const rightGrad = ctx.createLinearGradient(width, 0, width - 56, 0);
-            rightGrad.addColorStop(0, `rgba(236, 72, 153, ${sideAlpha})`);
-            rightGrad.addColorStop(1, "rgba(236, 72, 153, 0)");
+            rightGrad.addColorStop(0, `rgba(251, 191, 36, ${sideAlpha})`);
+            rightGrad.addColorStop(1, "rgba(251, 191, 36, 0)");
             ctx.fillStyle = rightGrad;
             ctx.fillRect(width - 56, 0, 56, height);
           }
@@ -235,8 +232,8 @@ export const StageVisualizerCanvas = forwardRef<StageVisualizerHandle, StageVisu
           // 5. Beat-synced hit-line floor wash
           const floorAlpha = 0.08 + pulse * 0.14;
           const floorGrad = ctx.createLinearGradient(0, hitY, 0, height);
-          floorGrad.addColorStop(0, `rgba(34, 211, 238, ${floorAlpha})`);
-          floorGrad.addColorStop(1, "rgba(236, 72, 153, 0.04)");
+          floorGrad.addColorStop(0, `rgba(249, 115, 22, ${floorAlpha})`);
+          floorGrad.addColorStop(1, "rgba(251, 191, 36, 0.04)");
           ctx.globalAlpha = 1;
           ctx.fillStyle = floorGrad;
           ctx.fillRect(0, hitY, width, height - hitY);
